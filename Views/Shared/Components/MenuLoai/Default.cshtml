@@ -1,0 +1,15 @@
+﻿@model IEnumerable<KLTN_E.ViewModels.MenuLoaiVM>
+
+<div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+    <div class="card-body">
+        <div class="shop__sidebar__categories">
+            <ul class="nice-scroll">
+                @foreach (var item in Model)
+                {
+                    <li><a asp-controller="HangHoa" asp-action="Index" asp-route-loai="@item.MaLoai">@item.TenLoai <span>(@item.SoLuong)</span></a></li>
+                }
+
+            </ul>
+        </div>
+    </div>
+</div>
