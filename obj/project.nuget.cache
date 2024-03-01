@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Ef9VvlQMUwjhjCH0x8AZFPCgoKIw2RG9WrJn5UfT8cxt8CEIySyCcnSFI6bAzq8jGK+mbIj2i4ZHqFn05v1evQ==",
+  "dgSpecHash": "/ra1V/0Tqpb6GjvaNgNHSrRnyys5/zoMee6ic+ZAMr7xDmDRUmtPmE/0cAkA8q40NwLPwxAOwGh8de7N+ALl9Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\ADMIN\\Documents\\Phát triển ứng dụng\\KLTN-E\\KLTN-E\\KLTN-E.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ADMIN\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
@@ -79,7 +81,7 @@
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.codeanalysis.razor\\6.0.24\\microsoft.codeanalysis.razor.6.0.24.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.codeanalysis.scripting.common\\4.8.0-3.final\\microsoft.codeanalysis.scripting.common.4.8.0-3.final.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.codeanalysis.workspaces.common\\4.8.0-3.final\\microsoft.codeanalysis.workspaces.common.4.8.0-3.final.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.4\\microsoft.data.sqlclient.5.1.4.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.1\\microsoft.data.sqlclient.sni.runtime.5.1.1.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.diasymreader\\2.0.0\\microsoft.diasymreader.2.0.0.nupkg.sha512",

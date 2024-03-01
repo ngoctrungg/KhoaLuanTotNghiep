@@ -259,3 +259,7 @@ C:\Users\ADMIN\Documents\Phát triển ứng dụng\KLTN-E\KLTN-E\bin\Debug\net8
 C:\Users\ADMIN\Documents\Phát triển ứng dụng\KLTN-E\KLTN-E\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\ADMIN\Documents\Phát triển ứng dụng\KLTN-E\KLTN-E\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\ADMIN\Documents\Phát triển ứng dụng\KLTN-E\KLTN-E\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\ADMIN\Documents\Phát triển ứng dụng\KLTN-E\KLTN-E\obj\Debug\net8.0\KLTN-E.sourcelink.json
+C:\Users\ADMIN\Documents\Phát triển ứng dụng\KLTN-E\KLTN-E\obj\Debug\net8.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\ADMIN\Documents\Phát triển ứng dụng\KLTN-E\KLTN-E\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\ADMIN\Documents\Phát triển ứng dụng\KLTN-E\KLTN-E\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

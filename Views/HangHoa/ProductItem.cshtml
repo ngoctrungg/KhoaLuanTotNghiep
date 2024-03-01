@@ -19,7 +19,7 @@
                 </ul>
                 <div class="product__item__text">
                     <h6>@item.TenHH</h6>
-                    <a href="#" class="add-cart">+ Add To Cart</a>
+                    <a asp-action="AddToCart" asp-controller="Cart" asp-route-id="@item.MaHH" class="add-cart">+ Add To Cart</a>
                     <div class="rating">
                         @for (int i = 0; i < 5; i++)
                         {

@@ -36,7 +36,7 @@
         <div class="offcanvas-menu-wrapper">
             <div class="offcanvas__option">
                 <div class="offcanvas__links">
-                    <a href="#">Sign in</a>
+                    <a asp-action="DangKy" asp-controller="KhachHang">Sign in</a>
                     <a href="#">FAQs</a>
                 </div>
                 <div class="offcanvas__top__hover">
@@ -51,7 +51,10 @@
             <div class="offcanvas__nav__option">
                 <a href="#" class="search-switch"><img src="~/img/icon/search.png" alt=""></a>
                 <a href="#"><img src="~/img/icon/heart.png" alt=""></a>
-                <a href="#"><img src="~/img/icon/cart.png" alt=""> <span>0</span></a>
+                <a asp-action="Index" asp-controller="Cart">
+                    <img src="~/img/icon/cart.png" alt="cart">
+                    <span>0</span>
+                </a>
                 <div class="price">$0.00</div>
             </div>
             <div id="mobile-menu-wrap"></div>
@@ -73,7 +76,7 @@
                         <div class="col-lg-6 col-md-5">
                             <div class="header__top__right">
                                 <div class="header__top__links">
-                                    <a href="#">Sign in</a>
+                                    <a asp-action="DangKy" asp-controller="KhachHang">Sign in</a>
                                     <a href="#">FAQs</a>
                                 </div>
                                 <div class="header__top__hover">
@@ -120,8 +123,7 @@
                         <div class="header__nav__option">
                             <a href="#" class="search-switch"><img src="~/img/icon/search.png" alt=""></a>
                             <a href="#"><img src="~/img/icon/heart.png" alt=""></a>
-                            <a href="#"><img src="~/img/icon/cart.png" alt=""> <span>0</span></a>
-                            <div class="price">$0.00</div>
+                           @await Component.InvokeAsync("Cart")
                         </div>
                     </div>
                 </div>

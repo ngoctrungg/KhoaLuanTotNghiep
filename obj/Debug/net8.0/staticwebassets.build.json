@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uGGQ/rCV/xAXMbydy4htG/kenmlu6WvxOxu8Won5JGY=",
+  "Hash": "gCkcBKKw0qbs8dyxp4eKH/1XuLxbagPc7ft4XxeYlLM=",
   "Source": "KLTN-E",
   "BasePath": "_content/KLTN-E",
   "Mode": "Default",
@@ -205,6 +205,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Documents\\Phát triển ứng dụng\\KLTN-E\\KLTN-E\\wwwroot\\css\\demo.css",
+      "SourceId": "KLTN-E",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Documents\\Phát triển ứng dụng\\KLTN-E\\KLTN-E\\wwwroot\\",
+      "BasePath": "_content/KLTN-E",
+      "RelativePath": "css/demo.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\demo.css"
     },
     {
       "Identity": "C:\\Users\\ADMIN\\Documents\\Phát triển ứng dụng\\KLTN-E\\KLTN-E\\wwwroot\\css\\elegant-icons.css",
@@ -6817,6 +6836,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\clients\\client-8.png"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Documents\\Phát triển ứng dụng\\KLTN-E\\KLTN-E\\wwwroot\\img\\demo.css",
+      "SourceId": "KLTN-E",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Documents\\Phát triển ứng dụng\\KLTN-E\\KLTN-E\\wwwroot\\",
+      "BasePath": "_content/KLTN-E",
+      "RelativePath": "img/demo.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\demo.css"
     },
     {
       "Identity": "C:\\Users\\ADMIN\\Documents\\Phát triển ứng dụng\\KLTN-E\\KLTN-E\\wwwroot\\img\\footer-logo.png",

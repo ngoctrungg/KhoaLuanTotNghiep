@@ -1249,6 +1249,10 @@
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Phát triển ứng dụng\\KLTN-E\\KLTN-E\\wwwroot\\css\\demo.css",
+      "PackagePath": "staticwebassets\\css\\demo.css"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\Documents\\Phát triển ứng dụng\\KLTN-E\\KLTN-E\\wwwroot\\css\\elegant-icons.css",
       "PackagePath": "staticwebassets\\css\\elegant-icons.css"
     },
@@ -1447,6 +1451,10 @@
     {
       "Id": "C:\\Users\\ADMIN\\Documents\\Phát triển ứng dụng\\KLTN-E\\KLTN-E\\wwwroot\\img\\clients\\client-8.png",
       "PackagePath": "staticwebassets\\img\\clients\\client-8.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Phát triển ứng dụng\\KLTN-E\\KLTN-E\\wwwroot\\img\\demo.css",
+      "PackagePath": "staticwebassets\\img\\demo.css"
     },
     {
       "Id": "C:\\Users\\ADMIN\\Documents\\Phát triển ứng dụng\\KLTN-E\\KLTN-E\\wwwroot\\img\\footer-logo.png",
