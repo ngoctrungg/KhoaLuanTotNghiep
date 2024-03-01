@@ -17,95 +17,95 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = KLTN_E
 build_property.RootNamespace = KLTN_E
-build_property.ProjectDir = C:\Users\hoquo\source\repos\Khoaluantotnghiep\
+build_property.ProjectDir = C:\Users\hoquo\Source\Repos\Khoaluantotnghiep\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\hoquo\source\repos\Khoaluantotnghiep
+build_property.MSBuildProjectDirectory = C:\Users\hoquo\Source\Repos\Khoaluantotnghiep
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/hoquo/source/repos/Khoaluantotnghiep/Views/HangHoas/Create.cshtml]
+[C:/Users/hoquo/Source/Repos/Khoaluantotnghiep/Views/HangHoas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hoquo/source/repos/Khoaluantotnghiep/Views/HangHoas/Delete.cshtml]
+[C:/Users/hoquo/Source/Repos/Khoaluantotnghiep/Views/HangHoas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hoquo/source/repos/Khoaluantotnghiep/Views/HangHoas/Details.cshtml]
+[C:/Users/hoquo/Source/Repos/Khoaluantotnghiep/Views/HangHoas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hoquo/source/repos/Khoaluantotnghiep/Views/HangHoas/Edit.cshtml]
+[C:/Users/hoquo/Source/Repos/Khoaluantotnghiep/Views/HangHoas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hoquo/source/repos/Khoaluantotnghiep/Views/HangHoas/Index.cshtml]
+[C:/Users/hoquo/Source/Repos/Khoaluantotnghiep/Views/HangHoas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hoquo/source/repos/Khoaluantotnghiep/Views/HangHoa/Detail.cshtml]
+[C:/Users/hoquo/Source/Repos/Khoaluantotnghiep/Views/HangHoa/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYVxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hoquo/source/repos/Khoaluantotnghiep/Views/HangHoa/Index.cshtml]
+[C:/Users/hoquo/Source/Repos/Khoaluantotnghiep/Views/HangHoa/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hoquo/source/repos/Khoaluantotnghiep/Views/HangHoa/ProductItem.cshtml]
+[C:/Users/hoquo/Source/Repos/Khoaluantotnghiep/Views/HangHoa/ProductItem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYVxQcm9kdWN0SXRlbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hoquo/source/repos/Khoaluantotnghiep/Views/HangHoa/Search.cshtml]
+[C:/Users/hoquo/Source/Repos/Khoaluantotnghiep/Views/HangHoa/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYVxTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hoquo/source/repos/Khoaluantotnghiep/Views/Home/Index.cshtml]
+[C:/Users/hoquo/Source/Repos/Khoaluantotnghiep/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hoquo/source/repos/Khoaluantotnghiep/Views/Home/NotFound404.cshtml]
+[C:/Users/hoquo/Source/Repos/Khoaluantotnghiep/Views/Home/NotFound404.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb3RGb3VuZDQwNC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hoquo/source/repos/Khoaluantotnghiep/Views/Home/Privacy.cshtml]
+[C:/Users/hoquo/Source/Repos/Khoaluantotnghiep/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hoquo/source/repos/Khoaluantotnghiep/Views/Shared/Components/MenuLoai/Default.cshtml]
+[C:/Users/hoquo/Source/Repos/Khoaluantotnghiep/Views/Shared/Components/MenuLoai/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVudUxvYWlcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hoquo/source/repos/Khoaluantotnghiep/Views/Shared/Error.cshtml]
+[C:/Users/hoquo/Source/Repos/Khoaluantotnghiep/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hoquo/source/repos/Khoaluantotnghiep/Views/Shared/_DanhSachHangHoa.cshtml]
+[C:/Users/hoquo/Source/Repos/Khoaluantotnghiep/Views/Shared/_DanhSachHangHoa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EYW5oU2FjaEhhbmdIb2EuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hoquo/source/repos/Khoaluantotnghiep/Views/Shared/_Footer.cshtml]
+[C:/Users/hoquo/Source/Repos/Khoaluantotnghiep/Views/Shared/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hoquo/source/repos/Khoaluantotnghiep/Views/Shared/_LayoutCustomer.cshtml]
+[C:/Users/hoquo/Source/Repos/Khoaluantotnghiep/Views/Shared/_LayoutCustomer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDdXN0b21lci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hoquo/source/repos/Khoaluantotnghiep/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/hoquo/Source/Repos/Khoaluantotnghiep/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hoquo/source/repos/Khoaluantotnghiep/Views/_ViewImports.cshtml]
+[C:/Users/hoquo/Source/Repos/Khoaluantotnghiep/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hoquo/source/repos/Khoaluantotnghiep/Views/_ViewStart.cshtml]
+[C:/Users/hoquo/Source/Repos/Khoaluantotnghiep/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hoquo/source/repos/Khoaluantotnghiep/Views/Shared/_Layout.cshtml]
+[C:/Users/hoquo/Source/Repos/Khoaluantotnghiep/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-nbc1ngs02o
