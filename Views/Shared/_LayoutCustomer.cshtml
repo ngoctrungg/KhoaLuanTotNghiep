@@ -36,7 +36,7 @@
         <div class="offcanvas-menu-wrapper">
             <div class="offcanvas__option">
                 <div class="offcanvas__links">
-                    <a asp-action="DangKy" asp-controller="KhachHang">Sign in</a>
+                    <a href="#">Sign in</a>
                     <a href="#">FAQs</a>
                 </div>
                 <div class="offcanvas__top__hover">
@@ -76,7 +76,7 @@
                         <div class="col-lg-6 col-md-5">
                             <div class="header__top__right">
                                 <div class="header__top__links">
-                                    <a asp-action="DangKy" asp-controller="KhachHang">Sign in</a>
+                                    <a asp-action="DangNhap" asp-controller="KhachHang">Sign in</a>
                                     <a href="#">FAQs</a>
                                 </div>
                                 <div class="header__top__hover">
@@ -103,13 +103,13 @@
                         <nav class="header__menu mobile-menu">
                             <ul>
                                 <li class="active"><a href="/">Home</a></li>
-                                <li><a asp-controller="HangHoa">Shop</a></li>
+                                <li><a asp-action="Index" asp-controller="HangHoa">Shop</a></li>
                                 <li>
                                     <a href="#">Pages</a>
                                     <ul class="dropdown">
                                         <li><a href="./about.html">About Us</a></li>
-                                        <li><a asp-action="Detail" asp-controller="HangHoa">Shop Details</a></li>
-                                        <li><a href="./shopping-cart.html">Shopping Cart</a></li>
+                                        <li><a asp-action="DangNhap" asp-controller="KhachHang">Login</a></li>
+                                        <li><a asp-action="DangKy" asp-controller="KhachHang">Register</a></li>
                                         <li><a asp-action="AddToCart" asp-controller="Cart">Check Out</a></li>
                                         <li><a href="./blog-details.html">Blog Details</a></li>
                                     </ul>
@@ -159,7 +159,7 @@
     <script src="~/js/owl.carousel.min.js"></script>
     <script src="~/js/main.js"></script>
 
-    @RenderSection("Script", required: false)
+    @RenderSection("Scripts", required: false)
 
     <script>
         $(document).ready(function () {

@@ -102,7 +102,7 @@
                         <li>Subtotal <span>$0</span></li>
                         <li>Total <span>$@Model.Sum(p => p.ThanhTien)</span></li>
                     </ul>
-                    <a href="#" class="primary-btn">Proceed to checkout</a>
+                    <a asp-action="Checkout" asp-controller="Cart" class="primary-btn">Proceed to checkout</a>
                 </div>
             </div>
         </div>

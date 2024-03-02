@@ -329,6 +329,14 @@
       "PackagePath": "staticwebassets\\Hinh\\HangHoa\\To.gif"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Phát triển ứng dụng\\KLTN-E\\KLTN-E\\wwwroot\\Hinh\\KhachHang\\3.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Phát triển ứng dụng\\KLTN-E\\KLTN-E\\wwwroot\\Hinh\\KhachHang\\4.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\4.jpg"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\Documents\\Phát triển ứng dụng\\KLTN-E\\KLTN-E\\wwwroot\\Hinh\\KhachHang\\Author.jpg",
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\Author.jpg"
     },

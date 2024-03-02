@@ -32,11 +32,11 @@ namespace KLTN_E.ViewModels
         public string DiaChi { get; set; }
 
         [MaxLength(24, ErrorMessage = "Maximum 24 characters")]
-        [RegularExpression(@"0[9875]\d{8}", ErrorMessage = "Phone number format is not correct")]
+        [RegularExpression(@"0[9875]\d{8}", ErrorMessage = "Please enter a valid Phone Number")]
         [Display(Name = "Phone")]
         [Required(ErrorMessage = "The Phone is required")]
         public string DienThoai { get; set; }
-        [EmailAddress(ErrorMessage = "EmailAddress format is not correct")]
+        [EmailAddress(ErrorMessage = "Please enter a valid Email Address")]
         [Required(ErrorMessage = "The Email is required")]
         public string Email { get; set; }
 
