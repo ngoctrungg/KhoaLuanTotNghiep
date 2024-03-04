@@ -1,0 +1,2153 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\KLTN-E.bundle.scp.css",
+      "PackagePath": "staticwebassets\\KLTN-E.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\1009.gif",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\1009.gif"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\21meTyhQebL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\21meTyhQebL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\31EPGSm2s1L._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\31EPGSm2s1L._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\31LAnW1JFqL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\31LAnW1JFqL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\31TB6tC6BOL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\31TB6tC6BOL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\31YOss-gC-L._AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\31YOss-gC-L._AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\31hCgES5GXL._AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\31hCgES5GXL._AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\31ioCUUFnoL.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\31ioCUUFnoL.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\31jsjfVfH9L._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\31jsjfVfH9L._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\31ncPnMYCxL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\31ncPnMYCxL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\31pAGovVENL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\31pAGovVENL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\31pT+SdvQXL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\31pT+SdvQXL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\31yxRemzRLL._SS350_ (1).jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\31yxRemzRLL._SS350_ (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41-yvkFqVZL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41-yvkFqVZL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\410PjzqoC8L._AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\410PjzqoC8L._AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\415cOCbey.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\415cOCbey.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\415cOCbeyML.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\415cOCbeyML.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\416OcTXFfeL._AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\416OcTXFfeL._AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\416pdroSEkL.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\416pdroSEkL.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\419WCoqfamL._AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\419WCoqfamL._AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41A9R5KXCXL._AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41A9R5KXCXL._AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41BiMx1FKyL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41BiMx1FKyL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41CIcYRxJKL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41CIcYRxJKL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41G38jC0ajL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41G38jC0ajL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41GVLtgNngL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41GVLtgNngL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41IPLmZIKhL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41IPLmZIKhL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41KALboJKuL.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41KALboJKuL.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41LMouG6j7L._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41LMouG6j7L._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41MJUdI2jdL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41MJUdI2jdL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41Pg1ahql8L._AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41Pg1ahql8L._AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41RxtSQOd2L._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41RxtSQOd2L._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41TexqWVkHL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41TexqWVkHL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41V4Ds2PtZL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41V4Ds2PtZL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41WvZnGYUkL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41WvZnGYUkL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41XX7Pi240L.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41XX7Pi240L.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41Ymq8fjbOL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41Ymq8fjbOL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41Z43OmFHjL._SX342_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41Z43OmFHjL._SX342_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41ZE9SmWdzL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41ZE9SmWdzL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41brDHtPY9L._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41brDHtPY9L._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41iDo0HDhbL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41iDo0HDhbL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41iji4-9UsL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41iji4-9UsL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41lffECD-sL._SY445_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41lffECD-sL._SY445_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41qfgTvFBwL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41qfgTvFBwL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41qlcUEhNmL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41qlcUEhNmL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41riQRGf-6L._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41riQRGf-6L._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41sd2DTD8EL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41sd2DTD8EL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41sdBTtnUDL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41sdBTtnUDL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41sl3FN6NpL.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41sl3FN6NpL.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41sw9ASUvBL._SX342_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41sw9ASUvBL._SX342_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41w4TlVPhGL.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41w4TlVPhGL.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41wHu2N4tVL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41wHu2N4tVL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41yh1vBmqsL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41yh1vBmqsL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\41zxxR71G+L._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41zxxR71G+L._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\51+4d3VBFvL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\51+4d3VBFvL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\513UnnRfFML._SL1001_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\513UnnRfFML._SL1001_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\515p1IeP0-L._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\515p1IeP0-L._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\5195-l+nflL._AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\5195-l+nflL._AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\51GBNkHO6vL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\51GBNkHO6vL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\51JhyHtnEgL._SL1001_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\51JhyHtnEgL._SL1001_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\51Lj5bxbNtL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\51Lj5bxbNtL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\51Z9tfgl4aL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\51Z9tfgl4aL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\51czOOat0OL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\51czOOat0OL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\51l46qQB50L._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\51l46qQB50L._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\51nukXFJLJL.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\51nukXFJLJL.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\51pvLIvb6ZL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\51pvLIvb6ZL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\51s6pbRlNyL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\51s6pbRlNyL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\51uJ-pWfc9L._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\51uJ-pWfc9L._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\51vxcBS1sQL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\51vxcBS1sQL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\51w+JqOnmSL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\51w+JqOnmSL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\51y46IslQkL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\51y46IslQkL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\51yomC0EodL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\51yomC0EodL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\71bJrFAys9L._SL1280_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\71bJrFAys9L._SL1280_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\71cBwWAgvIL._SL1430_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\71cBwWAgvIL._SL1430_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\816zGZv1ORL._SL1500_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\816zGZv1ORL._SL1500_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\81Q1DvOnnoL._SL1500_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\81Q1DvOnnoL._SL1500_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\81k1XbQ6nQL._SL1500_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\81k1XbQ6nQL._SL1500_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\91FM0Hog9FL._SL1500_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\91FM0Hog9FL._SL1500_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\91JUBDf1jTL._AA1500_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\91JUBDf1jTL._AA1500_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\91T2BjUkYmL._SL1500_.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\91T2BjUkYmL._SL1500_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\Camera1.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\Camera1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\HangHoa\\To.gif",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\To.gif"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\KhachHang\\3.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\KhachHang\\4.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\KhachHang\\Author.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\Author.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\KhachHang\\Penguins.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\Penguins.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\KhachHang\\android_300200.png",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\android_300200.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\KhachHang\\forsythia-8595521_1280.webp",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\forsythia-8595521_1280.webp"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\KhachHang\\man.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\man.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\KhachHang\\woman.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\woman.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\Loai11.jpeg",
+      "PackagePath": "staticwebassets\\Hinh\\Loai11.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\Loai\\Accept.png",
+      "PackagePath": "staticwebassets\\Hinh\\Loai\\Accept.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\Loai\\Alarm.png",
+      "PackagePath": "staticwebassets\\Hinh\\Loai\\Alarm.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\Loai\\Anchor.png",
+      "PackagePath": "staticwebassets\\Hinh\\Loai\\Anchor.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\Loai\\Bell.png",
+      "PackagePath": "staticwebassets\\Hinh\\Loai\\Bell.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\Loai\\Best.png",
+      "PackagePath": "staticwebassets\\Hinh\\Loai\\Best.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\Loai\\Billboard.png",
+      "PackagePath": "staticwebassets\\Hinh\\Loai\\Billboard.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\Loai\\Bomb.png",
+      "PackagePath": "staticwebassets\\Hinh\\Loai\\Bomb.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\Loai\\Brick house.png",
+      "PackagePath": "staticwebassets\\Hinh\\Loai\\Brick house.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\Loai\\Bricks.png",
+      "PackagePath": "staticwebassets\\Hinh\\Loai\\Bricks.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\Loai\\Buddy.png",
+      "PackagePath": "staticwebassets\\Hinh\\Loai\\Buddy.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\Loai\\Certificate.png",
+      "PackagePath": "staticwebassets\\Hinh\\Loai\\Certificate.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\Loai\\Dice.png",
+      "PackagePath": "staticwebassets\\Hinh\\Loai\\Dice.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\Loai\\Dollar.png",
+      "PackagePath": "staticwebassets\\Hinh\\Loai\\Dollar.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\Loai\\Favourites.png",
+      "PackagePath": "staticwebassets\\Hinh\\Loai\\Favourites.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\Loai\\Funny.png",
+      "PackagePath": "staticwebassets\\Hinh\\Loai\\Funny.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\Loai\\Heart.png",
+      "PackagePath": "staticwebassets\\Hinh\\Loai\\Heart.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\Loai\\Microsoft.png",
+      "PackagePath": "staticwebassets\\Hinh\\Loai\\Microsoft.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\Loai\\Unlock.png",
+      "PackagePath": "staticwebassets\\Hinh\\Loai\\Unlock.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\Loai\\agenda_1.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\Loai\\agenda_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\Loaiimages.jpeg",
+      "PackagePath": "staticwebassets\\Hinh\\Loaiimages.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\NhaCC\\Acer_logo-300x300.gif",
+      "PackagePath": "staticwebassets\\Hinh\\NhaCC\\Acer_logo-300x300.gif"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\NhaCC\\amd-logo.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\NhaCC\\amd-logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\NhaCC\\apple.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\NhaCC\\apple.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\NhaCC\\dell-logo.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\NhaCC\\dell-logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\NhaCC\\dell-logo2.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\NhaCC\\dell-logo2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\NhaCC\\hp-logo.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\NhaCC\\hp-logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\NhaCC\\intel-logo.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\NhaCC\\intel-logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\NhaCC\\motorola.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\NhaCC\\motorola.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\NhaCC\\nokia.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\NhaCC\\nokia.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\NhaCC\\samsung-logo-2.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\NhaCC\\samsung-logo-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\NhaCC\\samsung.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\NhaCC\\samsung.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\NhaCC\\shopping_cart.png",
+      "PackagePath": "staticwebassets\\Hinh\\NhaCC\\shopping_cart.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\NhaCC\\sonny-ericsson.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\NhaCC\\sonny-ericsson.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\Others\\shopping_cart.png",
+      "PackagePath": "staticwebassets\\Hinh\\Others\\shopping_cart.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\divider.gif",
+      "PackagePath": "staticwebassets\\Hinh\\divider.gif"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Accept.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Accept.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Add to basket.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Add to basket.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Add.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Add.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Address book.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Address book.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Alarm.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Alarm.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Anchor.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Anchor.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Application form.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Application form.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Bar chart.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Bar chart.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Basket.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Basket.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Bell.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Bell.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Best.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Best.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Billboard.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Billboard.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Bluetooth.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Bluetooth.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Bomb.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Bomb.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Book.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Book.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Bookmark.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Bookmark.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Box.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Box.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Boy.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Boy.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Brick house.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Brick house.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Bricks.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Bricks.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Brief case.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Brief case.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Brightness.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Brightness.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Bubble.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Bubble.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Buddy.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Buddy.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Cable.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Cable.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Calculator.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Calculator.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Call.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Call.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Camera.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Camera.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Card file.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Card file.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Cash register.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Cash register.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Cat.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Cat.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Certificate.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Certificate.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Clien list.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Clien list.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Clipboard.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Clipboard.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Clock.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Clock.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Closed door.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Closed door.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Closed folder.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Closed folder.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Coin.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Coin.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Coins.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Coins.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Color wheel.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Color wheel.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Comment.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Comment.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Comments.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Comments.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Company.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Company.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Computer.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Computer.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Conference.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Conference.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Connect.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Connect.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Construction.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Construction.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Contrast.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Contrast.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Control panel.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Control panel.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Create.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Create.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Database.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Database.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Date.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Date.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Delete.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Delete.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Desktop.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Desktop.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Diagram.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Diagram.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Dice.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Dice.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Disconnect.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Disconnect.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Discussion.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Discussion.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Document.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Document.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Documents.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Documents.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Dog.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Dog.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Dollar.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Dollar.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Down.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Down.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Download.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Download.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Edit.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Edit.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Euro.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Euro.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Exit button.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Exit button.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Exit.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Exit.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Favourites.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Favourites.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Fax.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Fax.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Flash drive.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Flash drive.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Flow block.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Flow block.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Free.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Free.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Friends.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Friends.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Full basket.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Full basket.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Funny.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Funny.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Game controller.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Game controller.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Gear.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Gear.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Genealogy.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Genealogy.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Gift.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Gift.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Girl.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Girl.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Globe.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Globe.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Handshake.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Handshake.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Happy.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Happy.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Hard disk.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Hard disk.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Heart1.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Heart1.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Help.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Help.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Hierarchy.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Hierarchy.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Home.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Home.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Hungup.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Hungup.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Industry.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Industry.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Info.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Info.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Key.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Key.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Label.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Label.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Left.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Left.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Lego brick.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Lego brick.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Letter.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Letter.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\List.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\List.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Lists.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Lists.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Lock.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Lock.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Log out.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Log out.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Login.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Login.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Mail.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Mail.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Microsoft.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Microsoft.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Mobile phone.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Mobile phone.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Money.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Money.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Monitor.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Monitor.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Mouse.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Mouse.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Music.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Music.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\No.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\No.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Notes.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Notes.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Numbered list.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Numbered list.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\OK.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\OK.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Online.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Online.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Open door.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Open door.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Open file.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Open file.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Open folder.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Open folder.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Open letter.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Open letter.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Open lock.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Open lock.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Payment.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Payment.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Peace.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Peace.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Pets.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Pets.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Phone.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Phone.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Piggy bank.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Piggy bank.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Piggy.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Piggy.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Pointer.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Pointer.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Pound.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Pound.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Price list.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Price list.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Print preview.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Print preview.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Print.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Print.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Printer.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Printer.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Problem.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Problem.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Properties.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Properties.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\RSS.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\RSS.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Red star.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Red star.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Refresh.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Refresh.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Remove from basket.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Remove from basket.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Report.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Report.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Right.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Right.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Rouble.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Rouble.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Sad.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Sad.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Safe.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Safe.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Save as.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Save as.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Save.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Save.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Scroll list.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Scroll list.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Shield.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Shield.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Smile.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Smile.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Software.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Software.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Statistics.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Statistics.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Stop.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Stop.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Task list.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Task list.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Telephone.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Telephone.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Text.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Text.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Tick.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Tick.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\To do list.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\To do list.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Trash.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Trash.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Unknown person.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Unknown person.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Unlock.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Unlock.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Unordered list.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Unordered list.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Up.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Up.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Upload.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Upload.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\User group.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\User group.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\User.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\User.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Users.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Users.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Wallet.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Wallet.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Warning.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Warning.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Weather.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Weather.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Wireless.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Wireless.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Wizard.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Wizard.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Yen.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Yen.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Yin-Yang.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Yin-Yang.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Zoom in.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Zoom in.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Zoom out.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Zoom out.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\Zoom.png",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\Zoom.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\eng.gif",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\eng.gif"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Hinh\\icon\\vit.gif",
+      "PackagePath": "staticwebassets\\Hinh\\icon\\vit.gif"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Source\\Magnific-Popup-master.zip",
+      "PackagePath": "staticwebassets\\Source\\Magnific-Popup-master.zip"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Source\\OwlCarousel2-2.3.4.zip",
+      "PackagePath": "staticwebassets\\Source\\OwlCarousel2-2.3.4.zip"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Source\\SlickNav-master.zip",
+      "PackagePath": "staticwebassets\\Source\\SlickNav-master.zip"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Source\\bootstrap-4.2.1-dist.zip",
+      "PackagePath": "staticwebassets\\Source\\bootstrap-4.2.1-dist.zip"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Source\\elegant_font.zip",
+      "PackagePath": "staticwebassets\\Source\\elegant_font.zip"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Source\\font-awesome-4.7.0.zip",
+      "PackagePath": "staticwebassets\\Source\\font-awesome-4.7.0.zip"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\Source\\jquery-nice-select-1.1.0.zip",
+      "PackagePath": "staticwebassets\\Source\\jquery-nice-select-1.1.0.zip"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\about.html",
+      "PackagePath": "staticwebassets\\about.html"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\blog-details.html",
+      "PackagePath": "staticwebassets\\blog-details.html"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\blog.html",
+      "PackagePath": "staticwebassets\\blog.html"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\checkout.html",
+      "PackagePath": "staticwebassets\\checkout.html"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\contact.html",
+      "PackagePath": "staticwebassets\\contact.html"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\css\\demo.css",
+      "PackagePath": "staticwebassets\\css\\demo.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\css\\elegant-icons.css",
+      "PackagePath": "staticwebassets\\css\\elegant-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\css\\nice-select.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\css\\profile.css",
+      "PackagePath": "staticwebassets\\css\\profile.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\css\\profile.css.map",
+      "PackagePath": "staticwebassets\\css\\profile.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\css\\slicknav.min.css",
+      "PackagePath": "staticwebassets\\css\\slicknav.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\css\\style.css.map",
+      "PackagePath": "staticwebassets\\css\\style.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\fonts\\ElegantIcons.eot",
+      "PackagePath": "staticwebassets\\fonts\\ElegantIcons.eot"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\fonts\\ElegantIcons.svg",
+      "PackagePath": "staticwebassets\\fonts\\ElegantIcons.svg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\fonts\\ElegantIcons.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ElegantIcons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\fonts\\ElegantIcons.woff",
+      "PackagePath": "staticwebassets\\fonts\\ElegantIcons.woff"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\about.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\about.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\bg_1.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\bg_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\bg_2.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\bg_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\bg_3.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\bg_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\category-1.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\category-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\category-2.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\category-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\category-3.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\category-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\category-4.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\category-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\category.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\category.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\image_1.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\image_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\image_2.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\image_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\image_3.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\image_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\image_4.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\image_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\image_5.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\image_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\image_6.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\image_6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\product-1.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\product-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\product-10.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\product-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\product-11.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\product-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\product-12.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\product-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\product-2.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\product-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\product-3.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\product-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\product-4.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\product-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\product-5.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\product-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\product-6.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\product-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\product-7.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\product-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\product-8.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\product-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\imgFruits\\product-9.jpg",
+      "PackagePath": "staticwebassets\\imgFruits\\product-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\about\\about-us.jpg",
+      "PackagePath": "staticwebassets\\img\\about\\about-us.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\about\\team-1.jpg",
+      "PackagePath": "staticwebassets\\img\\about\\team-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\about\\team-2.jpg",
+      "PackagePath": "staticwebassets\\img\\about\\team-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\about\\team-3.jpg",
+      "PackagePath": "staticwebassets\\img\\about\\team-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\about\\team-4.jpg",
+      "PackagePath": "staticwebassets\\img\\about\\team-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\about\\testimonial-author.jpg",
+      "PackagePath": "staticwebassets\\img\\about\\testimonial-author.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\about\\testimonial-pic.jpg",
+      "PackagePath": "staticwebassets\\img\\about\\testimonial-pic.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\banner\\banner-1.jpg",
+      "PackagePath": "staticwebassets\\img\\banner\\banner-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\banner\\banner-2.jpg",
+      "PackagePath": "staticwebassets\\img\\banner\\banner-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\banner\\banner-3.jpg",
+      "PackagePath": "staticwebassets\\img\\banner\\banner-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\blog\\blog-1.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\blog\\blog-2.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\blog\\blog-3.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\blog\\blog-4.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\blog\\blog-5.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\blog\\blog-6.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\blog\\blog-7.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\blog\\blog-8.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\blog\\blog-9.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\blog\\details\\blog-author.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\details\\blog-author.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\blog\\details\\blog-details.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\details\\blog-details.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\breadcrumb-bg.jpg",
+      "PackagePath": "staticwebassets\\img\\breadcrumb-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\clients\\client-1.png",
+      "PackagePath": "staticwebassets\\img\\clients\\client-1.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\clients\\client-2.png",
+      "PackagePath": "staticwebassets\\img\\clients\\client-2.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\clients\\client-3.png",
+      "PackagePath": "staticwebassets\\img\\clients\\client-3.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\clients\\client-4.png",
+      "PackagePath": "staticwebassets\\img\\clients\\client-4.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\clients\\client-5.png",
+      "PackagePath": "staticwebassets\\img\\clients\\client-5.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\clients\\client-6.png",
+      "PackagePath": "staticwebassets\\img\\clients\\client-6.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\clients\\client-7.png",
+      "PackagePath": "staticwebassets\\img\\clients\\client-7.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\clients\\client-8.png",
+      "PackagePath": "staticwebassets\\img\\clients\\client-8.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\demo.css",
+      "PackagePath": "staticwebassets\\img\\demo.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\footer-logo.png",
+      "PackagePath": "staticwebassets\\img\\footer-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\hero\\hero-1.jpg",
+      "PackagePath": "staticwebassets\\img\\hero\\hero-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\hero\\hero-2.jpg",
+      "PackagePath": "staticwebassets\\img\\hero\\hero-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\icon\\calendar.png",
+      "PackagePath": "staticwebassets\\img\\icon\\calendar.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\icon\\cart.png",
+      "PackagePath": "staticwebassets\\img\\icon\\cart.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\icon\\compare.png",
+      "PackagePath": "staticwebassets\\img\\icon\\compare.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\icon\\heart.png",
+      "PackagePath": "staticwebassets\\img\\icon\\heart.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\icon\\search.png",
+      "PackagePath": "staticwebassets\\img\\icon\\search.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\instagram\\instagram-1.jpg",
+      "PackagePath": "staticwebassets\\img\\instagram\\instagram-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\instagram\\instagram-2.jpg",
+      "PackagePath": "staticwebassets\\img\\instagram\\instagram-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\instagram\\instagram-3.jpg",
+      "PackagePath": "staticwebassets\\img\\instagram\\instagram-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\instagram\\instagram-4.jpg",
+      "PackagePath": "staticwebassets\\img\\instagram\\instagram-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\instagram\\instagram-5.jpg",
+      "PackagePath": "staticwebassets\\img\\instagram\\instagram-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\instagram\\instagram-6.jpg",
+      "PackagePath": "staticwebassets\\img\\instagram\\instagram-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\payment.png",
+      "PackagePath": "staticwebassets\\img\\payment.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\product-sale.png",
+      "PackagePath": "staticwebassets\\img\\product-sale.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\product\\product-1.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\product-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\product\\product-10.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\product-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\product\\product-11.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\product-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\product\\product-12.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\product-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\product\\product-13.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\product-13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\product\\product-14.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\product-14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\product\\product-2.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\product-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\product\\product-3.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\product-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\product\\product-4.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\product-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\product\\product-5.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\product-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\product\\product-6.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\product-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\product\\product-7.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\product-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\product\\product-8.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\product-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\product\\product-9.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\product-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\shop-details\\details-payment.png",
+      "PackagePath": "staticwebassets\\img\\shop-details\\details-payment.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\shop-details\\product-big-2.png",
+      "PackagePath": "staticwebassets\\img\\shop-details\\product-big-2.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\shop-details\\product-big-3.png",
+      "PackagePath": "staticwebassets\\img\\shop-details\\product-big-3.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\shop-details\\product-big-4.png",
+      "PackagePath": "staticwebassets\\img\\shop-details\\product-big-4.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\shop-details\\product-big.png",
+      "PackagePath": "staticwebassets\\img\\shop-details\\product-big.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\shop-details\\thumb-1.png",
+      "PackagePath": "staticwebassets\\img\\shop-details\\thumb-1.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\shop-details\\thumb-2.png",
+      "PackagePath": "staticwebassets\\img\\shop-details\\thumb-2.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\shop-details\\thumb-3.png",
+      "PackagePath": "staticwebassets\\img\\shop-details\\thumb-3.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\shop-details\\thumb-4.png",
+      "PackagePath": "staticwebassets\\img\\shop-details\\thumb-4.png"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\shopping-cart\\cart-1.jpg",
+      "PackagePath": "staticwebassets\\img\\shopping-cart\\cart-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\shopping-cart\\cart-2.jpg",
+      "PackagePath": "staticwebassets\\img\\shopping-cart\\cart-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\shopping-cart\\cart-3.jpg",
+      "PackagePath": "staticwebassets\\img\\shopping-cart\\cart-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\img\\shopping-cart\\cart-4.jpg",
+      "PackagePath": "staticwebassets\\img\\shopping-cart\\cart-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\js\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\js\\jquery.countdown.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.countdown.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\js\\jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.nice-select.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\js\\jquery.nicescroll.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.nicescroll.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\js\\jquery.slicknav.js",
+      "PackagePath": "staticwebassets\\js\\jquery.slicknav.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\js\\mixitup.min.js",
+      "PackagePath": "staticwebassets\\js\\mixitup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\main.html",
+      "PackagePath": "staticwebassets\\main.html"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\sass\\_about.scss",
+      "PackagePath": "staticwebassets\\sass\\_about.scss"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\sass\\_base.scss",
+      "PackagePath": "staticwebassets\\sass\\_base.scss"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\sass\\_blog-details.scss",
+      "PackagePath": "staticwebassets\\sass\\_blog-details.scss"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\sass\\_blog-sidebar.scss",
+      "PackagePath": "staticwebassets\\sass\\_blog-sidebar.scss"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\sass\\_blog.scss",
+      "PackagePath": "staticwebassets\\sass\\_blog.scss"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\sass\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\sass\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\sass\\_checkout.scss",
+      "PackagePath": "staticwebassets\\sass\\_checkout.scss"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\sass\\_contact.scss",
+      "PackagePath": "staticwebassets\\sass\\_contact.scss"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\sass\\_footer.scss",
+      "PackagePath": "staticwebassets\\sass\\_footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\sass\\_header.scss",
+      "PackagePath": "staticwebassets\\sass\\_header.scss"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\sass\\_hero.scss",
+      "PackagePath": "staticwebassets\\sass\\_hero.scss"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\sass\\_home-page.scss",
+      "PackagePath": "staticwebassets\\sass\\_home-page.scss"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\sass\\_mixins.scss",
+      "PackagePath": "staticwebassets\\sass\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\sass\\_product.scss",
+      "PackagePath": "staticwebassets\\sass\\_product.scss"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\sass\\_responsive.scss",
+      "PackagePath": "staticwebassets\\sass\\_responsive.scss"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\sass\\_shop-details.scss",
+      "PackagePath": "staticwebassets\\sass\\_shop-details.scss"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\sass\\_shop.scss",
+      "PackagePath": "staticwebassets\\sass\\_shop.scss"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\sass\\_shopping-cart.scss",
+      "PackagePath": "staticwebassets\\sass\\_shopping-cart.scss"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\sass\\_variable.scss",
+      "PackagePath": "staticwebassets\\sass\\_variable.scss"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\sass\\style.scss",
+      "PackagePath": "staticwebassets\\sass\\style.scss"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\shop-details.html",
+      "PackagePath": "staticwebassets\\shop-details.html"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\shop.html",
+      "PackagePath": "staticwebassets\\shop.html"
+    },
+    {
+      "Id": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-2\\Khoaluantotnghiep-KLTN-2\\wwwroot\\shopping-cart.html",
+      "PackagePath": "staticwebassets\\shopping-cart.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.KLTN-E.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.KLTN-E.props",
+      "PackagePath": "build\\KLTN-E.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.KLTN-E.props",
+      "PackagePath": "buildMultiTargeting\\KLTN-E.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.KLTN-E.props",
+      "PackagePath": "buildTransitive\\KLTN-E.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

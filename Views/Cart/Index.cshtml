@@ -1,0 +1,111 @@
+﻿@model IEnumerable<KLTN_E.ViewModels.CartItem>
+@{
+    ViewData["Title"] = "Cart";
+}
+
+<!-- Breadcrumb Section Begin -->
+<section class="breadcrumb-option">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb__text">
+                    <h4>Shopping Cart</h4>
+                    <div class="breadcrumb__links">
+                        <a href="/">Home</a>
+                        <a asp-action="Index" asp-controller="HangHoa">Shop</a>
+                        <span>Shopping Cart</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Breadcrumb Section End -->
+<!-- Shopping Cart Section Begin -->
+<section class="shopping-cart spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="shopping__cart__table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+
+                                <tr>
+                                    <td class="product__cart__item">
+                                        <div class="product__cart__item__pic">
+                                            <img src="~/Hinh//HangHoa/@item.Hinh" alt="@item.TenHh">
+                                        </div>
+                                        <div class="product__cart__item__text">
+                                            <div>
+                                                <a asp-action="Detail" asp-controller="HangHoa" asp-route-id="@item.MaHh">
+
+                                                    <h6>@item.TenHh</h6>
+                                                </a>
+                                            </div>
+                                            <h5>$@item.DonGia</h5>
+                                        </div>
+                                    </td>
+                                    <td class="quantity__item">
+                                        <div class="quantity">
+                                            <div class="pro-qty-2">
+                                                <input type="text" value="@item.SoLuong">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cart__price">$@item.ThanhTien</td>
+                                    <td class="cart__close">
+                                        <a asp-action="RemoveFromCart" asp-controller="Cart" asp-route-id="@item.MaHh">
+                                            <i class="fa fa-close"></i>
+                                        </a>
+
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="continue__btn">
+                            <a asp-action="Index" asp-controller="HangHoa">Continue Shopping</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="continue__btn update__btn">
+                            <a href="#"><i class="fa fa-spinner"></i> Update cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="cart__discount">
+                    <h6>Discount codes</h6>
+                    <form action="#">
+                        <input type="text" placeholder="Coupon code">
+                        <button type="submit">Apply</button>
+                    </form>
+                </div>
+                <div class="cart__total">
+                    <h6>Cart total</h6>
+                    <ul>
+                        <li>Subtotal <span>$0</span></li>
+                        <li>Total <span>$@Model.Sum(p => p.ThanhTien)</span></li>
+                    </ul>
+                    <a asp-action="Checkout" asp-controller="Cart" class="primary-btn">Proceed to checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Shopping Cart Section End -->
