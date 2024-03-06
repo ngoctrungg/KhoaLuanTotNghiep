@@ -1,0 +1,40 @@
+﻿@model IEnumerable<KLTN_E.ViewModels.HangHoaVM>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_DanhSachHangHoa";
+}
+<h5>There are <b>@Model.Count()</b> products.</h5>
+<!-- Breadcrumb Section Begin -->
+@section BreadCum {
+    <section class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h4>Shop</h4>
+                        <div class="breadcrumb__links">
+                            <a href="./index.html">Home</a>
+                            <span>Shop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+<!-- Breadcrumb Section End -->
+
+@await Html.PartialAsync("ProductItem", Model)
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="product__pagination">
+            <a class="active" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <span>...</span>
+            <a href="#">21</a>
+        </div>
+    </div>
+</div>

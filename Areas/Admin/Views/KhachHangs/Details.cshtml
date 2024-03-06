@@ -1,0 +1,124 @@
+﻿@model KLTN_E.Data.KhachHang
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid dashboard-content">
+
+    <div class="row">
+
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+            <div class="card">
+
+
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered first">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        @Html.DisplayNameFor(model => model.HoTen)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.HoTen)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        @Html.DisplayNameFor(model => model.MatKhau)
+                                     </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.MatKhau)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        @Html.DisplayNameFor(model => model.GioiTinh)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.GioiTinh)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        @Html.DisplayNameFor(model => model.NgaySinh)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.NgaySinh)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        @Html.DisplayNameFor(model => model.Hinh)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.Hinh)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        @Html.DisplayNameFor(model => model.DiaChi)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.DiaChi)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        @Html.DisplayNameFor(model => model.DienThoai)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.DienThoai)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        @Html.DisplayNameFor(model => model.Email)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.Email)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        @Html.DisplayNameFor(model => model.HieuLuc)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.HieuLuc)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        @Html.DisplayNameFor(model => model.VaiTro)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.VaiTro)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        @Html.DisplayNameFor(model => model.RandomKey)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.RandomKey)
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                            <div>
+                                <a class=" btn btn-dark" asp-action="Edit" asp-route-id="@Model?.MaKh">Edit</a> |
+                                <a class=" btn btn-dark" asp-action="Index">Back to List</a>
+                            </div>
+                            <hr />
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
