@@ -6,4 +6,12 @@
         public const string CLAIM_CUSTOMER_ID = "CustomerID";
 
     }
+
+    public class PaymentType
+    {
+        public static string COD = "COD";
+        public static string Paypal = "Paypal";
+        public static string VnPay = "VnPay";
+
+    }
 }

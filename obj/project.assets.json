@@ -8237,19 +8237,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hoquo\\.nuget\\packages\\": {}
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-3\\KLTN-E.csproj",
+      "projectUniqueName": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\KLTN-E.csproj",
       "projectName": "KLTN-E",
-      "projectPath": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-3\\KLTN-E.csproj",
-      "packagesPath": "C:\\Users\\hoquo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hoquo\\Downloads\\Khoaluantotnghiep-KLTN-3\\obj\\",
+      "projectPath": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\KLTN-E.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\hoquo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8269,11 +8269,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -8326,7 +8321,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
