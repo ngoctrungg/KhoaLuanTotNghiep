@@ -1,0 +1,18 @@
+﻿@model KLTN_E.ViewModels.QuenMatKhauVM
+@{
+    ViewData["Title"] = "Forgot password";
+}
+
+<h1>Reset your password.</h1>
+
+<form asp-controller="KhachHang" asp-action="QuenMatKhau" method="post">
+    <div class="form-group">
+        <label for="MaKh">UserName:</label>
+        <input asp-for="@Model.MaKh" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input asp-for="@Model.Email" class="form-control" type="email" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Send password reset link</button>
+</form>

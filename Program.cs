@@ -1,7 +1,8 @@
-using KLTN_E.Data;
+﻿using KLTN_E.Data;
 using KLTN_E.Helpers;
 using KLTN_E.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -45,6 +46,12 @@ builder.Services.AddSingleton(x => new PaypalClient(
 
 
 builder.Services.AddSingleton<IVnPayService, VnPayService>();
+
+// Trong phương thức ConfigureServices của file Startup.cs
+builder.Services.AddTransient<IEmailSender, EmailSender>(); // Đăng ký IEmailSender với EmailSender
+builder.Services.AddTransient<IMyEmailSender, MyEmailSender>(); // Đăng ký IMyEmailSender với MyEmailSender
+
+
 
 var app = builder.Build();
 

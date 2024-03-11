@@ -271,6 +271,7 @@ public partial class KltnContext : DbContext
             entity.Property(e => e.RandomKey)
                 .HasMaxLength(50)
                 .IsUnicode(false);
+            entity.Property(e => e.ResetToken).HasMaxLength(50);
         });
 
         modelBuilder.Entity<Loai>(entity =>

@@ -9,9 +9,9 @@
 
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div class="card">
-        <h5 class="card-header">Create Product</h5>
+            <h5 class="card-header">Create Product</h5>
             <div class="card-body">
-                <form class="needs-validation" novalidate asp-action="Create">
+                <form asp-action="Create" asp-controller="HangHoas" >
                     <div class="row">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
@@ -39,7 +39,7 @@
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
                             <div class="form-group">
                                 <label asp-for="Hinh" class="control-label"></label>
-                                <input asp-for="Hinh" class="form-control" />
+                                <input name="Hinh" type="file" class="form-control" />
                                 <span asp-validation-for="Hinh" class="text-danger"></span>
                             </div>
                         </div>
@@ -51,15 +51,13 @@
                                 <span asp-validation-for="MoTa" class="text-danger"></span>
                             </div>
                         </div>
-
-
                     </div>
                     <div class="form-row">
                         <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
-
                             <div class="form-group">
                                 <label asp-for="MaLoai" class="control-label"></label>
                                 <select asp-for="MaLoai" class="form-control" asp-items="ViewBag.MaLoai"></select>
+                                <span asp-validation-for="MaLoai" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
@@ -84,9 +82,8 @@
                             </div>
                         </div>
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
-
                             <div class="form-group">
-                                <input type="submit" value="Create" class="btn btn-primary" />
+                                <button type="submit" class="btn btn-primary">Create</button>
                             </div>
                         </div>
                     </div>
