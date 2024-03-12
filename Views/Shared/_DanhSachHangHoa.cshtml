@@ -26,26 +26,37 @@
 
                                 @await Component.InvokeAsync("MenuLoai")
                             </div>
-               
-                            <div class="card">
-                                <div class="card-heading">
-                                    <a data-toggle="collapse" data-target="#collapseThree">Filter Price</a>
-                                </div>
-                                <div id="collapseThree" class="collapse show" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <div class="shop__sidebar__price">
-                                            <ul>
-                                                <li><a href="#">$0.00 - $50.00</a></li>
-                                                <li><a href="#">$50.00 - $100.00</a></li>
-                                                <li><a href="#">$100.00 - $150.00</a></li>
-                                                <li><a href="#">$150.00 - $200.00</a></li>
-                                                <li><a href="#">$200.00 - $250.00</a></li>
-                                                <li><a href="#">250.00+</a></li>
-                                            </ul>
-                                        </div>
+
+                         
+                            <form asp-action="Filter" asp-controller="HangHoa" method="get">
+                                <div class="card-body">
+                                    <div class="shop__sidebar__price">
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="minPrice" value="0-50" id="price_50_100">
+                                                <label for="price_50_100">$0.00 - $50.00</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="minPrice" value="50-100" id="price_50_100">
+                                                <label for="price_50_100">$50.00 - $100.00</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="minPrice" value="100-200" id="price_50_100">
+                                                <label for="price_50_100">$100.00 - $200.00</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="minPrice" value="200-300" id="price_50_100">
+                                                <label for="price_50_100">$200.00 - $300.00</label>
+                                            </li>
+                                            <!-- Các radio button khác ở đây -->
+                                        </ul>
+                                        <button type="submit">Filter</button>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
+
+
+
                         </div>
                     </div>
                 </div>
@@ -55,7 +66,6 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="shop__product__option__left">
-      
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
@@ -75,4 +85,3 @@
         </div>
     </div>
 </section>
-<!-- Shop Section End -->

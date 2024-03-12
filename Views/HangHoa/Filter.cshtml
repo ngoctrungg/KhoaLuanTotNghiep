@@ -1,5 +1,10 @@
 ﻿@model IEnumerable<KLTN_E.ViewModels.HangHoaVM>
 
+@{
+    TempData["Title"] = "Filter products";
+    Layout = "_DanhSachHangHoa";
+}
+
 <div class="row">
     @foreach (var item in Model)
     {

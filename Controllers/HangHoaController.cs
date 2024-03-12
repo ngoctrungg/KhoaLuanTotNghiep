@@ -76,5 +76,51 @@ namespace KLTN_E.Controllers
             };
             return View(result);
         }
+
+        public IActionResult Filter(string minPrice)
+        {
+            if (!string.IsNullOrEmpty(minPrice))
+            {
+                // Tách giá trị minPrice thành khoảng giá
+                var priceRange = minPrice.Split('-');
+
+                if (priceRange.Length == 2 && int.TryParse(priceRange[0], out var min) && int.TryParse(priceRange[1], out var max))
+                {
+                    // Lọc sản phẩm có giá trong khoảng từ min đến max
+                    
+                    var filteredProducts = db.HangHoas
+                        .Where(p => p.DonGia != null && p.DonGia.Value >= min && p.DonGia.Value <= max)
+                        .Select(p => new HangHoaVM
+                        {
+                            MaHH = p.MaHh,
+                            TenHH = p.TenHh,
+                            Hinh = p.Hinh ?? "",
+                            DonGia = p.DonGia ?? 0,
+                            TenLoai = p.MaLoaiNavigation.TenLoai ?? "..."
+                        })
+                        .ToList();
+
+                    // Trả về danh sách sản phẩm đã lọc đến View
+                    return View(filteredProducts);
+                }
+            }
+
+            // Nếu không có giá tối thiểu được chọn, trả về toàn bộ danh sách sản phẩm
+            var allProducts = db.HangHoas
+                .Select(p => new HangHoaVM
+                {
+                    MaHH = p.MaHh,
+                    TenHH = p.TenHh,
+                    Hinh = p.Hinh,
+                    DonGia = p.DonGia ?? 0,
+                    TenLoai = p.MaLoaiNavigation.TenLoai
+                })
+                .ToList();
+
+            return View(allProducts);
+        }
+
+
+
     }
 }
