@@ -1,4 +1,4 @@
-﻿@model IEnumerable<KLTN_E.Data.KhachHang>
+﻿@model IEnumerable<KLTN_E.Data.NhanVien>
 
 @{
     ViewData["Title"] = "Index";
@@ -11,9 +11,8 @@
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div class="card">
                 <h5 class="card-header">
-                    
-                        <a class="btn btn-dark" asp-action="Create">Create New</a>
-                    
+                    <a class="btn btn-dark" asp-action="Create">Create New</a>
+
                 </h5>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -23,47 +22,31 @@
                                     <th>
                                         @Html.DisplayNameFor(model => model.HoTen)
                                     </th>
-
-                                    <th>
-                                        @Html.DisplayNameFor(model => model.DienThoai)
-                                    </th>
                                     <th>
                                         @Html.DisplayNameFor(model => model.Email)
                                     </th>
-                                    <th>
-                                        @Html.DisplayNameFor(model => model.Hinh)
 
-                                    <th>edit</th>
+                                    <th>Edit</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach (var item in Model)
                                 {
                                     <tr>
-
                                         <td>
                                             @Html.DisplayFor(modelItem => item.HoTen)
-                                        </td>
-
-
-                                        <td>
-                                            @Html.DisplayFor(modelItem => item.DienThoai)
                                         </td>
                                         <td>
                                             @Html.DisplayFor(modelItem => item.Email)
                                         </td>
-                                        <td>
-                                            <img src="~/Hinh/KhachHang/@item.Hinh" alt="img" width="100" height="100" style="border-radius:50%">
-                                        </td>
 
                                         <td>
-                                            <a asp-action="Edit" asp-route-id="@item.MaKh">Edit</a> |
-                                            <a asp-action="Details" asp-route-id="@item.MaKh">Details</a> |
-                                            <a asp-action="Delete" asp-route-id="@item.MaKh">Delete</a>
+                                            <a asp-action="Edit" asp-route-id="@item.MaNv">Edit</a> |
+                                            <a asp-action="Details" asp-route-id="@item.MaNv">Details</a> |
+                                            <a asp-action="Delete" asp-route-id="@item.MaNv">Delete</a>
                                         </td>
                                     </tr>
                                 }
-                            
                             </tbody>
 
                         </table>
@@ -71,9 +54,6 @@
                 </div>
             </div>
         </div>
-        <!-- ============================================================== -->
-        <!-- end basic table  -->
-        <!-- ============================================================== -->
     </div>
 
 </div>

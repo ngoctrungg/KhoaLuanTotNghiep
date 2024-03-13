@@ -75,7 +75,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "areas",
-    pattern: "{area:exists}/{controller=Category}/{action=Index}/{id?}");
+    pattern: "{area:exists}/{controller=HangHoas}/{action=Index}/{id?}");
 
 
 

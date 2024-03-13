@@ -1,0 +1,73 @@
+﻿@model KLTN_E.Data.NhanVien
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid  dashboard-content">
+    <div class="row">
+
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="card">
+                <h5 class="card-header">
+
+                    <a asp-action="Index" class="btn btn-dark">Back to List</a>
+
+                </h5>
+                <div class="card-body">
+                    <form asp-action="Edit">
+                        <div class="row">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                <div class="form-group">
+                                    <label asp-for="MaNv" class="control-label"></label>
+                                    <input asp-for="MaNv" disabled class="form-control" />
+                                    <span asp-validation-for="MaNv" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                <div class="form-group">
+                                    <label asp-for="MatKhau" class="control-label"></label>
+                                    <input asp-for="MatKhau" class="form-control" />
+                                    <span asp-validation-for="MatKhau" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                <div class="form-group">
+                                    <label asp-for="HoTen" class="control-label"></label>
+                                    <input asp-for="HoTen" class="form-control" />
+                                    <span asp-validation-for="HoTen" class="text-danger"></span>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                <div class="form-group">
+                                    <label asp-for="Email" class="control-label"></label>
+                                    <input asp-for="Email" class="form-control" />
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+
+
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+
+                                <input type="submit" value="Save" class="btn btn-primary" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

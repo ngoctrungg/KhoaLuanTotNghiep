@@ -1,0 +1,68 @@
+﻿@model KLTN_E.Data.Loai
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+
+<div class="container-fluid dashboard-content">
+
+    <div class="row">
+
+        <div class="col-xl-12 col-lg-6 col-md-12 col-sm-12 col-12">
+            <div class="card">
+                <h5 class="card-header">
+
+                    <form asp-action="Delete">
+                        <input type="hidden" asp-for="MaLoai" />
+                        <input type="submit" value="Delete" class="btn btn-danger" /> |
+                        <a class="btn btn-dark" asp-action="Index">Back to List</a>
+                    </form>
+
+                </h5>
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.TenLoai)
+                                </th>
+                                <td>@Html.DisplayFor(model => model.TenLoai)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.TenLoaiAlias)
+
+                                </th>
+                                <td>@Html.DisplayFor(model => model.TenLoaiAlias)</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.MoTa)
+
+                                </th>
+                                <td>
+                                    @Html.DisplayFor(model => model.MoTa)
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.Hinh)
+
+                                </th>
+                                <td>
+                                    <img src="~/Hinh/Loai/@Model.Hinh" width="100" height="100">
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

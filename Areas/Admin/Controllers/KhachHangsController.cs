@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using KLTN_E.Data;
+using KLTN_E.Helpers;
+using KLTN_E.ViewModels;
 
 namespace KLTN_E.Areas.Admin.Controllers
 {
@@ -13,10 +15,11 @@ namespace KLTN_E.Areas.Admin.Controllers
     public class KhachHangsController : Controller
     {
         private readonly KltnContext _context;
-
-        public KhachHangsController(KltnContext context)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public KhachHangsController(KltnContext context, IWebHostEnvironment webHostEnvironment)
         {
             _context = context;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         // GET: Admin/KhachHangs
@@ -44,6 +47,7 @@ namespace KLTN_E.Areas.Admin.Controllers
         }
 
         // GET: Admin/KhachHangs/Create
+        [HttpGet]
         public IActionResult Create()
         {
             return View();
@@ -54,18 +58,23 @@ namespace KLTN_E.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("MaKh,MatKhau,HoTen,GioiTinh,NgaySinh,DiaChi,DienThoai,Email,Hinh,HieuLuc,VaiTro,RandomKey")] KhachHang khachHang)
+        public async Task<IActionResult> Create(KhachHang khachHang, IFormFile hinhKH)
         {
             if (ModelState.IsValid)
             {
+                if (hinhKH != null)
+                {
+                    khachHang.Hinh = MyUtil.UploadHinh(hinhKH, "KhachHang");
+                }
                 _context.Add(khachHang);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index");
             }
             return View(khachHang);
         }
 
         // GET: Admin/KhachHangs/Edit/5
+        [HttpGet]
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
@@ -86,34 +95,41 @@ namespace KLTN_E.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("MaKh,MatKhau,HoTen,GioiTinh,NgaySinh,DiaChi,DienThoai,Email,Hinh,HieuLuc,VaiTro,RandomKey")] KhachHang khachHang)
+        public IActionResult Edit(KhachHang khachHang, IFormFile hinhKH)
         {
-            if (id != khachHang.MaKh)
+            var existedKhachHangs = _context.KhachHangs.SingleOrDefault(x => x.MaKh == khachHang.MaKh);
+            if (existedKhachHangs != null)
+            {
+                //Edit
+                existedKhachHangs.MatKhau = khachHang.MatKhau;
+                existedKhachHangs.Email = khachHang.Email;
+                existedKhachHangs.HoTen = khachHang.HoTen;
+                existedKhachHangs.GioiTinh = khachHang.GioiTinh;
+                existedKhachHangs.DiaChi = khachHang.DiaChi;
+                existedKhachHangs.DienThoai = khachHang.DienThoai;
+                existedKhachHangs.HieuLuc = khachHang.HieuLuc;
+                existedKhachHangs.VaiTro = khachHang.VaiTro;
+                existedKhachHangs.RandomKey = khachHang.RandomKey;
+
+
+                if (hinhKH == null)
+                {
+                    existedKhachHangs.Hinh = khachHang.Hinh;
+                }
+                else
+                {
+                    existedKhachHangs.Hinh = MyUtil.UploadHinh(hinhKH, "KhachHang");
+                }
+                //Save
+                _context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            else
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(khachHang);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!KhachHangExists(khachHang.MaKh))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(khachHang);
+
         }
 
         // GET: Admin/KhachHangs/Delete/5
@@ -142,6 +158,12 @@ namespace KLTN_E.Areas.Admin.Controllers
             var khachHang = await _context.KhachHangs.FindAsync(id);
             if (khachHang != null)
             {
+                string uploadDir = Path.Combine(_webHostEnvironment.WebRootPath, "Hinh/KhachHang");
+                string oldIMG = Path.Combine(uploadDir, khachHang.Hinh);
+                if (System.IO.File.Exists(oldIMG))
+                {
+                    System.IO.File.Delete(oldIMG);
+                }
                 _context.KhachHangs.Remove(khachHang);
             }
 

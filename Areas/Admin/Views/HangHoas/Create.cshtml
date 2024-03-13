@@ -6,98 +6,116 @@
 }
 
 <div class="container-fluid  dashboard-content">
+    <div class="row">
+        <!-- ============================================================== -->
+        <!-- validation form -->
+        <!-- ============================================================== -->
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="card">
+                <h5 class="card-header">
 
-    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-        <div class="card">
-            <h5 class="card-header">Create Product</h5>
-            <div class="card-body">
-                <form asp-action="Create" asp-controller="HangHoas" >
-                    <div class="row">
-                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                    <a asp-action="Index" class="btn btn-dark">Back to List</a>
 
-                            <div class="form-group">
-                                <label asp-for="TenHh" class="control-label"></label>
-                                <input asp-for="TenHh" class="form-control" />
-                                <span asp-validation-for="TenHh" class="text-danger"></span>
-                            </div>
-                        </div>
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
-                            <div class="form-group">
-                                <label asp-for="TenAlias" class="control-label"></label>
-                                <input asp-for="TenAlias" class="form-control" />
-                                <span asp-validation-for="TenAlias" class="text-danger"></span>
-                            </div>
-                        </div>
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
-                            <div class="form-group">
-                                <label asp-for="MoTaDonVi" class="control-label"></label>
-                                <input asp-for="MoTaDonVi" class="form-control" />
-                                <span asp-validation-for="MoTaDonVi" class="text-danger"></span>
-                            </div>
-                        </div>
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
-                            <div class="form-group">
-                                <label asp-for="Hinh" class="control-label"></label>
-                                <input name="Hinh" type="file" class="form-control" />
-                                <span asp-validation-for="Hinh" class="text-danger"></span>
-                            </div>
-                        </div>
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                </h5>
+                <div class="card-body">
+                    <form asp-action="Create" enctype="multipart/form-data">
+                        <div class="row">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-                            <div class="form-group">
-                                <label asp-for="MoTa" class="control-label"></label>
-                                <input asp-for="MoTa" class="form-control" />
-                                <span asp-validation-for="MoTa" class="text-danger"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
-                            <div class="form-group">
-                                <label asp-for="MaLoai" class="control-label"></label>
-                                <select asp-for="MaLoai" class="form-control" asp-items="ViewBag.MaLoai"></select>
-                                <span asp-validation-for="MaLoai" class="text-danger"></span>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
-                            <div class="form-group">
-                                <label asp-for="MaNcc" class="control-label"></label>
-                                <select asp-for="MaNcc" class="form-control" asp-items="ViewBag.MaNcc"></select>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
-                            <div class="form-group">
-                                <label asp-for="GiamGia" class="control-label"></label>
-                                <input asp-for="GiamGia" class="form-control" />
+@*                             @Html.ValidationMessageFor(model => model.TenHh) *@
 
-                                <span asp-validation-for="GiamGia" class="text-danger"></span>
+                            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                <div class="form-group">
+                                    <label asp-for="TenHh" class="control-label"></label>
+                                    <input asp-for="TenHh" class="form-control" />
+                                    <span asp-validation-for="TenHh" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                <div class="form-group">
+                                    <label asp-for="TenAlias" class="control-label"></label>
+                                    <input asp-for="TenAlias" class="form-control" />
+                                    <span asp-validation-for="TenAlias" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                <div class="form-group">
+                                    <label asp-for="MoTaDonVi" class="control-label"></label>
+                                    <input asp-for="MoTaDonVi" class="form-control" />
+                                    <span asp-validation-for="MoTaDonVi" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                <div class="form-group">
+                                    <label asp-for="MoTa" class="control-label"></label>
+
+                                    <textarea asp-for="MoTa" class="form-control"></textarea>
+                                    <span asp-validation-for="MoTa" class="text-danger"></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
-                            <div class="form-group">
-                                <label asp-for="SoLanXem" class="control-label"></label>
-                                <input asp-for="SoLanXem" class="form-control" />
-                                <span asp-validation-for="SoLanXem" class="text-danger"></span>
+                        <div class="form-row">
+                            <div class="col-xl-2 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                <div class="form-group">
+                                    <label asp-for="DonGia" class="control-label"></label>
+                                    <input asp-for="DonGia" class="form-control" />
+                                    <span asp-validation-for="DonGia" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
+                                <div class="form-group">
+                                    <label asp-for="GiamGia" class="control-label"></label>
+                                    <input asp-for="GiamGia" class="form-control" />
+                                    <span asp-validation-for="GiamGia" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
+                                <div class="form-group">
+                                    <label asp-for="SoLanXem" class="control-label"></label>
+                                    <input asp-for="SoLanXem" class="form-control" />
+                                    <span asp-validation-for="SoLanXem" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                <div class="form-group">
+                                    <label asp-for="MaLoai" class="control-label"></label>
+                                    <select asp-for="MaLoai" class="form-control" asp-items="ViewBag.Loai"></select>
+                                    <span asp-validation-for="MaLoai" class="text-danger"></span>
+                                </div>
+
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
+                                <div class="form-group">
+                                    <label asp-for="MaNcc" class="control-label"></label>
+                                    <select asp-for="MaNcc" class="form-control" asp-items="ViewBag.NCC"></select>
+                                    <span asp-validation-for="MaNcc" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="form-group">
+                                    <label asp-for="Hinh" class="control-label"></label>
+                                    <input asp-for="Hinh" type="file" name="hinhHH" class="form-control" />
+                                    <span asp-validation-for="Hinh" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+
+                                <input type="submit" value="Create" class="btn btn-primary" />
                             </div>
                         </div>
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary">Create</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
-
-
-
         </div>
-
-        <div>
-            <a class=" btn btn-dark" asp-action="Index">Back to List</a>
-        </div>
+        <!-- ============================================================== -->
+        <!-- end validation form -->
+        <!-- ============================================================== -->
     </div>
 </div>
 
-
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

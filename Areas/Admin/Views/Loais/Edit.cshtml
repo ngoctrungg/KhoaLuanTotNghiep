@@ -1,0 +1,80 @@
+﻿@model KLTN_E.Data.Loai
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+
+
+
+<div class="container-fluid  dashboard-content">
+    <div class="row">
+
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="card">
+                <h5 class="card-header">
+
+                    <a asp-action="Index" class="btn btn-dark">Back to List</a>
+
+                </h5>
+                <div class="card-body">
+                    <form asp-action="Edit">
+                        <div class="row">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <input type="hidden" asp-for="MaLoai" />
+                            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                <div class="form-group">
+                                    <label asp-for="TenLoai" class="control-label"></label>
+                                    <input asp-for="TenLoai" class="form-control" />
+                                    <span asp-validation-for="TenLoai" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                <div class="form-group">
+                                    <label asp-for="TenLoaiAlias" class="control-label"></label>
+                                    <input asp-for="TenLoaiAlias" class="form-control" />
+                                    <span asp-validation-for="TenLoaiAlias" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                <div class="form-group">
+                                    <label asp-for="MoTa" class="control-label"></label>
+                                    <input asp-for="MoTa" class="form-control" />
+                                    <span asp-validation-for="MoTa" class="text-danger"></span>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                <div class="form-group">
+                                    <label asp-for="Hinh" class="control-label"></label>
+                                    <input asp-for="Hinh" name="hinhL" type="file" class="form-control" />
+                                    <img src="~/Hinh/Loai/@Model.Hinh" width="100" height="100">
+                                    <span asp-validation-for="Hinh" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+
+
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+
+                                <input type="submit" value="Save" class="btn btn-primary" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
