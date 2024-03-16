@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.WebUtilities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Security.Claims;
 using System.Text;
@@ -55,19 +56,22 @@ namespace KLTN_E.Controllers
                     }
                     db.Add(khachHang);
                     db.SaveChanges();
-                
 
-                    var userId = khachHang.MaKh;
-                    var code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(userId.ToString()));
-                    var callBackUrl = Url.Action("ConfirmEmail", "KhachHang", new { UserId = userId, code = code }, protocol: HttpContext.Request.Scheme);
-                    await _myEmailSender.SendEmailAsync(model.Email, "Confirm your Email", $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callBackUrl)}'>clicking here</a>.");
-                    return RedirectToAction("ConfirmEmail");
+
+                    //var userId = khachHang.MaKh;
+                    //var code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(userId.ToString()));
+                    //var callBackUrl = Url.Action("ConfirmEmail", "KhachHang", new { UserId = userId, code = code }, protocol: HttpContext.Request.Scheme);
+                    //await _myEmailSender.SendEmailAsync(model.Email, "Confirm your Email", $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callBackUrl)}'>clicking here</a>.");
+                    return RedirectToAction("DangNhap", "KhachHang");
 
 
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
+                    // Hiển thị thông báo lỗi cho người dùng
+                    ModelState.AddModelError(string.Empty, "An error occurred while registering. Please try again later.");
+                    return View(model);
                 }
             }
             return View();
@@ -167,11 +171,141 @@ namespace KLTN_E.Controllers
         }
         #endregion
 
+        //[Authorize]
+        //public IActionResult Profile()
+        //{
+        //    var userIdClaim = HttpContext.User.Claims.FirstOrDefault(c => c.Type == MySettings.CLAIM_CUSTOMER_ID);
+        //    if (userIdClaim != null)
+        //    {
+        //        var userId = userIdClaim.Value;
+        //        var khachHang = db.KhachHangs.Find(userId);
+
+        //        if (khachHang != null)
+        //        {
+        //            ViewBag.UserName = khachHang.MaKh;
+        //            ViewBag.Email = khachHang.Email;
+        //            ViewBag.FullName = khachHang.HoTen;
+        //            ViewBag.ImageUrl = "~/Hinh/KhachHang/" + khachHang.Hinh;
+
+
+
+        //            return View();
+        //        }
+        //        else
+        //        {
+        //            TempData["Message"] = "Customer not found";
+        //            return View();
+        //        }
+        //    }
+        //    return View();
+        //}
+
         [Authorize]
         public IActionResult Profile()
         {
+            var userIdClaim = HttpContext.User.Claims.FirstOrDefault(c => c.Type == MySettings.CLAIM_CUSTOMER_ID);
+            if (userIdClaim != null)
+            {
+                var userId = userIdClaim.Value;
+                var khachHang = db.KhachHangs.Find(userId);
+
+                if (khachHang != null)
+                {
+
+                    var profileModel = new ProfileVM
+                    {
+                        UserName = khachHang.MaKh,
+                        Email = khachHang.Email,
+                        FullName = khachHang.HoTen,
+                        ProfileImage = khachHang.Hinh
+
+                    };
+                    return View(profileModel);
+                }
+                else
+                {
+                    TempData["Message"] = "Customer not found";
+                    return View();
+                }
+            }
             return View();
         }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> UpdateProfile(ProfileVM model, IFormFile newImage)
+        {
+            //if(ModelState.IsValid)
+            // {
+            var userIdClaim = HttpContext.User.Claims.FirstOrDefault(c => c.Type == MySettings.CLAIM_CUSTOMER_ID);
+            if (userIdClaim != null)
+            {
+                var userId = userIdClaim.Value;
+                var khachHang = db.KhachHangs.Find(userId);
+
+                if (khachHang != null)
+                {
+                    khachHang.HoTen = model.FullName;
+                    khachHang.Email = model.Email;
+
+                    if(newImage != null && newImage.Length > 0)
+                    {
+                        khachHang.Hinh = MyUtil.UploadHinh(newImage, "KhachHang");
+                    }
+
+
+                    db.Update(khachHang);
+                    await db.SaveChangesAsync();
+
+                    return RedirectToAction("Profile");
+                }
+                else
+                {
+                    TempData["Message"] = "Customer not found";
+                }
+            }
+            // }
+            else
+            {
+                TempData["Message"] = "User not authenticated";
+            }
+            return View("Profile", model);
+        }
+
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> ChangePassword(DatLaiMatKhauVM model)
+        {
+            var userId = HttpContext.User.FindFirstValue(MySettings.CLAIM_CUSTOMER_ID);
+
+            var khachHang = db.KhachHangs.FirstOrDefault(kh => kh.MaKh == userId);
+
+            if(khachHang == null)
+            {
+                return NotFound();
+            }
+
+            string hashedOldPassword = model.OldPassword.ToMd5Hash(khachHang.RandomKey);
+            if(hashedOldPassword != khachHang.MatKhau)
+            {
+                ModelState.AddModelError("Error", "Old password is not correct.");
+                return View("Profile", model);
+            }
+
+            if(model.NewPassword != model.ConfirmPassword)
+            {
+                ModelState.AddModelError("Error", "New password and confirm password not match.");
+                return View("Profile", model);
+            }
+
+            TempData["Message"] = "Changed password successful.";
+            khachHang.MatKhau = model.NewPassword.ToMd5Hash(khachHang.RandomKey);
+            db.SaveChanges();
+
+            return RedirectToAction("Profile");
+        }
+
 
         [Authorize]
         public async Task<IActionResult> DangXuat()
@@ -200,7 +334,7 @@ namespace KLTN_E.Controllers
         public async Task<IActionResult> QuenMatKhau(QuenMatKhauVM model)
         {
             var khachHang = db.KhachHangs.SingleOrDefault(k => k.MaKh == model.MaKh);
-            
+
 
             if (khachHang != null)
             {
@@ -233,7 +367,7 @@ namespace KLTN_E.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> DatLaiMatKhau( DatLaiMatKhauVM model)
+        public async Task<IActionResult> DatLaiMatKhau(DatLaiMatKhauVM model)
         {
             var userId = TempData["UserId"]?.ToString();
             var token = TempData["Token"]?.ToString();

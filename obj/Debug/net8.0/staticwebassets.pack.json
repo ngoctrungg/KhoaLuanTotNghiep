@@ -1573,6 +1573,10 @@
       "PackagePath": "staticwebassets\\Hinh\\HangHoa\\1009.gif"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\wwwroot\\Hinh\\HangHoa\\20.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\20.jpg"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\wwwroot\\Hinh\\HangHoa\\21meTyhQebL._SL500_AA300_.jpg",
       "PackagePath": "staticwebassets\\Hinh\\HangHoa\\21meTyhQebL._SL500_AA300_.jpg"
     },
@@ -1897,6 +1901,10 @@
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\1.jpg"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\1.png",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\1.png"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\10.jpg",
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\10.jpg"
     },
@@ -1907,6 +1915,10 @@
     {
       "Id": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\12.jpg",
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\14.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\14.jpg"
     },
     {
       "Id": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\15.jpg",
@@ -1931,6 +1943,10 @@
     {
       "Id": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\23.jpg",
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\23.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\24.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\24.jpg"
     },
     {
       "Id": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\3.jpg",
@@ -1981,6 +1997,10 @@
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\Author.jpg"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\My img.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\My img.jpg"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\Penguins.jpg",
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\Penguins.jpg"
     },
@@ -1993,6 +2013,10 @@
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\forsythia-8595521_1280.webp"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\hoa bi ngan.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\hoa bi ngan.jpg"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\man.jpg",
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\man.jpg"
     },
@@ -2001,8 +2025,24 @@
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\woman.jpg"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\z3876297481132_0a05bb0bde1717303856212b055181a2.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\z3876297481132_0a05bb0bde1717303856212b055181a2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\z3876319342456_ee21867ea3e2e58e83d7c3bfc4489bcf.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\z3876319342456_ee21867ea3e2e58e83d7c3bfc4489bcf.jpg"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\wwwroot\\Hinh\\Loai11.jpeg",
       "PackagePath": "staticwebassets\\Hinh\\Loai11.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\wwwroot\\Hinh\\Loai\\6.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\Loai\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\wwwroot\\Hinh\\Loai\\7.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\Loai\\7.jpg"
     },
     {
       "Id": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\wwwroot\\Hinh\\Loai\\Accept.png",
