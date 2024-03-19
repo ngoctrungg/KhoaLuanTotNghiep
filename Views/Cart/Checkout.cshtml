@@ -25,6 +25,7 @@
     <div class="container">
         <div class="checkout__form">
             <form asp-action="Checkout" asp-controller="Cart">
+           @*  <form asp-action="CapturePaypalOrder" asp-controller="Cart"> *@
                 <div class="row">
                     <div class="col-lg-8 col-md-6">
 
@@ -45,8 +46,6 @@
                                     </label>
 
                                 </div>
-
-
                                 <div class="checkout__input my-delivery-info">
                                     <p>Full Name<span>*</span></p>
                                     <input type="text" name="HoTen">
@@ -94,20 +93,7 @@
                                 <li>Total <span>$@Model.Sum(p => p.ThanhTien)</span></li>
                             </ul>
 
-                            @*  <div class="checkout__input__checkbox">
-                            <label for="payment">
-                            Check Payment
-                            <input type="checkbox" id="payment">
-                            <span class="checkmark"></span>
-                            </label>
-                            </div>
-                            <div class="checkout__input__checkbox">
-                            <label for="paypal">
-                            Paypal
-                            <input type="checkbox" id="paypal">
-                            <span class="checkmark"></span>
-                            </label>
-                            </div> *@
+
                             <input type="submit" name="payment" class="site-btn" value="PLACE ORDER"></input>
                             <input type="submit" name="payment" class="site-btn" value="VNPAY"></input>
                             <div id="paypal-button-container" style="max-width:1000px; margin-top:4px"></div>
@@ -126,11 +112,12 @@
         $(document).ready(function () {
             $("#GiongKhachHang").change(function () {
                 if ($(this).prop("checked")) {
+                    console.log('true');
                     $(this).val(true);
-                    $(".delivery-info").addClass("d-none");
+                    $(".my-delivery-info").addClass("d-none");
                 } else {
                     $(this).val(false);
-                    $(".delivery-info").removeClass("d-none");
+                    $(".my-delivery-info").removeClass("d-none");
                 }
             });
         });

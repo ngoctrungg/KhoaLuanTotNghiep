@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\KLTN-E.csproj": {}
+    "C:\\Users\\hoquo\\source\\repos\\KLTN-8\\KLTN-E.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\KLTN-E.csproj": {
+    "C:\\Users\\hoquo\\source\\repos\\KLTN-8\\KLTN-E.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\KLTN-E.csproj",
+        "projectUniqueName": "C:\\Users\\hoquo\\source\\repos\\KLTN-8\\KLTN-E.csproj",
         "projectName": "KLTN-E",
-        "projectPath": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\KLTN-E.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\Documents\\Testgithub\\Khoaluantotnghiep\\obj\\",
+        "projectPath": "C:\\Users\\hoquo\\source\\repos\\KLTN-8\\KLTN-E.csproj",
+        "packagesPath": "C:\\Users\\hoquo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hoquo\\source\\repos\\KLTN-8\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hoquo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -86,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

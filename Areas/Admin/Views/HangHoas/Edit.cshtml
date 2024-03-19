@@ -5,6 +5,85 @@
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 
+@* <h1>Edit</h1>
+
+<h4>HangHoa</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MaHh" />
+            <div class="form-group">
+                <label asp-for="TenHh" class="control-label"></label>
+                <input asp-for="TenHh" class="form-control" />
+                <span asp-validation-for="TenHh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TenAlias" class="control-label"></label>
+                <input asp-for="TenAlias" class="form-control" />
+                <span asp-validation-for="TenAlias" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaLoai" class="control-label"></label>
+                <select asp-for="MaLoai" class="form-control" asp-items="ViewBag.Loai"></select>
+                <span asp-validation-for="MaLoai" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MoTaDonVi" class="control-label"></label>
+                <input asp-for="MoTaDonVi" class="form-control" />
+                <span asp-validation-for="MoTaDonVi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DonGia" class="control-label"></label>
+                <input asp-for="DonGia" class="form-control" />
+                <span asp-validation-for="DonGia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Hinh" class="control-label"></label>
+                <input asp-for="Hinh" type="file" name="hinhHH" class="form-control" />
+                <img src="~/Hinh/HangHoa/@Model.Hinh" width="100" height="100"/>
+                <span asp-validation-for="Hinh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgaySx" class="control-label"></label>
+                <input asp-for="NgaySx" class="form-control" />
+                <span asp-validation-for="NgaySx" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GiamGia" class="control-label"></label>
+                <input asp-for="GiamGia" class="form-control" />
+                <span asp-validation-for="GiamGia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoLanXem" class="control-label"></label>
+                <input asp-for="SoLanXem" class="form-control" />
+                <span asp-validation-for="SoLanXem" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MoTa" class="control-label"></label>
+                <input asp-for="MoTa" class="form-control" />
+                <span asp-validation-for="MoTa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaNcc" class="control-label"></label>
+                <select asp-for="MaNcc" class="form-control" asp-items="ViewBag.NCC"></select>
+                <span asp-validation-for="MaNcc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div> *@
+
+
+
+
 
 
 <div class="container-fluid  dashboard-content">
@@ -24,7 +103,7 @@
                         <div class="row">
                             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                             <input type="hidden" asp-for="MaHh" />
-                        
+
                             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 ">
                                 <div class="form-group">
                                     <label asp-for="TenHh" class="control-label"></label>
@@ -98,7 +177,7 @@
                             <div class="col-xl-2 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="form-group">
                                     <label asp-for="Hinh" class="control-label"></label>
-                                    <input asp-for="Hinh" type="file" name="hinHH" class="form-control" />
+                                    <input asp-for="Hinh" type="file" name="hinhHH" class="form-control" />
                                     <span asp-validation-for="Hinh" class="text-danger"></span>
                                 </div>
                             </div>
@@ -119,6 +198,12 @@
 
 
 
+
+
+
+
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

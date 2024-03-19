@@ -5,8 +5,6 @@
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-
-
 <div class="container-fluid  dashboard-content">
     <div class="row">
 
@@ -65,21 +63,28 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
+                            <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
                                 <div class="form-group">
                                     <label asp-for="VaiTro" class="control-label"></label>
                                     <input asp-for="VaiTro" class="form-control" />
                                     <span asp-validation-for="VaiTro" class="text-danger"></span>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
+                            <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
                                 <div class="form-group">
                                     <label asp-for="RandomKey" class="control-label"></label>
                                     <input asp-for="RandomKey" class="form-control" />
                                     <span asp-validation-for="RandomKey" class="text-danger"></span>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
+                            <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
+                                <div class="form-group">
+                                    <label asp-for="NgaySinh" class="control-label"></label>
+                                    <input asp-for="NgaySinh" type="date"  class="form-control" />
+                                    <span asp-validation-for="NgaySinh" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
                                 <div class="form-group">
                                     <label asp-for="Hinh" class="control-label"></label>
                                     <input asp-for="Hinh" name="hinhKH" type="file" class="form-control" />
@@ -101,7 +106,7 @@
                                 </div>
                             </div>
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
-                           
+
                                 <input type="submit" value="Create" class="btn btn-primary" />
                             </div>
                         </div>
@@ -113,12 +118,6 @@
     </div>
 </div>
 
-
-
-
-
 @section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

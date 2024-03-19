@@ -188,71 +188,70 @@ namespace KLTN_E.Controllers
         [HttpPost("/Cart/capture-paypal-order")]
         public async Task<IActionResult> CapturePaypalOrder(string orderID, CancellationToken cancellationToken, CheckoutVM model)
         {
-            try
+            if (ModelState.IsValid)
             {
-                var response = await _paypalClient.CaptureOrder(orderID);
-
-                // lưu vào database
-                var customerID = HttpContext.User.Claims.SingleOrDefault(p => p.Type == MySettings.CLAIM_CUSTOMER_ID).Value;
-                var khachHang = new KhachHang();
-                if (model.GiongKhachHang)
-                {
-                    khachHang = db.KhachHangs.SingleOrDefault(p => p.MaKh == customerID);
-                }
-                var hoadon = new HoaDon
-                {
-                    MaKh = customerID,
-                    HoTen = model.HoTen ?? khachHang.HoTen,
-                    DiaChi = model.DiaChi ?? khachHang.DiaChi,
-                    DienThoai = model.DienThoai ?? khachHang.DienThoai,
-                    NgayDat = DateTime.Now,
-                    CachThanhToan = "Paypal",
-                    CachVanChuyen = "GiaoHangNhanh",
-                    MaTrangThai = 0,
-                    GhiChu = model.GhiChu
-                };
-                db.Database.BeginTransaction();
                 try
                 {
-                    db.Add(hoadon);
-                    db.SaveChanges();
+                    db.Database.BeginTransaction();
+                    var response = await _paypalClient.CaptureOrder(orderID);
 
-                    var cthd = new List<ChiTietHd>();
-                    foreach (var item in Cart)
+                    // lưu vào database
+                    var customerID = HttpContext.User.Claims.SingleOrDefault(p => p.Type == MySettings.CLAIM_CUSTOMER_ID).Value;
+                    var khachHang = new KhachHang();
+                    khachHang = db.KhachHangs.SingleOrDefault(p => p.MaKh == customerID);
+                    var hoadon = new HoaDon
                     {
-                        cthd.Add(new ChiTietHd
+                        MaKh = customerID,
+                        HoTen = model.HoTen ?? khachHang.HoTen,
+                        DiaChi = model.DiaChi ?? khachHang.DiaChi,
+                        DienThoai = model.DienThoai ?? khachHang.DienThoai,
+                        NgayDat = DateTime.Now,
+                        CachThanhToan = "Paypal",
+                        CachVanChuyen = "GiaoHangNhanh",
+                        MaTrangThai = 0,
+                        GhiChu = model.GhiChu
+                    };
+                    try
+                    {
+                        db.Add(hoadon);
+                        db.SaveChanges();
+
+                        var cthd = new List<ChiTietHd>();
+                        foreach (var item in Cart)
                         {
-                            MaHd = hoadon.MaHd,
-                            SoLuong = item.SoLuong,
-                            DonGia = item.DonGia,
-                            MaHh = item.MaHh,
-                            GiamGia = 0
-                        });
+                            cthd.Add(new ChiTietHd
+                            {
+                                MaHd = hoadon.MaHd,
+                                SoLuong = item.SoLuong,
+                                DonGia = item.DonGia,
+                                MaHh = item.MaHh,
+                                GiamGia = 0
+                            });
+                        }
+                        db.AddRange(cthd);
+                        db.SaveChanges();
+                        db.Database.CommitTransaction();
+                        HttpContext.Session.Set<List<CartItem>>(MySettings.CART_KEY, new List<CartItem>());
+
+                        return View("Success");
                     }
-                    db.AddRange(cthd);
-                    db.SaveChanges();
+                    catch (Exception ex)
+                    {
+                        db.Database.RollbackTransaction();
+                        TempData["Message"] = $"Error.";
 
-                    db.Database.CommitTransaction();
-                    HttpContext.Session.Set<List<CartItem>>(MySettings.CART_KEY, new List<CartItem>());
+                    }
 
-                    return View("Success");
+                    return Ok(response);
                 }
                 catch (Exception ex)
                 {
-                    db.Database.RollbackTransaction();
-                    TempData["Message"] = $"Error.";
-
+                    var error = new { ex.GetBaseException().Message };
+                    return BadRequest(error);
                 }
-
-                return Ok(response);
             }
-            catch (Exception ex)
-            {
-                var error = new { ex.GetBaseException().Message };
-                return BadRequest(error);
-            }
+            return View("Success");
         }
-
         #endregion
 
         [Authorize]
@@ -283,10 +282,9 @@ namespace KLTN_E.Controllers
             {
                 var customerID = HttpContext.User.Claims.SingleOrDefault(p => p.Type == MySettings.CLAIM_CUSTOMER_ID).Value;
                 var khachHang = new KhachHang();
-                if (model.GiongKhachHang)
-                {
-                    khachHang = db.KhachHangs.SingleOrDefault(p => p.MaKh == customerID);
-                }
+
+                khachHang = db.KhachHangs.SingleOrDefault(p => p.MaKh == customerID);
+
                 var hoadon = new HoaDon
                 {
                     MaKh = customerID,

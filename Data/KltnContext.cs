@@ -43,6 +43,8 @@ public partial class KltnContext : DbContext
 
     public virtual DbSet<PhongBan> PhongBans { get; set; }
 
+    public virtual DbSet<Role> Roles { get; set; }
+
     public virtual DbSet<TrangThai> TrangThais { get; set; }
 
     public virtual DbSet<TrangWeb> TrangWebs { get; set; }
@@ -52,8 +54,8 @@ public partial class KltnContext : DbContext
     public virtual DbSet<YeuThich> YeuThiches { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=DESKTOP-1OVGN83\\SQLSERVER2022;Initial Catalog=KLTN;Integrated Security=True;Encrypt=True;Trust Server Certificate=True");
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseSqlServer("Server=.; Database=KLTN;Integrated Security=True;Encrypt=False;Trust Server Certificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -156,7 +158,6 @@ public partial class KltnContext : DbContext
 
             entity.Property(e => e.MaHh).HasColumnName("MaHH");
             entity.Property(e => e.DonGia).HasDefaultValue(0.0);
-            entity.Property(e => e.Hinh).HasMaxLength(50);
             entity.Property(e => e.MaNcc)
                 .HasMaxLength(50)
                 .HasColumnName("MaNCC");
@@ -260,9 +261,7 @@ public partial class KltnContext : DbContext
             entity.Property(e => e.DiaChi).HasMaxLength(60);
             entity.Property(e => e.DienThoai).HasMaxLength(24);
             entity.Property(e => e.Email).HasMaxLength(50);
-            entity.Property(e => e.Hinh)
-                .HasMaxLength(50)
-                .HasDefaultValue("Photo.gif");
+            entity.Property(e => e.Hinh).HasDefaultValue("Photo.gif");
             entity.Property(e => e.HoTen).HasMaxLength(50);
             entity.Property(e => e.MatKhau).HasMaxLength(50);
             entity.Property(e => e.NgaySinh)
@@ -272,6 +271,11 @@ public partial class KltnContext : DbContext
                 .HasMaxLength(50)
                 .IsUnicode(false);
             entity.Property(e => e.ResetToken).HasMaxLength(50);
+
+            entity.HasOne(d => d.VaiTroNavigation).WithMany(p => p.KhachHangs)
+                .HasForeignKey(d => d.VaiTro)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_KhachHang_Role");
         });
 
         modelBuilder.Entity<Loai>(entity =>
@@ -280,7 +284,6 @@ public partial class KltnContext : DbContext
 
             entity.ToTable("Loai");
 
-            entity.Property(e => e.Hinh).HasMaxLength(50);
             entity.Property(e => e.TenLoai).HasMaxLength(50);
             entity.Property(e => e.TenLoaiAlias).HasMaxLength(50);
         });
@@ -297,7 +300,6 @@ public partial class KltnContext : DbContext
             entity.Property(e => e.DiaChi).HasMaxLength(50);
             entity.Property(e => e.DienThoai).HasMaxLength(50);
             entity.Property(e => e.Email).HasMaxLength(50);
-            entity.Property(e => e.Logo).HasMaxLength(50);
             entity.Property(e => e.NguoiLienLac).HasMaxLength(50);
             entity.Property(e => e.TenCongTy).HasMaxLength(50);
         });
@@ -379,6 +381,16 @@ public partial class KltnContext : DbContext
             entity.Property(e => e.TenPb)
                 .HasMaxLength(50)
                 .HasColumnName("TenPB");
+        });
+
+        modelBuilder.Entity<Role>(entity =>
+        {
+            entity.HasKey(e => e.MaVaiTro);
+
+            entity.ToTable("Role");
+
+            entity.Property(e => e.MaVaiTro).ValueGeneratedNever();
+            entity.Property(e => e.TenVaiTro).HasMaxLength(50);
         });
 
         modelBuilder.Entity<TrangThai>(entity =>

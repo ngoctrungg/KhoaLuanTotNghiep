@@ -6,8 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using KLTN_E.Data;
-using KLTN_E.Helpers;
-using KLTN_E.ViewModels;
+using Microsoft.Extensions.Hosting;
 
 namespace KLTN_E.Areas.Admin.Controllers
 {
@@ -15,11 +14,11 @@ namespace KLTN_E.Areas.Admin.Controllers
     public class KhachHangsController : Controller
     {
         private readonly KltnContext _context;
-        private readonly IWebHostEnvironment _webHostEnvironment;
-        public KhachHangsController(KltnContext context, IWebHostEnvironment webHostEnvironment)
+        private readonly IWebHostEnvironment _environment;
+        public KhachHangsController(KltnContext context, IWebHostEnvironment environment)
         {
             _context = context;
-            _webHostEnvironment = webHostEnvironment;
+            _environment = environment;
         }
 
         // GET: Admin/KhachHangs
@@ -47,7 +46,6 @@ namespace KLTN_E.Areas.Admin.Controllers
         }
 
         // GET: Admin/KhachHangs/Create
-        [HttpGet]
         public IActionResult Create()
         {
             return View();
@@ -60,21 +58,35 @@ namespace KLTN_E.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(KhachHang khachHang, IFormFile hinhKH)
         {
-            if (ModelState.IsValid)
+
+            var check = await _context.KhachHangs.FirstOrDefaultAsync(p => p.HoTen == khachHang.HoTen);
+            if (check != null)
             {
+                ModelState.AddModelError("HoTen", "Ten da ton tai");
+                return View(khachHang);
+            }
+            else
+            {
+
                 if (hinhKH != null)
                 {
-                    khachHang.Hinh = MyUtil.UploadHinh(hinhKH, "KhachHang");
+                    string dir = Path.Combine(_environment.WebRootPath, "Hinh/KhachHang");
+                    string imgName = Guid.NewGuid().ToString() + hinhKH.FileName;
+                    string filePath = Path.Combine(dir, imgName);
+                    FileStream fs = new FileStream(filePath, FileMode.Create);
+                    await hinhKH.CopyToAsync(fs);
+                    fs.Close();
+                    khachHang.Hinh = imgName;
                 }
-                _context.Add(khachHang);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Index");
             }
-            return View(khachHang);
+            _context.Add(khachHang);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
+
+
         // GET: Admin/KhachHangs/Edit/5
-        [HttpGet]
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
@@ -95,41 +107,47 @@ namespace KLTN_E.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(KhachHang khachHang, IFormFile hinhKH)
+        public async Task<IActionResult> Edit(string id, KhachHang khachHang, IFormFile hinhKH)
         {
-            var existedKhachHangs = _context.KhachHangs.SingleOrDefault(x => x.MaKh == khachHang.MaKh);
-            if (existedKhachHangs != null)
-            {
-                //Edit
-                existedKhachHangs.MatKhau = khachHang.MatKhau;
-                existedKhachHangs.Email = khachHang.Email;
-                existedKhachHangs.HoTen = khachHang.HoTen;
-                existedKhachHangs.GioiTinh = khachHang.GioiTinh;
-                existedKhachHangs.DiaChi = khachHang.DiaChi;
-                existedKhachHangs.DienThoai = khachHang.DienThoai;
-                existedKhachHangs.HieuLuc = khachHang.HieuLuc;
-                existedKhachHangs.VaiTro = khachHang.VaiTro;
-                existedKhachHangs.RandomKey = khachHang.RandomKey;
-
-
-                if (hinhKH == null)
-                {
-                    existedKhachHangs.Hinh = khachHang.Hinh;
-                }
-                else
-                {
-                    existedKhachHangs.Hinh = MyUtil.UploadHinh(hinhKH, "KhachHang");
-                }
-                //Save
-                _context.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            else
+            if (id != khachHang.MaKh)
             {
                 return NotFound();
             }
 
+            if (ModelState.IsValid)
+            {
+                try
+                {
 
+
+                    if (hinhKH != null)
+                    {
+                        string dir = Path.Combine(_environment.WebRootPath, "Hinh/KhachHang");
+                        string imgName = Guid.NewGuid().ToString() + hinhKH.FileName;
+                        string filePath = Path.Combine(dir, imgName);
+                        FileStream fs = new FileStream(filePath, FileMode.Create);
+                        await hinhKH.CopyToAsync(fs);
+                        fs.Close();
+                        khachHang.Hinh = imgName;
+                    }
+
+                    _context.Update(khachHang);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!KhachHangExists(khachHang.MaKh))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(khachHang);
         }
 
         // GET: Admin/KhachHangs/Delete/5
@@ -158,11 +176,14 @@ namespace KLTN_E.Areas.Admin.Controllers
             var khachHang = await _context.KhachHangs.FindAsync(id);
             if (khachHang != null)
             {
-                string uploadDir = Path.Combine(_webHostEnvironment.WebRootPath, "Hinh/KhachHang");
-                string oldIMG = Path.Combine(uploadDir, khachHang.Hinh);
-                if (System.IO.File.Exists(oldIMG))
+                if (!string.Equals(khachHang.Hinh, "noImg.jpg"))
                 {
-                    System.IO.File.Delete(oldIMG);
+                    string dir = Path.Combine(_environment.WebRootPath, "Hinh/KhachHang");
+                    string oldfileImg = Path.Combine(dir, khachHang.Hinh);
+                    if (System.IO.File.Exists(oldfileImg))
+                    {
+                        System.IO.File.Delete(oldfileImg);
+                    }
                 }
                 _context.KhachHangs.Remove(khachHang);
             }

@@ -17,275 +17,275 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = KLTN_E
 build_property.RootNamespace = KLTN_E
-build_property.ProjectDir = C:\Users\ADMIN\Documents\Testgithub\Khoaluantotnghiep\
+build_property.ProjectDir = C:\Users\hoquo\source\repos\KLTN-8\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ADMIN\Documents\Testgithub\Khoaluantotnghiep
+build_property.MSBuildProjectDirectory = C:\Users\hoquo\source\repos\KLTN-8
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/HangHoas/Create.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/HangHoas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSGFuZ0hvYXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/HangHoas/Delete.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/HangHoas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSGFuZ0hvYXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/HangHoas/Details.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/HangHoas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSGFuZ0hvYXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/HangHoas/Edit.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/HangHoas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSGFuZ0hvYXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/HangHoas/Index.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/HangHoas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSGFuZ0hvYXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/KhachHangs/Create.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/KhachHangs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS2hhY2hIYW5nc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/KhachHangs/Delete.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/KhachHangs/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS2hhY2hIYW5nc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/KhachHangs/Details.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/KhachHangs/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS2hhY2hIYW5nc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/KhachHangs/Edit.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/KhachHangs/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS2hhY2hIYW5nc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/KhachHangs/Index.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/KhachHangs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS2hhY2hIYW5nc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/Loais/Create.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/Loais/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9haXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/Loais/Delete.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/Loais/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9haXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/Loais/Details.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/Loais/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9haXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/Loais/Edit.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/Loais/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9haXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/Loais/Index.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/Loais/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9haXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/NhanViens/Create.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/NhaCungCaps/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhQ3VuZ0NhcHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/NhaCungCaps/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhQ3VuZ0NhcHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/NhaCungCaps/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhQ3VuZ0NhcHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/NhaCungCaps/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhQ3VuZ0NhcHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/NhaCungCaps/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhQ3VuZ0NhcHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/NhanViens/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhblZpZW5zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/NhanViens/Delete.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/NhanViens/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhblZpZW5zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/NhanViens/Details.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/NhanViens/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhblZpZW5zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/NhanViens/Edit.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/NhanViens/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhblZpZW5zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/NhanViens/Index.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/NhanViens/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhblZpZW5zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/Shared/Components/MenuLoai/Default.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/Shared/Components/MenuLoai/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVudUxvYWlcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/Shared/Error.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/Shared/_DanhSachHangHoa.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/Shared/_DanhSachHangHoa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9EYW5oU2FjaEhhbmdIb2EuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/Shared/_Footer.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/Shared/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/Shared/_LayoutCustomer.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/Shared/_LayoutCustomer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXRDdXN0b21lci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/_ViewImports.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/_ViewStart.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/Cart/Checkout.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/Cart/Checkout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDaGVja291dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/Cart/Index.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/Cart/PaymentFail.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/Cart/PaymentFail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxQYXltZW50RmFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/Cart/Success.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/Cart/Success.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxTdWNjZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/HangHoas/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYXNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/HangHoas/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYXNcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/HangHoas/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYXNcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/HangHoas/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYXNcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/HangHoas/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYXNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/HangHoa/Detail.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/HangHoa/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYVxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/HangHoa/Filter.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/HangHoa/Filter.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYVxGaWx0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/HangHoa/Index.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/HangHoa/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/HangHoa/ProductItem.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/HangHoa/ProductItem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYVxQcm9kdWN0SXRlbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/HangHoa/Search.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/HangHoa/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYVxTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/Home/Index.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/Home/NotFound404.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/Home/NotFound404.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb3RGb3VuZDQwNC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/Home/Privacy.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/KhachHang/ConfirmEmail.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/KhachHang/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXENvbmZpcm1FbWFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/KhachHang/DangKy.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/KhachHang/DangKy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXERhbmdLeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/KhachHang/DangNhap.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/KhachHang/DangNhap.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXERhbmdOaGFwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/KhachHang/DatLaiMatKhau.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/KhachHang/DatLaiMatKhau.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXERhdExhaU1hdEtoYXUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/KhachHang/Error.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/KhachHang/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/KhachHang/Profile.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/KhachHang/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXFByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/KhachHang/QuenMatKhau.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/KhachHang/QuenMatKhau.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXFF1ZW5NYXRLaGF1LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/KhachHang/RSPasswordSuccess.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/KhachHang/RSPasswordSuccess.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXFJTUGFzc3dvcmRTdWNjZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/Shared/Components/Cart/CartPanel.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/Shared/Components/Cart/CartPanel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FydFxDYXJ0UGFuZWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/Shared/Components/MenuLoai/Default.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/Shared/Components/MenuLoai/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVudUxvYWlcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/Shared/Error.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/Shared/_DanhSachHangHoa.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/Shared/_DanhSachHangHoa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EYW5oU2FjaEhhbmdIb2EuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/Shared/_Footer.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/Shared/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/Shared/_LayoutCustomer.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/Shared/_LayoutCustomer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDdXN0b21lci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/Shared/_ResetPassword.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/Shared/_ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/_ViewImports.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/_ViewStart.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Areas/Admin/Views/Shared/_Layout.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-613vq7585g
 
-[C:/Users/ADMIN/Documents/Testgithub/Khoaluantotnghiep/Views/Shared/_Layout.cshtml]
+[C:/Users/hoquo/source/repos/KLTN-8/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-nbc1ngs02o

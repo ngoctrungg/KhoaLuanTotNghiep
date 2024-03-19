@@ -119,12 +119,13 @@ namespace KLTN_E.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> DangNhap(LoginVM model, string? ReturnUrl)
+        public async Task<IActionResult> DangNhap(LoginVM model, string? ReturnUrl, int vaiTro = 0)
         {
             ViewBag.ReturnUrl = ReturnUrl;
             if (ModelState.IsValid)
             {
                 var khachHang = db.KhachHangs.SingleOrDefault(kh => kh.MaKh == model.UserName);
+                var role = db.Roles.SingleOrDefault(r => r.MaVaiTro == khachHang.VaiTro);
                 if (khachHang == null)
                 {
                     ModelState.AddModelError("Error", "UserName or Password is not correct");
@@ -143,14 +144,33 @@ namespace KLTN_E.Controllers
                         }
                         else
                         {
+                            
+
                             var claims = new List<Claim> {
                                 new Claim(ClaimTypes.Email, khachHang.Email),
                                 new Claim(ClaimTypes.Name, khachHang.HoTen),
                                 new Claim(MySettings.CLAIM_CUSTOMER_ID, khachHang.MaKh),
 
                                 // Claim - role động
-                                new Claim(ClaimTypes.Role, "Customer")
+                               // new Claim(ClaimTypes.Role, "Customer")
                             };
+
+                            switch (role.MaVaiTro)
+                            {
+                                case 1:
+                                    claims.Add(new Claim(ClaimTypes.Role, role.TenVaiTro));
+                                    break;
+                                case 2:
+                                    claims.Add(new Claim(ClaimTypes.Role, role.TenVaiTro));
+                                    break;
+                                default:
+                                    claims.Add(new Claim(ClaimTypes.Role, role.TenVaiTro));
+                                    break;
+                            }
+
+
+
+
                             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                             var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
 
@@ -171,34 +191,6 @@ namespace KLTN_E.Controllers
         }
         #endregion
 
-        //[Authorize]
-        //public IActionResult Profile()
-        //{
-        //    var userIdClaim = HttpContext.User.Claims.FirstOrDefault(c => c.Type == MySettings.CLAIM_CUSTOMER_ID);
-        //    if (userIdClaim != null)
-        //    {
-        //        var userId = userIdClaim.Value;
-        //        var khachHang = db.KhachHangs.Find(userId);
-
-        //        if (khachHang != null)
-        //        {
-        //            ViewBag.UserName = khachHang.MaKh;
-        //            ViewBag.Email = khachHang.Email;
-        //            ViewBag.FullName = khachHang.HoTen;
-        //            ViewBag.ImageUrl = "~/Hinh/KhachHang/" + khachHang.Hinh;
-
-
-
-        //            return View();
-        //        }
-        //        else
-        //        {
-        //            TempData["Message"] = "Customer not found";
-        //            return View();
-        //        }
-        //    }
-        //    return View();
-        //}
 
         [Authorize]
         public IActionResult Profile()
@@ -212,7 +204,7 @@ namespace KLTN_E.Controllers
                 if (khachHang != null)
                 {
 
-                    var profileModel = new ProfileVM
+                    var profileModel = new DatLaiMatKhauVM
                     {
                         UserName = khachHang.MaKh,
                         Email = khachHang.Email,
@@ -232,9 +224,50 @@ namespace KLTN_E.Controllers
         }
 
 
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> UpdateProfile(ProfileVM model, IFormFile newImage)
+        //{
+        //    //if(ModelState.IsValid)
+        //    // {
+        //    var userIdClaim = HttpContext.User.Claims.FirstOrDefault(c => c.Type == MySettings.CLAIM_CUSTOMER_ID);
+        //    if (userIdClaim != null)
+        //    {
+        //        var userId = userIdClaim.Value;
+        //        var khachHang = db.KhachHangs.Find(userId);
+
+        //        if (khachHang != null)
+        //        {
+        //            khachHang.HoTen = model.FullName;
+        //            khachHang.Email = model.Email;
+
+        //            if(newImage != null && newImage.Length > 0)
+        //            {
+        //                khachHang.Hinh = MyUtil.UploadHinh(newImage, "KhachHang");
+        //            }
+
+
+        //            db.Update(khachHang);
+        //            await db.SaveChangesAsync();
+
+        //            return RedirectToAction("Profile");
+        //        }
+        //        else
+        //        {
+        //            TempData["Message"] = "Customer not found";
+        //        }
+        //    }
+        //    // }
+        //    else
+        //    {
+        //        TempData["Message"] = "User not authenticated";
+        //    }
+        //    return View("Profile", model);
+        //}
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> UpdateProfile(ProfileVM model, IFormFile newImage)
+        public async Task<IActionResult> UpdateProfile(DatLaiMatKhauVM model, IFormFile newImage)
         {
             //if(ModelState.IsValid)
             // {
@@ -249,7 +282,7 @@ namespace KLTN_E.Controllers
                     khachHang.HoTen = model.FullName;
                     khachHang.Email = model.Email;
 
-                    if(newImage != null && newImage.Length > 0)
+                    if (newImage != null && newImage.Length > 0)
                     {
                         khachHang.Hinh = MyUtil.UploadHinh(newImage, "KhachHang");
                     }
@@ -272,6 +305,7 @@ namespace KLTN_E.Controllers
             }
             return View("Profile", model);
         }
+
 
         [Authorize]
         [HttpPost]

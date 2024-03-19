@@ -13,5 +13,11 @@ namespace KLTN_E.ViewModels
         [Compare("NewPassword", ErrorMessage = "New password and confirm password do not match.")]
         public string ConfirmPassword { get; set; }
 
+
+        public string UserName { get; set; }
+        public string FullName { get; set; }
+        public string Email { get; set; }
+        public string ProfileImage { get; set; }
+
     }
 }
