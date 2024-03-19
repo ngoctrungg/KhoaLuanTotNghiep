@@ -3,7 +3,10 @@
     ViewData["Title"] = "Index";
     Layout = "_DanhSachHangHoa";
 }
-<h5>There are <b>@Model.Count()</b> products.</h5>
+<div style="margin-bottom:44px">
+
+    <h5>There are <b>@Model.Count()</b> products.</h5>
+</div>
 <!-- Breadcrumb Section Begin -->
 @section BreadCum {
     <section class="breadcrumb-option">
@@ -23,7 +26,6 @@
     </section>
 }
 <!-- Breadcrumb Section End -->
-
 @await Html.PartialAsync("ProductItem", Model)
 
 

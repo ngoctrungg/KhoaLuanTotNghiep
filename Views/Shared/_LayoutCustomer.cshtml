@@ -84,15 +84,15 @@
 
                                 <li><a asp-action="Index" asp-controller="HangHoa">Shop</a></li>
 
-                               @*  <li>
-                                    <a href="#">Pages</a>
-                                    <ul class="dropdown">
-                                        <li><a href="./about.html">About Us</a></li>
-                                        <li><a asp-action="DangNhap" asp-controller="KhachHang">Login</a></li>
-                                        <li><a asp-action="DangKy" asp-controller="KhachHang">Register</a></li>
-                                        <li><a asp-action="AddToCart" asp-controller="Cart">Check Out</a></li>
-                                        <li><a asp-action="Profile" asp-controller="KhachHang">Profile</a></li>
-                                    </ul>
+                                @*  <li>
+                                <a href="#">Pages</a>
+                                <ul class="dropdown">
+                                <li><a href="./about.html">About Us</a></li>
+                                <li><a asp-action="DangNhap" asp-controller="KhachHang">Login</a></li>
+                                <li><a asp-action="DangKy" asp-controller="KhachHang">Register</a></li>
+                                <li><a asp-action="AddToCart" asp-controller="Cart">Check Out</a></li>
+                                <li><a asp-action="Profile" asp-controller="KhachHang">Profile</a></li>
+                                </ul>
                                 </li>
                                 <li><a href="./blog.html">Blog</a></li> *@
                                 <li><a href="./contact.html">Contacts</a></li>
@@ -148,9 +148,9 @@
     <div class="search-model">
         <div class="h-100 d-flex align-items-center justify-content-center">
             <div class="search-close-switch">+</div>
-            <form class="search-model-form">
-                <input type="search" id="searchText" placeholder="Search here.....">
-                <span id="searchButton"><i class="fa fa-search"></i></span>
+            <form class="search-model-form d-flex align-items-center">
+                <input type="search" id="searchText" class="d-block" style="width:90%" placeholder="Search here.....">
+                <div style="width:10%" class="d-flex justify-content-center search-icon" id="searchButton"><i class="fa fa-search " style="font-size:40px;padding:5px;"></i></div>
             </form>
         </div>
     </div>

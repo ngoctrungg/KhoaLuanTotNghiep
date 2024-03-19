@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hoquo\\source\\repos\\KLTN-8\\",
+  "WorkspaceRootPath": "C:\\Users\\hoquo\\source\\repos\\KLTN-10\\Khoaluantotnghiep\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B29B582-231D-4AF6-BC42-EDEC178628DC}|KLTN-E.csproj|c:\\users\\hoquo\\source\\repos\\kltn-8\\areas\\admin\\views\\khachhangs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3B29B582-231D-4AF6-BC42-EDEC178628DC}|KLTN-E.csproj|solutionrelative:areas\\admin\\views\\khachhangs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3B29B582-231D-4AF6-BC42-EDEC178628DC}|KLTN-E.csproj|c:\\users\\hoquo\\source\\repos\\kltn-10\\khoaluantotnghiep\\views\\hanghoa\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B29B582-231D-4AF6-BC42-EDEC178628DC}|KLTN-E.csproj|solutionrelative:views\\hanghoa\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B29B582-231D-4AF6-BC42-EDEC178628DC}|KLTN-E.csproj|c:\\users\\hoquo\\source\\repos\\kltn-8\\areas\\admin\\controllers\\khachhangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B29B582-231D-4AF6-BC42-EDEC178628DC}|KLTN-E.csproj|solutionrelative:areas\\admin\\controllers\\khachhangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B29B582-231D-4AF6-BC42-EDEC178628DC}|KLTN-E.csproj|c:\\users\\hoquo\\source\\repos\\kltn-10\\khoaluantotnghiep\\views\\hanghoa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B29B582-231D-4AF6-BC42-EDEC178628DC}|KLTN-E.csproj|solutionrelative:views\\hanghoa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B29B582-231D-4AF6-BC42-EDEC178628DC}|KLTN-E.csproj|c:\\users\\hoquo\\source\\repos\\kltn-8\\areas\\admin\\views\\khachhangs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3B29B582-231D-4AF6-BC42-EDEC178628DC}|KLTN-E.csproj|solutionrelative:areas\\admin\\views\\khachhangs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3B29B582-231D-4AF6-BC42-EDEC178628DC}|KLTN-E.csproj|c:\\users\\hoquo\\source\\repos\\kltn-10\\khoaluantotnghiep\\views\\shared\\_danhsachhanghoa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B29B582-231D-4AF6-BC42-EDEC178628DC}|KLTN-E.csproj|solutionrelative:views\\shared\\_danhsachhanghoa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,49 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\hoquo\\source\\repos\\KLTN-8\\Areas\\Admin\\Views\\KhachHangs\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\KhachHangs\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\hoquo\\source\\repos\\KLTN-8\\Areas\\Admin\\Views\\KhachHangs\\Edit.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\KhachHangs\\Edit.cshtml",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAAAG8AAAAiAAAA",
+              "Title": "Search.cshtml",
+              "DocumentMoniker": "C:\\Users\\hoquo\\source\\repos\\KLTN-10\\Khoaluantotnghiep\\Views\\HangHoa\\Search.cshtml",
+              "RelativeDocumentMoniker": "Views\\HangHoa\\Search.cshtml",
+              "ToolTip": "C:\\Users\\hoquo\\source\\repos\\KLTN-10\\Khoaluantotnghiep\\Views\\HangHoa\\Search.cshtml",
+              "RelativeToolTip": "Views\\HangHoa\\Search.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-19T07:18:48.874Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "KhachHangsController.cs",
-              "DocumentMoniker": "C:\\Users\\hoquo\\source\\repos\\KLTN-8\\Areas\\Admin\\Controllers\\KhachHangsController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\KhachHangsController.cs",
-              "ToolTip": "C:\\Users\\hoquo\\source\\repos\\KLTN-8\\Areas\\Admin\\Controllers\\KhachHangsController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\KhachHangsController.cs",
-              "ViewState": "AQIAAGUAAAAAAAAAAAAswG4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T07:14:32.07Z",
+              "WhenOpened": "2024-03-19T10:56:27.993Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\hoquo\\source\\repos\\KLTN-8\\Areas\\Admin\\Views\\KhachHangs\\Create.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\KhachHangs\\Create.cshtml",
-              "ToolTip": "C:\\Users\\hoquo\\source\\repos\\KLTN-8\\Areas\\Admin\\Views\\KhachHangs\\Create.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\KhachHangs\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAVAAAA",
+              "Title": "_DanhSachHangHoa.cshtml",
+              "DocumentMoniker": "C:\\Users\\hoquo\\source\\repos\\KLTN-10\\Khoaluantotnghiep\\Views\\Shared\\_DanhSachHangHoa.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_DanhSachHangHoa.cshtml",
+              "ToolTip": "C:\\Users\\hoquo\\source\\repos\\KLTN-10\\Khoaluantotnghiep\\Views\\Shared\\_DanhSachHangHoa.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_DanhSachHangHoa.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEMAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-19T07:07:04.803Z"
+              "WhenOpened": "2024-03-19T10:53:02.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hoquo\\source\\repos\\KLTN-10\\Khoaluantotnghiep\\Views\\HangHoa\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\HangHoa\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hoquo\\source\\repos\\KLTN-10\\Khoaluantotnghiep\\Views\\HangHoa\\Index.cshtml",
+              "RelativeToolTip": "Views\\HangHoa\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-19T10:52:22.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

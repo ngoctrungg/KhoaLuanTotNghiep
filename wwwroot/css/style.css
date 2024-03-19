@@ -272,8 +272,9 @@ ol {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: #000;
 	z-index: 99999;
+	background: #000;
+	opacity: 0.9;
 }
 
 .search-model-form {
@@ -288,32 +289,38 @@ ol {
 		background: 0 0;
 		color: #999;
 	}
+	.search-model-form .search-icon:hover{
+		opacity:0.7;
+		cursor:pointer;
+		
+	}
 
-.search-close-switch {
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	background: #333;
-	color: #fff;
-	text-align: center;
-	border-radius: 50%;
-	font-size: 28px;
-	line-height: 28px;
-	top: 30px;
-	cursor: pointer;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-}
+
+	.search-close-switch {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		background: #333;
+		color: #fff;
+		text-align: center;
+		border-radius: 50%;
+		font-size: 28px;
+		line-height: 28px;
+		top: 30px;
+		cursor: pointer;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
 
 /*---------------------
   Header
