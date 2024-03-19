@@ -1,0 +1,98 @@
+﻿@model KLTN_E.ViewModels.RegisterVM
+@{
+    ViewData["Title"] = "Register";
+}
+
+<!-- Breadcrumb Section Begin -->
+<section class="breadcrumb-option">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb__text">
+                    <h4>Register</h4>
+                    <div class="breadcrumb__links">
+                        <a href="/">Home</a>
+                        <a asp-action="Index" asp-controller="HangHoa">Shop</a>
+                        <span>Register</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Breadcrumb Section End -->
+<!-- Checkout Section Begin -->
+<section class="checkout spad">
+    <div class="container">
+        <div class="checkout__form">
+            <form asp-action="DangKy" asp-controller="KhachHang" enctype="multipart/form-data">
+                <div class="text-danger" asp-validation-summary="All"></div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-6">
+                        <h6 class="checkout__title">Register</h6>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="checkout__input">
+                                     <p>UserName<span>*</span></p>
+                                    <input asp-for="@Model.MaKh">
+                                    <span asp-validation-for="@Model.MaKh" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="checkout__input">
+                                    <p>Password<span>*</span></p>
+                                    <input asp-for="@Model.MatKhau">
+                                    <span asp-validation-for="@Model.MatKhau" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="checkout__input">
+                                    <p>Email<span>*</span></p>
+                                    <input asp-for="@Model.Email">
+                                    <span asp-validation-for="@Model.Email" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="checkout__input">
+                                    <p>FullName<span>*</span></p>
+                                    <input asp-for="@Model.HoTen">
+                                    <span asp-validation-for="@Model.HoTen" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="checkout__input">
+                                    <p>DateOfBirth<span></span></p>
+                                    <input asp-for="@Model.NgaySinh">
+                                    <span asp-validation-for="@Model.NgaySinh" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="checkout__input">
+                                    <p>Address<span>*</span></p>
+                                    <input asp-for="@Model.DiaChi">
+                                    <span asp-validation-for="@Model.DiaChi" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="checkout__input">
+                                    <p>Phone<span>*</span></p>
+                                    <input asp-for="@Model.DienThoai">
+                                    <span asp-validation-for="@Model.DienThoai" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="checkout__input">
+                               
+                                    <p>Image</p>
+                                    <input type="file" name="Hinh">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="site-btn">Register</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- Checkout Section End -->

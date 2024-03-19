@@ -1,0 +1,60 @@
+﻿@model KLTN_E.Data.NhanVien
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+
+<div class="container-fluid dashboard-content">
+
+    <div class="row">
+
+        <div class="col-xl-12 col-lg-6 col-md-12 col-sm-12 col-12">
+            <div class="card">
+                <h5 class="card-header">
+
+                    <form asp-action="Delete">
+                        <input type="hidden" asp-for="MaNv" />
+                        <input type="submit" value="Delete" class="btn btn-danger" /> |
+                        <a class="btn btn-dark" asp-action="Index">Back to List</a>
+                    </form>
+
+                </h5>
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.MatKhau)
+                                </th>
+                                <td>@Html.DisplayFor(model => model.MatKhau)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.HoTen)
+
+                                </th>
+                                <td>@Html.DisplayFor(model => model.HoTen)</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.Email)
+
+                                </th>
+                                <td>
+                                    @Html.DisplayFor(model => model.Email)
+                                </td>
+                            </tr>
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

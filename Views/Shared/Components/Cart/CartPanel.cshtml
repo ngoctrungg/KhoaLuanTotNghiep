@@ -1,0 +1,7 @@
+﻿@model KLTN_E.ViewModels.CartModel
+
+<div style="display:flex;align-items:center">
+
+    <a asp-action="Index" asp-controller="Cart"><img src="~/img/icon/cart.png" alt="" > <span>@Model.Quantity</span></a>
+    <span class="price">$@Model.Total</span>
+</div>

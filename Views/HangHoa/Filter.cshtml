@@ -1,0 +1,58 @@
+﻿@model IEnumerable<KLTN_E.ViewModels.HangHoaVM>
+
+@{
+    TempData["Title"] = "Filter products";
+    Layout = "_DanhSachHangHoa";
+}
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="product__item sale">
+                <div class="product__item__pic">
+                    <a asp-action="Detail" asp-controller="HangHoa" asp-route-id="@item.MaHH">
+                        <img src="https://localhost:7121/Hinh/HangHoa/@item.Hinh" alt="@item.TenHH" class=" set-bg">
+                    </a>
+                    <span class="label">@item.TenLoai</span>
+                    <ul class="product__hover">
+                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                    </ul>
+                </div>
+
+                <div class="product__item__text">
+                    <h6>@item.TenHH</h6>
+                    <a asp-action="AddToCart" asp-controller="Cart" asp-route-id="@item.MaHH" class="add-cart">+ Add To Cart</a>
+                    <div class="rating">
+                        @for (int i = 0; i < 5; i++)
+                        {
+                            if (i < 4)
+                            {
+                                <i class="fa fa-star"></i>
+                            }
+                            else
+                            {
+                                <i class="fa fa-star-o"></i>
+                            }
+                        }
+                    </div>
+                    <h5>$@item.DonGia</h5>
+                    <div class="product__color__select">
+                        <label for="pc-7">
+                            <input type="radio" id="pc-7">
+                        </label>
+                        <label class="active black" for="pc-8">
+                            <input type="radio" id="pc-8">
+                        </label>
+                        <label class="grey" for="pc-9">
+                            <input type="radio" id="pc-9">
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
+</div>
