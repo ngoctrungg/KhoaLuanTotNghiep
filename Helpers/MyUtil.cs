@@ -5,18 +5,40 @@ namespace KLTN_E.Helpers
 {
     public class MyUtil
     {
+        //public static string UploadHinh(IFormFile Hinh, string folder)
+        //{
+        //    try
+        //    {
+        //        var fullPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Hinh", folder, Hinh.FileName);
+        //        using (var myfile = new FileStream(fullPath, FileMode.CreateNew))
+        //        {
+        //            Hinh.CopyTo(myfile);
+        //        }
+        //        return Hinh.FileName;
+        //    }catch(Exception ex) 
+        //    {
+        //        return string.Empty;
+        //    }
+        //}
+
         public static string UploadHinh(IFormFile Hinh, string folder)
         {
             try
             {
-                var fullPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Hinh", folder, Hinh.FileName);
+                var extension = Path.GetExtension(Hinh.FileName);
+                var uniqueFileName = Guid.NewGuid().ToString() + extension;
+                var fullPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Hinh", folder, uniqueFileName);
+
                 using (var myfile = new FileStream(fullPath, FileMode.CreateNew))
                 {
                     Hinh.CopyTo(myfile);
                 }
-                return Hinh.FileName;
-            }catch(Exception ex) 
+
+                return uniqueFileName;
+            }
+            catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 return string.Empty;
             }
         }

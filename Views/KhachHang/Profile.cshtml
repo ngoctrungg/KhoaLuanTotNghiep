@@ -119,6 +119,41 @@
                                 @* </div> *@
                             </form>
                         </div>
+                        
+                        <div class="tab-pane fade" id="purchase-histories" role="tabpanel" aria-labelledby="purchase-histories-tab">
+                            @if (Model.PurchaseHistory != null && Model.PurchaseHistory.Count > 0)
+                            {
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Produce Name</th>
+                                        <th>OrderDate</th>
+                                        <th>Quantity</th>
+                                        <th>Price</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        @foreach (var item in Model.PurchaseHistory)
+                                        {
+                                        <tr>
+                                                <td><img src="https://localhost:7121/Hinh/HangHoa/@item.Hinh" alt="Image" width="50"></td>
+                                            <td>@item.TenHangHoa</td>
+                                            <td>@item.NgayDat.ToShortDateString()</td>
+                                            <td>@item.SoLuong</td>
+                                            <td>@item.DonGia</td>
+                                            <td>@item.TenTrangThai</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                            }
+                            else
+                            {
+                            <p>Không có dữ liệu.</p>
+                            }
+                        </div>
 
 
                         <div class="tab-pane fade" id="account-info">

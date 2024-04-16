@@ -47,10 +47,9 @@ builder.Services.AddSingleton(x => new PaypalClient(
 
 builder.Services.AddSingleton<IVnPayService, VnPayService>();
 
-// Trong phương thức ConfigureServices của file Startup.cs
-builder.Services.AddTransient<IEmailSender, EmailSender>(); // Đăng ký IEmailSender với EmailSender
-builder.Services.AddTransient<IMyEmailSender, MyEmailSender>(); // Đăng ký IMyEmailSender với MyEmailSender
-
+builder.Services.AddTransient<IEmailSender, EmailSender>();
+builder.Services.AddTransient<IMyEmailSender, MyEmailSender>();
+builder.Services.AddScoped<IPurchaseHistoryService, PurchaseHistoryService>();
 
 
 var app = builder.Build();

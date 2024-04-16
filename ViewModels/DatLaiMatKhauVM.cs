@@ -18,6 +18,16 @@ namespace KLTN_E.ViewModels
         public string FullName { get; set; }
         public string Email { get; set; }
         public string ProfileImage { get; set; }
+        public List<PurchaseHistoryVM>? PurchaseHistory { get; set;}
+
+
+        public DateTime NgayDat { get; set; }
+        public string TenTrangThai { get; set; }
+        public string TenHangHoa { get; set; }
+        public double SoLuong { get; set; }
+        public double? DonGia { get; set; }
+        public string? Hinh { get; set; }
+
 
     }
 }

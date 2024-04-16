@@ -23,12 +23,14 @@ namespace KLTN_E.Controllers
         private readonly KltnContext db;
         private readonly IMapper _mapper;
         private readonly IEmailSender _myEmailSender;
+        private readonly IPurchaseHistoryService _purchaseHistory;
 
-        public KhachHangController(KltnContext context, IMapper mapper, IEmailSender emailSender)
+        public KhachHangController(KltnContext context, IMapper mapper, IEmailSender emailSender, IPurchaseHistoryService purchaseHistory)
         {
             db = context;
             _mapper = mapper;
             _myEmailSender = emailSender;
+            _purchaseHistory = purchaseHistory;
         }
         #region Register
         [HttpGet]
@@ -47,7 +49,7 @@ namespace KLTN_E.Controllers
                     var khachHang = _mapper.Map<KhachHang>(model);
                     khachHang.RandomKey = MyUtil.GenerateRandomKey();
                     khachHang.MatKhau = model.MatKhau.ToMd5Hash(khachHang.RandomKey);
-                    khachHang.HieuLuc = true;
+                    khachHang.HieuLuc = false;
                     khachHang.VaiTro = 0;
 
                     if (Hinh != null)
@@ -58,18 +60,17 @@ namespace KLTN_E.Controllers
                     db.SaveChanges();
 
 
-                    //var userId = khachHang.MaKh;
-                    //var code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(userId.ToString()));
-                    //var callBackUrl = Url.Action("ConfirmEmail", "KhachHang", new { UserId = userId, code = code }, protocol: HttpContext.Request.Scheme);
-                    //await _myEmailSender.SendEmailAsync(model.Email, "Confirm your Email", $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callBackUrl)}'>clicking here</a>.");
-                    return RedirectToAction("DangNhap", "KhachHang");
+                    var userId = khachHang.MaKh;
+                    var code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(userId.ToString()));
+                    var callBackUrl = Url.Action("ConfirmEmail", "KhachHang", new { UserId = userId, code = code }, protocol: HttpContext.Request.Scheme);
+                    await _myEmailSender.SendEmailAsync(model.Email, "Confirm your Email", $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callBackUrl)}'>clicking here</a>.");
+                    return RedirectToAction("Notification");
 
 
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
-                    // Hiển thị thông báo lỗi cho người dùng
                     ModelState.AddModelError(string.Empty, "An error occurred while registering. Please try again later.");
                     return View(model);
                 }
@@ -79,35 +80,34 @@ namespace KLTN_E.Controllers
         #endregion
 
         [HttpGet]
-        public IActionResult ConfirmEmail()
+        public async Task<IActionResult> Notification()
         {
             return View();
         }
 
 
+
+        [HttpGet]
         public async Task<IActionResult> ConfirmEmail(string userId, string code)
         {
             if (userId == null || code == null)
             {
-                return RedirectToAction("/404");
+                return RedirectToAction("Error", "Home");
             }
 
             var user = await db.KhachHangs.FindAsync(userId);
+
             if (user == null)
             {
-                return RedirectToAction("/404");
+                return RedirectToAction("Error", "Home");
             }
-            if (!user.HieuLuc)
-            {
-                user.HieuLuc = true;
-                await db.SaveChangesAsync();
-                return RedirectToAction("EmailConfirmed");
 
-            }
-            return View();
+            user.HieuLuc = true;
+            db.Update(user);
+            await db.SaveChangesAsync();
+
+            return RedirectToAction("DangNhap", "KhachHang");
         }
-
-
 
         #region Login
         [HttpGet]
@@ -144,7 +144,7 @@ namespace KLTN_E.Controllers
                         }
                         else
                         {
-                            
+
 
                             var claims = new List<Claim> {
                                 new Claim(ClaimTypes.Email, khachHang.Email),
@@ -212,6 +212,9 @@ namespace KLTN_E.Controllers
                         ProfileImage = khachHang.Hinh
 
                     };
+
+                    var purchaseHistory = _purchaseHistory.GetPurchaseHistory(userId);
+                    profileModel.PurchaseHistory = purchaseHistory;
                     return View(profileModel);
                 }
                 else
@@ -272,19 +275,19 @@ namespace KLTN_E.Controllers
 
             var khachHang = db.KhachHangs.FirstOrDefault(kh => kh.MaKh == userId);
 
-            if(khachHang == null)
+            if (khachHang == null)
             {
                 return NotFound();
             }
 
             string hashedOldPassword = model.OldPassword.ToMd5Hash(khachHang.RandomKey);
-            if(hashedOldPassword != khachHang.MatKhau)
+            if (hashedOldPassword != khachHang.MatKhau)
             {
                 ModelState.AddModelError("Error", "Old password is not correct.");
                 return View("Profile", model);
             }
 
-            if(model.NewPassword != model.ConfirmPassword)
+            if (model.NewPassword != model.ConfirmPassword)
             {
                 ModelState.AddModelError("Error", "New password and confirm password not match.");
                 return View("Profile", model);
@@ -340,10 +343,10 @@ namespace KLTN_E.Controllers
                 var callbackUrl = Url.Action("DatLaiMatKhau", "KhachHang", new { userId = khachHang.MaKh, token = khachHang.ResetToken }, protocol: HttpContext.Request.Scheme);
                 //var callbackUrl = Url.Action("DatLaiMatKhau", "KhachHang", new { userId = khachHang.MaKh, token = khachHang.ResetToken }, HttpContext.Request.Scheme);
 
-                await _myEmailSender.SendEmailAsync(khachHang.Email, "Đặt lại mật khẩu", $"Vui lòng đặt lại mật khẩu của bạn bằng cách <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                await _myEmailSender.SendEmailAsync(khachHang.Email, "Đặt lại mật khẩu", $"Please <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>click here</a> to reset your password.");
 
 
-                return RedirectToAction("DatLaiMatKhau");
+                return RedirectToAction("NotificationRSPassword");
             }
             else
             {
@@ -353,56 +356,73 @@ namespace KLTN_E.Controllers
         }
 
         [HttpGet]
+        public async Task<IActionResult> NotificationRSPassword()
+        {
+            return View();
+        }
+
+
+        [HttpGet]
         public IActionResult DatLaiMatKhau()
         {
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> DatLaiMatKhau(DatLaiMatKhauVM model)
+        public async Task<IActionResult> DatLaiMatKhau(ResetPasswordVM model)
         {
             var userId = TempData["UserId"]?.ToString();
             var token = TempData["Token"]?.ToString();
 
-            if (string.IsNullOrEmpty(userId) || string.IsNullOrEmpty(token))
+            model.UserId = userId;
+            model.Token = token;
+
+            if (string.IsNullOrEmpty(model.UserId) || string.IsNullOrEmpty(model.Token))
             {
-                ViewBag.ErrrorMessage = "Dữ liệu không hợp lệ, vui lòng thử lại";
-                return View("Error");
+                return RedirectToAction("Error", "Home");
             }
 
-            //Kiểm tra tính hợp lệ của token và userId
-            var khachHang = db.KhachHangs.SingleOrDefault(kh => kh.MaKh == userId && kh.ResetToken == token);
+            var khachHang = db.KhachHangs.SingleOrDefault(k => k.MaKh == model.UserId && k.ResetToken == model.Token);
 
             if (khachHang != null)
             {
-                string hashedOldPassword = model.OldPassword.ToMd5Hash(khachHang.RandomKey);
-                if (hashedOldPassword != khachHang.MatKhau)
-                {
-                    ModelState.AddModelError("Error", "old password is not correct.");
-                    return View();
-                }
-
-                if (model.NewPassword != model.ConfirmPassword)
-                {
-                    ModelState.AddModelError("Error", "New password and confirm password do not match.");
-                    return View();
-                }
-
-                // đặt lại mật khẩu và xóa token
-                //khachHang.MatKhau = model.NewPassword.ToMd5Hash(khachHang.RandomKey);
-
+                TempData["Message"] = "Changed password successful.";
                 khachHang.MatKhau = model.NewPassword.ToMd5Hash(khachHang.RandomKey);
                 khachHang.ResetToken = null;
                 db.SaveChanges();
 
-                return RedirectToAction("RSPasswordSuccess");
+                return RedirectToAction("DatLaiMatKhauThanhCong");
             }
             else
             {
-                ViewBag.ErrrorMessage = "UserName Not found.";
-                return View("Error");
+                return RedirectToAction("Error", "Home");
             }
         }
+
+
+        [HttpGet]
+        public async Task<IActionResult> DatLaiMatKhauThanhCong()
+        {
+            return View();
+        }
         #endregion
+
+
+       
+        #region PurchaseHistory
+        public async Task<IActionResult> ViewPurchaseHistory()
+        {
+            return View();
+        }
+
+        public async Task<IActionResult> PurchaseHistory(string maKhachHang)
+        {
+            var viewPurchase = _purchaseHistory.GetPurchaseHistory(maKhachHang);
+            ViewBag.PurchaseHistory = viewPurchase;
+            return View(viewPurchase);
+        }
+
+        #endregion
+
     }
 }
