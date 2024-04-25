@@ -1,4 +1,5 @@
-﻿@model KLTN_E.ViewModels.DatLaiMatKhauVM
+﻿@using PagedList.Mvc
+@model KLTN_E.ViewModels.DatLaiMatKhauVM
 
 @{
     ViewData["Title"] = "Profile";
@@ -148,6 +149,29 @@
                                     }
                                 </tbody>
                             </table>
+                        @*         <div class="product__pagination">
+                                    @if (Model.PurchaseHistory != null && Model.PurchaseHistory.Count > 0)
+                                    {
+                                        @for (int i = 1; i <= Model.PurchaseHistory.PageCount; i++)
+                                        {
+                                            <a href="@Url.Action("Profile", new { page = i, pageSize = Model.PurchaseHistory.PageSize })" class="@(i == Model.PurchaseHistory.PageNumber ? "active" : "")">
+                                                @i
+                                            </a>
+                                        }
+                                    }
+                                </div> *@
+                                <div class="product__pagination">
+                                    @if (Model.PurchaseHistory != null && Model.PurchaseHistory.Count > 0)
+                                    {
+                                        for (int i = 1; i <= Model.PurchaseHistory.PageCount; i++)
+                                        {
+                                            <a href="@Url.Action("Profile", new { page = i, pageSize = Model.PurchaseHistory.PageSize, previousPage = Model.PurchaseHistory.PageNumber })" class="@(i == Model.PurchaseHistory.PageNumber ? "active" : "")">
+                                                @i
+                                            </a>
+                                        }
+                                    }
+                                </div>
+
                             }
                             else
                             {
@@ -340,10 +364,29 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nunc arcu, digni
 </html>
 
 
-<script>
+@* <script>
     // JavaScript to control tab switching
     $('#myTab a').on('click', function (e) {
         e.preventDefault()
         $(this).tab('show')
     })
+</script> *@
+
+<script>
+    // JavaScript to control tab switching
+    $(document).ready(function () {
+        // Lưu trạng thái của tab hiện tại vào sessionStorage khi tab được chuyển
+        $('#myTab a').on('click', function (e) {
+            e.preventDefault();
+            var tabId = $(this).attr('id');
+            sessionStorage.setItem('activeTab', tabId);
+            $(this).tab('show');
+        });
+
+        // Khôi phục tab hiện tại từ sessionStorage khi trang được tải
+        var activeTab = sessionStorage.getItem('activeTab');
+        if (activeTab) {
+            $('#' + activeTab).tab('show');
+        }
+    });
 </script>

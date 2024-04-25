@@ -1909,6 +1909,10 @@
       "PackagePath": "staticwebassets\\Hinh\\HangHoa\\ba5d5616-37c9-43f2-a12b-e01e7ad89a93winter-8612635_640.jpg"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\086fcfe4-027b-4ccd-8c5c-a711f38ea202.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\086fcfe4-027b-4ccd-8c5c-a711f38ea202.jpg"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\1.jpg",
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\1.jpg"
     },
@@ -2041,8 +2045,16 @@
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\a.jpg"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\af187132-e131-4274-8838-ecb1f8c08c67.webp",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\af187132-e131-4274-8838-ecb1f8c08c67.webp"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\android_300200.png",
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\android_300200.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\c0c58907-f71e-480d-9795-a6af26434bba.png",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\c0c58907-f71e-480d-9795-a6af26434bba.png"
     },
     {
       "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\d4e4c5f8-8ffa-488d-9275-3b0494fe929e.jpg",
@@ -2051,6 +2063,10 @@
     {
       "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\d516a9ff-597a-44da-b76a-f88eb1edbabaa.jpg",
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\d516a9ff-597a-44da-b76a-f88eb1edbabaa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\db6a6794-c695-4b1e-8974-d5d3a463469b.jpeg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\db6a6794-c695-4b1e-8974-d5d3a463469b.jpeg"
     },
     {
       "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\dbbec5de-0f64-4d5c-aee9-4ed66274172dwinter-8612635_640.jpg",

@@ -17,103 +17,188 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 col-md-9  d-flex justify-content-between ">
-               
-                     <div  class="col-lg-5" style="padding:0px">
-                            <div class="product__details__pic__item">
-                                @* <a asp-action="Detail" asp-route-id="@Model.MaHH"> *@
-                                <img src="~/Hinh/HangHoa/@Model.Hinh" alt="@Model.TenHH">
-                                @* </a> *@
-                            </div>
-                       
-                      
+
+                    <div class="col-lg-5" style="padding:0px">
+                        <div class="product__details__pic__item">
+                            @* <a asp-action="Detail" asp-route-id="@Model.MaHH"> *@
+                            <img src="~/Hinh/HangHoa/@Model.Hinh" alt="@Model.TenHH">
+                            @* </a> *@
                         </div>
-               
-                     <div class="col-lg-6">
-                            <form asp-action="AddToCart" asp-controller="Cart" asp-route-id="@Model.MaHH">
-                                <div class="product__details__text text-left">
-                                    <h4>@Model.TenHH</h4>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <span> - 5 Reviews</span>
-                                    </div>
-                                    <h3>$@Model.DonGia <span>70.00</span></h3>
-                                    <p>
-                                        @Model.MoTa
-                                    </p>
-                                 
-                                    <div class="product__details__cart__option">
-                                        <div class="quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" value="1" name="quantity">
-                                            </div>
-                                        </div>
-                                        <button class="primary-btn">add to cart</button>
-                                    </div>
-                                    <div class="product__details__btns__option">
-                                        <a href="#"><i class="fa fa-heart"></i> add to wishlist</a>
-                                        <a href="#"><i class="fa fa-exchange"></i> Add To Compare</a>
-                                    </div>
-                                    <div class="product__details__last__option">
-                                        <h5><span>Guaranteed Safe Checkout</span></h5>
-                                        <img src="img/shop-details/details-payment.png" alt="">
-                                        <ul>
-                                            <li><span>SKU:</span> 3812912</li>
-                                            <li><span>Categories:</span> @Model.TenLoai</li>
-                                            <li><span>Tag:</span> Clothes, Skin, Body</li>
-                                        </ul>
-                                    </div>
+
+
+                    </div>
+
+                    <div class="col-lg-6">
+                        <form asp-action="AddToCart" asp-controller="Cart" asp-route-id="@Model.MaHH">
+                            <div class="product__details__text text-left">
+                                <h4>@Model.TenHH</h4>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <span> - 5 Reviews</span>
                                 </div>
-                            </form>
-                        </div>
-                   
+                                <h3>$@Model.DonGia <span>70.00</span></h3>
+                                <p>
+                                    @Model.MoTa
+                                </p>
+
+                                <div class="product__details__cart__option">
+                                    <div class="quantity">
+                                        <div class="pro-qty">
+                                            <input type="text" value="1" name="quantity">
+                                        </div>
+                                    </div>
+                                    <button class="primary-btn">add to cart</button>
+                                </div>
+                                <div class="product__details__btns__option">
+                                    <a href="#"><i class="fa fa-heart"></i> add to wishlist</a>
+                                    <a href="#"><i class="fa fa-exchange"></i> Add To Compare</a>
+                                </div>
+                                <div class="product__details__last__option">
+                                    <h5><span>Guaranteed Safe Checkout</span></h5>
+                                    <img src="img/shop-details/details-payment.png" alt="">
+                                    <ul>
+                                        <li><span>SKU:</span> @Model.MaHH</li>
+                                        <li><span>Categories:</span> @Model.TenLoai</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
-                    
+
                 <div>
                 </div>
 
             </div>
         </div>
     </div>
-    <div class="product__details__content">
-        <div class="container">
-            
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="product__details__tab">
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#tabs-5"
-                                   role="tab">Description</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#tabs-6" role="tab">
-                                    Customer
-                                    Previews(5)
-                                </a>
-                            </li>
+    <!-- Form thêm comment mới -->
+    @if (User.Identity.IsAuthenticated)
+    {
+        <form asp-action="AddComment" asp-controller="Comment" method="post">
+            <input type="hidden" name="productId" value="@Model.MaHH" />
+            <textarea name="content" rows="2" cols="30"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    }
+    else
+    {
+        <p>Please <a asp-action="DangNhap" asp-controller="KhachHang">log in</a> to leave a comment.</p>
+    }
 
-                        </ul>
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="tabs-5" role="tabpanel">
-                                <div class="product__details__tab__content">
-                                    <p class="note">
-                                        @Model.ChiTiet
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+    @foreach (var comment in Model.Comments)
+    {
+        <div>
+            <small>Posted by: @comment.Name - @comment.CreatedDate.ToShortDateString()</small>
+            <p>@comment.Content</p>
+        </div>
+    }
 
-
-                    </div>
-                </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="product__pagination">
+                @for (int i = 1; i <= Model.TotalPages; i++)
+                {
+                    if (i == Model.CurrentPage)
+                    {
+                        <span>@i</span>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Detail", new { id = Model.MaHH, page = i, pageSize = Model.PageSize })">@i</a>
+                    }
+                }
             </div>
         </div>
     </div>
+
+
+
+    @*   <div class="row">
+    <div class="col-lg-12">
+    <div class="product__details__tab">
+    <ul class="nav nav-tabs" role="tablist">
+    <!-- Các tab khác nếu có -->
+    <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#tabs-7" role="tab">
+    Comments (@Model.Comments.Count)
+    </a>
+    </li>
+    </ul>
+    <div class="tab-content">
+    <!-- Các tab khác nếu có -->
+    <div class="tab-pane active" id="tabs-7" role="tabpanel">
+    <div class="product__details__tab__content">
+    <!-- Form để người dùng thêm comment -->
+    <form asp-action="AddComment" asp-controller="Comment" method="post">
+    <input type="hidden" name="productId" value="@Model.MaHH" />
+    <textarea class="form-control" name="content" rows="3" required></textarea>
+    <button type="submit" class="btn btn-primary mt-2">Add Comment</button>
+    </form>
+
+    <!-- Danh sách các comment -->
+    @if (Model.Comments.Any())
+    {
+    <ul class="list-unstyled mt-4">
+    @foreach (var comment in Model.Comments)
+    {
+    <li>
+    <strong>@comment.User.HoTen</strong> - @comment.CreatedDate.ToShortDateString():
+    <p>@comment.Content</p>
+    </li>
+    }
+    </ul>
+    }
+    else
+    {
+    <p>There are no comments yet.</p>
+    }
     </div>
     </div>
+    </div>
+    </div>
+    </div>
+    </div> *@
+
+    @* <div class="product__details__content">
+    <div class="container">
+
+    <div class="row">
+    <div class="col-lg-12">
+    <div class="product__details__tab">
+    <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#tabs-5"
+    role="tab">Description</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#tabs-6" role="tab">
+    Customer
+    Previews(5)
+    </a>
+    </li>
+
+    </ul>
+    <div class="tab-content">
+    <div class="tab-pane active" id="tabs-5" role="tabpanel">
+    <div class="product__details__tab__content">
+    <p class="note">
+    @Model.ChiTiet
+    </p>
+    </div>
+    </div>
+    </div>
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div> *@
 </section>
 <!-- Shop Details Section End -->

@@ -2116,3 +2116,5 @@ C:\Users\ADMIN\Documents\KLTN-10\Khoaluantotnghiep\obj\Debug\net8.0\refint\KLTN-
 C:\Users\ADMIN\Documents\KLTN-10\Khoaluantotnghiep\obj\Debug\net8.0\KLTN-E.pdb
 C:\Users\ADMIN\Documents\KLTN-10\Khoaluantotnghiep\obj\Debug\net8.0\KLTN-E.genruntimeconfig.cache
 C:\Users\ADMIN\Documents\KLTN-10\Khoaluantotnghiep\obj\Debug\net8.0\ref\KLTN-E.dll
+C:\Users\ADMIN\Documents\KLTN-10\Khoaluantotnghiep\bin\Debug\net8.0\PagedList.dll
+C:\Users\ADMIN\Documents\KLTN-10\Khoaluantotnghiep\bin\Debug\net8.0\PagedList.Mvc.dll

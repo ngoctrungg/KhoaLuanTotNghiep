@@ -1,4 +1,6 @@
-﻿namespace KLTN_E.ViewModels
+﻿using KLTN_E.Data;
+
+namespace KLTN_E.ViewModels
 {
     public class HangHoaVM
     {
@@ -19,5 +21,9 @@
         public int DiemDanhGia { get; set; }
         public int SoLuongTon { get; set; }
         public string ChiTiet { get; set; }
+        public List<Comment>? Comments { get; set; }
+        public int TotalPages { get; set; }
+        public int CurrentPage { get; set; }
+        public int PageSize { get; set; }
     }
 }

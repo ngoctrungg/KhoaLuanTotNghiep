@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fTuX1npgYno53ZEjy1w5H97+wVWaITNafWUnnEFaG7U=",
+  "Hash": "VMy91+cYSZOPCm8BEE/iBAregwVdCWl/dRdTkYkfKrU=",
   "Source": "KLTN-E",
   "BasePath": "_content/KLTN-E",
   "Mode": "Default",
@@ -13051,6 +13051,25 @@
       "OriginalItemSpec": "wwwroot\\Hinh\\icon\\Zoom.png"
     },
     {
+      "Identity": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\086fcfe4-027b-4ccd-8c5c-a711f38ea202.jpg",
+      "SourceId": "KLTN-E",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\",
+      "BasePath": "_content/KLTN-E",
+      "RelativePath": "Hinh/KhachHang/086fcfe4-027b-4ccd-8c5c-a711f38ea202.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Hinh\\KhachHang\\086fcfe4-027b-4ccd-8c5c-a711f38ea202.jpg"
+    },
+    {
       "Identity": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\1.jpg",
       "SourceId": "KLTN-E",
       "SourceType": "Discovered",
@@ -13621,6 +13640,25 @@
       "OriginalItemSpec": "wwwroot\\Hinh\\KhachHang\\a.jpg"
     },
     {
+      "Identity": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\af187132-e131-4274-8838-ecb1f8c08c67.webp",
+      "SourceId": "KLTN-E",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\",
+      "BasePath": "_content/KLTN-E",
+      "RelativePath": "Hinh/KhachHang/af187132-e131-4274-8838-ecb1f8c08c67.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Hinh\\KhachHang\\af187132-e131-4274-8838-ecb1f8c08c67.webp"
+    },
+    {
       "Identity": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\android_300200.png",
       "SourceId": "KLTN-E",
       "SourceType": "Discovered",
@@ -13659,6 +13697,25 @@
       "OriginalItemSpec": "wwwroot\\Hinh\\KhachHang\\Author.jpg"
     },
     {
+      "Identity": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\c0c58907-f71e-480d-9795-a6af26434bba.png",
+      "SourceId": "KLTN-E",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\",
+      "BasePath": "_content/KLTN-E",
+      "RelativePath": "Hinh/KhachHang/c0c58907-f71e-480d-9795-a6af26434bba.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Hinh\\KhachHang\\c0c58907-f71e-480d-9795-a6af26434bba.png"
+    },
+    {
       "Identity": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\d4e4c5f8-8ffa-488d-9275-3b0494fe929e.jpg",
       "SourceId": "KLTN-E",
       "SourceType": "Discovered",
@@ -13695,6 +13752,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Hinh\\KhachHang\\d516a9ff-597a-44da-b76a-f88eb1edbabaa.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\db6a6794-c695-4b1e-8974-d5d3a463469b.jpeg",
+      "SourceId": "KLTN-E",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\",
+      "BasePath": "_content/KLTN-E",
+      "RelativePath": "Hinh/KhachHang/db6a6794-c695-4b1e-8974-d5d3a463469b.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Hinh\\KhachHang\\db6a6794-c695-4b1e-8974-d5d3a463469b.jpeg"
     },
     {
       "Identity": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\dbbec5de-0f64-4d5c-aee9-4ed66274172dwinter-8612635_640.jpg",

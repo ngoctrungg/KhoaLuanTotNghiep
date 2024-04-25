@@ -1,4 +1,5 @@
-﻿@model IEnumerable<KLTN_E.ViewModels.CartItem>
+﻿@* @model IEnumerable<KLTN_E.ViewModels.CartItem> *@
+@model PagedList<KLTN_E.ViewModels.CartItem>
 @{
     ViewData["Title"] = "Cart";
 }
@@ -37,7 +38,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (var item in Model)
+                            @foreach (var item in Model.Items)
                             {
 
                                 <tr>
@@ -75,6 +76,20 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="product__pagination">
+                    @if (Model.TotalPages > 1)
+                    {
+                        <ul>
+                            @for (int i = 1; i <= Model.TotalPages; i++)
+                            {
+                                <li class="@(i == Model.CurrentPage ? "active" : "")">
+                                    <a href="@Url.Action("Index", new { page = i, pageSize = Model.PageSize })" >@i</a>
+                                </li>
+                            }
+                        </ul>
+                    }
+                </div>
+
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="continue__btn">
@@ -100,7 +115,7 @@
                     <h6>Cart total</h6>
                     <ul>
                         <li>Subtotal <span>$0</span></li>
-                        <li>Total <span>$@Model.Sum(p => p.ThanhTien)</span></li>
+                        <li>Total <span>$@Model.Items.Sum(p => p.ThanhTien)</span></li>
                     </ul>
                     <a asp-action="Checkout" asp-controller="Cart" class="primary-btn">Proceed to checkout</a>
                 </div>

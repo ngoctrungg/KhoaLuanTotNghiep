@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using PagedList;
+using System.ComponentModel.DataAnnotations;
 
 namespace KLTN_E.ViewModels
 {
@@ -18,7 +19,7 @@ namespace KLTN_E.ViewModels
         public string FullName { get; set; }
         public string Email { get; set; }
         public string ProfileImage { get; set; }
-        public List<PurchaseHistoryVM>? PurchaseHistory { get; set;}
+        public IPagedList<PurchaseHistoryVM>? PurchaseHistory { get; set;}
 
 
         public DateTime NgayDat { get; set; }

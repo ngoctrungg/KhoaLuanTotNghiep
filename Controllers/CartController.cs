@@ -5,6 +5,7 @@ using KLTN_E.Helpers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using KLTN_E.Services;
+using KLTN_E.Models;
 
 namespace KLTN_E.Controllers
 {
@@ -20,9 +21,29 @@ namespace KLTN_E.Controllers
             db = context;
             _vnpayService = vnPayService;
         }
-        public IActionResult Index()
+        //public IActionResult Index()
+        //{
+        //    return View(Cart);
+        //}
+        public IActionResult Index(int page = 1, int pageSize = 5)
         {
-            return View(Cart);
+            // Lấy danh sách sản phẩm trong giỏ hàng
+            var cartItems = Cart;
+
+            // Tính toán tổng số trang
+            var totalItems = cartItems.Count();
+            var totalPages = (int)Math.Ceiling((double)totalItems / pageSize);
+
+            // Đảm bảo page không nhỏ hơn 1 và không lớn hơn totalPages
+            page = Math.Max(1, Math.Min(page, totalPages));
+
+            // Lọc ra trang hiện tại
+            var currentPageItems = cartItems.Skip((page - 1) * pageSize).Take(pageSize).ToList();
+
+            // Tạo đối tượng PagedList
+            var pagedList = new PagedList<CartItem>(currentPageItems, totalItems, page, pageSize, null);
+
+            return View(pagedList);
         }
 
         public List<CartItem> Cart => HttpContext.Session.Get<List<CartItem>>(MySettings.CART_KEY) ?? new List<CartItem>();

@@ -1,7 +1,8 @@
-﻿@model IEnumerable<KLTN_E.ViewModels.HangHoaVM>
+﻿@* @model IEnumerable<KLTN_E.ViewModels.HangHoaVM> *@
+@model KLTN_E.Models.PagedList<KLTN_E.ViewModels.HangHoaVM>
 
 <div class="row">
-    @foreach (var item in Model)
+    @foreach (var item in Model.Items)
     {
         <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="product__item sale">
