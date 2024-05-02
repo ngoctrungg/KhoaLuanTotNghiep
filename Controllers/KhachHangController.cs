@@ -243,7 +243,7 @@ namespace KLTN_E.Controllers
                         UserName = khachHang.MaKh,
                         Email = khachHang.Email,
                         FullName = khachHang.HoTen,
-                        ProfileImage = khachHang.Hinh
+                        ProfileImage = khachHang.Hinh ?? ""
                     };
 
                     // Truy vấn dữ liệu mua hàng theo trang và kích thước trang
@@ -275,53 +275,7 @@ namespace KLTN_E.Controllers
         }
 
 
-        //public IActionResult Profile(int page = 1, int pageSize = 10)
-        //{
-        //    var userIdClaim = HttpContext.User.Claims.FirstOrDefault(c => c.Type == MySettings.CLAIM_CUSTOMER_ID);
-        //    if (userIdClaim != null)
-        //    {
-        //        var userId = userIdClaim.Value;
-        //        var khachHang = db.KhachHangs.Find(userId);
-
-        //        if (khachHang != null)
-        //        {
-        //            var profileModel = new DatLaiMatKhauVM
-        //            {
-        //                UserName = khachHang.MaKh,
-        //                Email = khachHang.Email,
-        //                FullName = khachHang.HoTen,
-        //                ProfileImage = khachHang.Hinh
-        //            };
-
-        //            // Truy vấn dữ liệu mua hàng theo trang và kích thước trang
-        //            var purchaseHistory = _purchaseHistory.GetPurchaseHistory(userId)
-        //                .OrderByDescending(ph => ph.NgayDat) // Sắp xếp theo ngày mua giảm dần
-        //                .Skip((page - 1) * pageSize) // Bỏ qua các mục trên trang trước
-        //                .Take(pageSize) // Chọn số lượng mục cho trang hiện tại
-        //                .ToList();
-
-        //            // Tính toán tổng số mục mua hàng và tổng số trang
-        //            var totalPurchaseItems = _purchaseHistory.GetPurchaseHistory(userId).Count(); // Số lượng mục mua hàng tổng cộng
-        //            var totalPages = (int)Math.Ceiling((double)totalPurchaseItems / pageSize); // Tính tổng số trang
-
-        //            // Tạo đối tượng PagedList để lưu trữ dữ liệu phân trang
-        //            var pagedList = new PagedList<PurchaseHistoryVM>(purchaseHistory, totalPurchaseItems, page, pageSize, null);
-
-        //            // Gán danh sách mua hàng đã phân trang vào model
-        //            profileModel.PurchaseHistory = (PagedList.IPagedList<PurchaseHistoryVM>?)pagedList;
-
-        //            return View(profileModel);
-        //        }
-        //        else
-        //        {
-        //            TempData["Message"] = "Customer not found";
-        //            return View();
-        //        }
-        //    }
-        //    return View();
-        //}
-
-
+     
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> UpdateProfile(DatLaiMatKhauVM model, IFormFile newImage)

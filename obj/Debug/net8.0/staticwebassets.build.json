@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VMy91+cYSZOPCm8BEE/iBAregwVdCWl/dRdTkYkfKrU=",
+  "Hash": "Km5IBnevdwxVMolcArfgEGnGIjInxcsprgAj7LM4VhU=",
   "Source": "KLTN-E",
   "BasePath": "_content/KLTN-E",
   "Mode": "Default",
@@ -13317,6 +13317,25 @@
       "OriginalItemSpec": "wwwroot\\Hinh\\KhachHang\\24.jpg"
     },
     {
+      "Identity": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\2e2552f7-45dc-40f7-a79b-dee43c2b9895.jpeg",
+      "SourceId": "KLTN-E",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\",
+      "BasePath": "_content/KLTN-E",
+      "RelativePath": "Hinh/KhachHang/2e2552f7-45dc-40f7-a79b-dee43c2b9895.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Hinh\\KhachHang\\2e2552f7-45dc-40f7-a79b-dee43c2b9895.jpeg"
+    },
+    {
       "Identity": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\3.jpg",
       "SourceId": "KLTN-E",
       "SourceType": "Discovered",
@@ -13524,6 +13543,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Hinh\\KhachHang\\64ad7037-8619-4cd9-9d20-46e6451e3ce7hoa bi ngan.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\668f3bbb-9a3e-4303-b13f-8dcc7836fe9d.png",
+      "SourceId": "KLTN-E",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\",
+      "BasePath": "_content/KLTN-E",
+      "RelativePath": "Hinh/KhachHang/668f3bbb-9a3e-4303-b13f-8dcc7836fe9d.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Hinh\\KhachHang\\668f3bbb-9a3e-4303-b13f-8dcc7836fe9d.png"
     },
     {
       "Identity": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\7.jpg",

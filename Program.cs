@@ -2,10 +2,14 @@
 using KLTN_E.Helpers;
 using KLTN_E.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -29,14 +33,40 @@ builder.Services.AddSession(options =>
 
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
+//builder.Services.AddAuthentication(options =>
+//{
+//    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+//    options.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
+//})
+//    .AddCookie()
+//    .AddGoogle(GoogleDefaults.AuthenticationScheme, options =>
+//    {
+//        options.ClientId = builder.Configuration.GetSection("GoogleKeys:ClientId").Value;
+//        options.ClientSecret = builder.Configuration.GetSection("GoogleKeys:ClientSecret").Value;
+//    });
 
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+//builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+//{
+//    options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
+//    options.LoginPath = "/KhachHang/DangNhap";
+//    options.AccessDeniedPath = "/AccessDenied";
+//});
+builder.Services.AddAuthentication(options =>
 {
-    options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
-    options.LoginPath = "/KhachHang/DangNhap";
-    options.AccessDeniedPath = "/AccessDenied";
-});
-
+    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
+})
+    .AddCookie(options =>
+    {
+        options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
+        options.LoginPath = "/KhachHang/DangNhap";
+        options.AccessDeniedPath = "/AccessDenied";
+    })
+    .AddGoogle(GoogleDefaults.AuthenticationScheme, options =>
+    {
+        options.ClientId = builder.Configuration.GetSection("GoogleKeys:ClientId").Value;
+        options.ClientSecret = builder.Configuration.GetSection("GoogleKeys:ClientSecret").Value;
+    });
 
 builder.Services.AddSingleton(x => new PaypalClient(
     builder.Configuration["PaypalOptions:AppId"],
