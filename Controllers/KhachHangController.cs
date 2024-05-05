@@ -193,40 +193,6 @@ namespace KLTN_E.Controllers
         }
         #endregion
 
-
-        //[Authorize]
-        //public IActionResult Profile()
-        //{
-        //    var userIdClaim = HttpContext.User.Claims.FirstOrDefault(c => c.Type == MySettings.CLAIM_CUSTOMER_ID);
-        //    if (userIdClaim != null)
-        //    {
-        //        var userId = userIdClaim.Value;
-        //        var khachHang = db.KhachHangs.Find(userId);
-
-        //        if (khachHang != null)
-        //        {
-
-        //            var profileModel = new DatLaiMatKhauVM
-        //            {
-        //                UserName = khachHang.MaKh,
-        //                Email = khachHang.Email,
-        //                FullName = khachHang.HoTen,
-        //                ProfileImage = khachHang.Hinh
-
-        //            };
-
-        //            var purchaseHistory = _purchaseHistory.GetPurchaseHistory(userId);
-        //            profileModel.PurchaseHistory = purchaseHistory;
-        //            return View(profileModel);
-        //        }
-        //        else
-        //        {
-        //            TempData["Message"] = "Customer not found";
-        //            return View();
-        //        }
-        //    }
-        //    return View();
-        //}
         [Authorize]
         public IActionResult Profile(int page = 1, int pageSize = 5)
         {

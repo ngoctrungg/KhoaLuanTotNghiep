@@ -9,6 +9,8 @@
       "KLTN-E/1.0.0": {
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "Facebook": "7.0.6",
+          "Microsoft.AspNetCore.Authentication.Facebook": "8.0.4",
           "Microsoft.AspNetCore.Authentication.Google": "8.0.4",
           "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": "8.0.2",
           "Microsoft.EntityFrameworkCore": "8.0.2",
@@ -16,7 +18,8 @@
           "Microsoft.EntityFrameworkCore.Tools": "8.0.2",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.1",
           "PagedList": "1.17.0",
-          "PagedList.Mvc": "4.5.0"
+          "PagedList.Mvc": "4.5.0",
+          "RestSharp": "110.2.0"
         },
         "runtime": {
           "KLTN-E.dll": {}
@@ -76,6 +79,14 @@
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.10.3.0",
             "fileVersion": "1.1000.323.51804"
+          }
+        }
+      },
+      "Facebook/7.0.6": {
+        "runtime": {
+          "lib/net45/Facebook.dll": {
+            "assemblyVersion": "6.0.10.0",
+            "fileVersion": "7.0.6.0"
           }
         }
       },
@@ -616,6 +627,14 @@
         "resources": {
           "lib/net6.0/zh-Hant/Humanizer.resources.dll": {
             "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.Facebook/8.0.4": {
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Authentication.Facebook.dll": {
+            "assemblyVersion": "8.0.4.0",
+            "fileVersion": "8.0.424.17014"
           }
         }
       },
@@ -1751,6 +1770,17 @@
           }
         }
       },
+      "RestSharp/110.2.0": {
+        "dependencies": {
+          "System.Text.Json": "8.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/RestSharp.dll": {
+            "assemblyVersion": "110.2.0.0",
+            "fileVersion": "110.2.0.0"
+          }
+        }
+      },
       "System.CodeDom/5.0.0": {
         "runtime": {
           "lib/netstandard2.0/System.CodeDom.dll": {
@@ -2056,6 +2086,13 @@
       "sha512": "sha512-l1Xm2MWOF2Mzcwuarlw8kWQXLZk3UeB55aQXVyjj23aBfDwOZ3gu5GP2kJ6KlmZeZv2TCzw7x4L3V36iNr3gww==",
       "path": "azure.identity/1.10.3",
       "hashPath": "azure.identity.1.10.3.nupkg.sha512"
+    },
+    "Facebook/7.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-D9nlWZb88S4U+eh1pUDQ+AkSkiht6m0eFpxKFddZnQSSFTnncvDMBEnNODy4fOIOjWQIiOXRVbuY04jCPyWqkw==",
+      "path": "facebook/7.0.6",
+      "hashPath": "facebook.7.0.6.nupkg.sha512"
     },
     "Humanizer/2.14.1": {
       "type": "package",
@@ -2406,6 +2443,13 @@
       "sha512": "sha512-VIXB7HCUC34OoaGnO3HJVtSv2/wljPhjV7eKH4+TFPgQdJj2lvHNKY41Dtg0Bphu7X5UaXFR4zrYYyo+GNOjbA==",
       "path": "humanizer.core.zh-hant/2.14.1",
       "hashPath": "humanizer.core.zh-hant.2.14.1.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.Facebook/8.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AP/6PsDX9fy0Y/l1AxGF4F7sG0nOJsYCysiuz9I+4MhvLVwMEMhYBxH9BvfderCaR+MZwd0zGV22flmfjNhJeA==",
+      "path": "microsoft.aspnetcore.authentication.facebook/8.0.4",
+      "hashPath": "microsoft.aspnetcore.authentication.facebook.8.0.4.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.Google/8.0.4": {
       "type": "package",
@@ -2966,6 +3010,13 @@
       "sha512": "sha512-D0M4qW2g4a9cwG8ozIKUnJheCrm5GpFTceqUl63AXWaAVnTgk+TysZYUOGMsBRuzid8aF+/E8b0bXM6+90jiEw==",
       "path": "pagedlist.mvc/4.5.0",
       "hashPath": "pagedlist.mvc.4.5.0.nupkg.sha512"
+    },
+    "RestSharp/110.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FXGw0IMcqY7yO/hzS9QrD3iNswNgb9UxJnxWmfOxmGs4kRlZWqdtBoGPLuhlbgsDzX1RFo4WKui8TGGKXWKalw==",
+      "path": "restsharp/110.2.0",
+      "hashPath": "restsharp.110.2.0.nupkg.sha512"
     },
     "System.CodeDom/5.0.0": {
       "type": "package",

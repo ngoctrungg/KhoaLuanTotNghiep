@@ -44,6 +44,14 @@
               "target": "Package",
               "version": "[12.0.1, )"
             },
+            "Facebook": {
+              "target": "Package",
+              "version": "[7.0.6, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Facebook": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
             "Microsoft.AspNetCore.Authentication.Google": {
               "target": "Package",
               "version": "[8.0.4, )"
@@ -77,6 +85,10 @@
             "PagedList.Mvc": {
               "target": "Package",
               "version": "[4.5.0, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[110.2.0, )"
             }
           },
           "imports": [

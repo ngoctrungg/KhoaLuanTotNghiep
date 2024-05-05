@@ -2,6 +2,7 @@
 using KLTN_E.Helpers;
 using KLTN_E.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Facebook;
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
@@ -66,6 +67,11 @@ builder.Services.AddAuthentication(options =>
     {
         options.ClientId = builder.Configuration.GetSection("GoogleKeys:ClientId").Value;
         options.ClientSecret = builder.Configuration.GetSection("GoogleKeys:ClientSecret").Value;
+    })
+    .AddFacebook(FacebookDefaults.AuthenticationScheme,options =>
+    {
+        options.AppId = builder.Configuration.GetSection("FacebookKeys:AppId").Value;
+        options.ClientSecret = builder.Configuration.GetSection("FacebookKeys:AppSecret").Value;
     });
 
 builder.Services.AddSingleton(x => new PaypalClient(
@@ -83,7 +89,7 @@ builder.Services.AddScoped<IPurchaseHistoryService, PurchaseHistoryService>();
 
 
 var app = builder.Build();
-
+app.UseStaticFiles();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -93,7 +99,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles();
+
 
 app.UseRouting();
 

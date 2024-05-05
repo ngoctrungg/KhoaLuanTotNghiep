@@ -5,22 +5,6 @@ namespace KLTN_E.Helpers
 {
     public class MyUtil
     {
-        //public static string UploadHinh(IFormFile Hinh, string folder)
-        //{
-        //    try
-        //    {
-        //        var fullPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Hinh", folder, Hinh.FileName);
-        //        using (var myfile = new FileStream(fullPath, FileMode.CreateNew))
-        //        {
-        //            Hinh.CopyTo(myfile);
-        //        }
-        //        return Hinh.FileName;
-        //    }catch(Exception ex) 
-        //    {
-        //        return string.Empty;
-        //    }
-        //}
-
         public static string UploadHinh(IFormFile Hinh, string folder)
         {
             try
@@ -42,6 +26,34 @@ namespace KLTN_E.Helpers
                 return string.Empty;
             }
         }
+
+        public async static Task<string> UploadHinhFromUrl(string imageUrl, string folder)
+        {
+            try
+            {
+                // Tạo một đối tượng HttpClient để tải ảnh từ URL
+                using (var client = new HttpClient())
+                {
+                    // Tải ảnh từ URL
+                    var imageData = await client.GetByteArrayAsync(imageUrl);
+
+                    // Tạo một đối tượng IFormFile từ dữ liệu ảnh
+                    var imageStream = new MemoryStream(imageData);
+                    IFormFile imageFile = new FormFile(imageStream, 0, imageData.Length, "name", "filename.jpg");
+
+                    // Gọi phương thức UploadHinh để lưu ảnh và nhận tên file duy nhất
+                    var uniqueFileName = UploadHinh(imageFile, folder);
+
+                    return uniqueFileName;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return string.Empty;
+            }
+        }
+
 
         public static string GenerateRandomKey(int length = 5)
         {
