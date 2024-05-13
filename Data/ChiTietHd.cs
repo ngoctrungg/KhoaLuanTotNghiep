@@ -19,5 +19,6 @@ public partial class ChiTietHd
 
     public virtual HoaDon MaHdNavigation { get; set; } = null!;
 
-    public virtual HangHoa MaHhNavigation { get; set; } = null!;
+    //public virtual HangHoa MaHhNavigation { get; set; } = null!;
+    public virtual HangHoa? MaHhNavigation { get; set; }
 }

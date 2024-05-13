@@ -209,6 +209,8 @@ namespace KLTN_E.Controllers
                         UserName = khachHang.MaKh,
                         Email = khachHang.Email,
                         FullName = khachHang.HoTen,
+                        Address = khachHang.DiaChi ?? "",
+                        PhoneNumber = khachHang.DienThoai ?? "",
                         ProfileImage = khachHang.Hinh ?? ""
                     };
 
@@ -258,6 +260,8 @@ namespace KLTN_E.Controllers
                 {
                     khachHang.HoTen = model.FullName;
                     khachHang.Email = model.Email;
+                    khachHang.DiaChi = model.Address;
+                    khachHang.DienThoai = model.PhoneNumber;
 
                     if (newImage != null && newImage.Length > 0)
                     {

@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using KLTN_E.Services;
 using KLTN_E.Models;
+using Microsoft.EntityFrameworkCore;
+using Azure;
 
 namespace KLTN_E.Controllers
 {
@@ -121,7 +123,7 @@ namespace KLTN_E.Controllers
                     return Redirect(_vnpayService.CreatePaymentUrl(HttpContext, vnPayModel));
                 }
 
-
+                var NgayGiaoMin = DateTime.Now.AddDays(2);
                 var customerID = HttpContext.User.Claims.SingleOrDefault(p => p.Type == MySettings.CLAIM_CUSTOMER_ID).Value;
                 var khachHang = new KhachHang();
                 if (model.GiongKhachHang)
@@ -138,7 +140,8 @@ namespace KLTN_E.Controllers
                     CachThanhToan = "COD",
                     CachVanChuyen = "GiaoHangNhanh",
                     MaTrangThai = 0,
-                    GhiChu = model.GhiChu
+                    GhiChu = model.GhiChu,
+                    NgayGiao = NgayGiaoMin
                 };
                 db.Database.BeginTransaction();
                 try
@@ -215,11 +218,15 @@ namespace KLTN_E.Controllers
                 {
                     db.Database.BeginTransaction();
                     var response = await _paypalClient.CaptureOrder(orderID);
-
                     // lưu vào database
+                    var NgayGiaoMin = DateTime.Now.AddDays(2);
                     var customerID = HttpContext.User.Claims.SingleOrDefault(p => p.Type == MySettings.CLAIM_CUSTOMER_ID).Value;
                     var khachHang = new KhachHang();
                     khachHang = db.KhachHangs.SingleOrDefault(p => p.MaKh == customerID);
+                    if (model.GiongKhachHang)
+                    {
+                        khachHang = db.KhachHangs.SingleOrDefault(p => p.MaKh == customerID);
+                    }
                     var hoadon = new HoaDon
                     {
                         MaKh = customerID,
@@ -230,7 +237,8 @@ namespace KLTN_E.Controllers
                         CachThanhToan = "Paypal",
                         CachVanChuyen = "GiaoHangNhanh",
                         MaTrangThai = 0,
-                        GhiChu = model.GhiChu
+                        GhiChu = model.GhiChu,
+                        NgayGiao = NgayGiaoMin
                     };
                     try
                     {
@@ -303,7 +311,7 @@ namespace KLTN_E.Controllers
             {
                 var customerID = HttpContext.User.Claims.SingleOrDefault(p => p.Type == MySettings.CLAIM_CUSTOMER_ID).Value;
                 var khachHang = new KhachHang();
-
+                var NgayGiaoMin = DateTime.Now.AddDays(2);
                 khachHang = db.KhachHangs.SingleOrDefault(p => p.MaKh == customerID);
 
                 var hoadon = new HoaDon
@@ -316,7 +324,8 @@ namespace KLTN_E.Controllers
                     CachThanhToan = "VNPAY",
                     CachVanChuyen = "GiaoHangNhanh",
                     MaTrangThai = 0,
-                    GhiChu = model.GhiChu
+                    GhiChu = model.GhiChu,
+                    NgayGiao = NgayGiaoMin
                 };
                 db.Database.BeginTransaction();
                 try
@@ -354,8 +363,20 @@ namespace KLTN_E.Controllers
                 TempData["Message"] = $"Vnpay payment successful.";
                 return RedirectToAction("Success");
             }
+        }
 
-
+        public async Task<IActionResult> CancelOrder(int maHd)
+        {
+            var hoaDon = await db.HoaDons.FirstOrDefaultAsync(p => p.MaHd == maHd);
+            if (hoaDon == null)
+            {
+                TempData["Message"] = $"Order not found.";
+                return RedirectToAction("Profile", "KhachHang");
+            }
+            hoaDon.MaTrangThai = -1;
+            await db.SaveChangesAsync();
+            TempData["Message"] = $"Order {maHd} has been cancelled.";
+            return RedirectToAction("Profile", "KhachHang");
         }
     }
 }

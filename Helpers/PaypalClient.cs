@@ -1,4 +1,5 @@
-﻿using System.Net.Http.Headers;
+﻿using KLTN_E.Data;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 
@@ -232,5 +233,6 @@ namespace KLTN_E.Helpers
     {
         public Paypal paypal { get; set; }
     }
+
 
 }

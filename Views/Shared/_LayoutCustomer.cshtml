@@ -116,12 +116,12 @@
                                             }
                                             else
                                             {
-                                                <li><a asp-controller="KhachHang" asp-action="DangKy">Đăng ký</a></li>
+                                                <li><a asp-controller="KhachHang" asp-action="DangKy">Register</a></li>
                                                 <li>
-                                                    <a asp-controller="KhachHang" asp-action="DangNhap">Đăng nhập</a>
+                                                    <a asp-controller="KhachHang" asp-action="DangNhap">Login</a>
                                                 </li>
                                                 <li>
-                                                    <a asp-controller="KhachHang" asp-action="QuenMatKhau">Quên mật khẩu</a>
+                                                    <a asp-controller="KhachHang" asp-action="QuenMatKhau">Forgot password?</a>
                                                 </li>
                                             }
                                         </ul>
@@ -141,6 +141,12 @@
         <!-- Header Section End -->
         @RenderBody()
 
+
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger intent="WELCOME"
+                      chat-title="KLTN"
+                      agent-id="b2f82887-5f0f-4469-9b8c-ba2ee02779c4"
+                      language-code="en"></df-messenger>
 
         @await Html.PartialAsync("_Footer")
     </div>

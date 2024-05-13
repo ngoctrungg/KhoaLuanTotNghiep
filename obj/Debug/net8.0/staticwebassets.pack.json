@@ -1585,10 +1585,6 @@
       "PackagePath": "staticwebassets\\Hinh\\HangHoa\\31EPGSm2s1L._SL500_AA300_.jpg"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\HangHoa\\31LAnW1JFqL._SL500_AA300_.jpg",
-      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\31LAnW1JFqL._SL500_AA300_.jpg"
-    },
-    {
       "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\HangHoa\\31TB6tC6BOL._SL500_AA300_.jpg",
       "PackagePath": "staticwebassets\\Hinh\\HangHoa\\31TB6tC6BOL._SL500_AA300_.jpg"
     },
@@ -1659,10 +1655,6 @@
     {
       "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\HangHoa\\41BiMx1FKyL._SL500_AA300_.jpg",
       "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41BiMx1FKyL._SL500_AA300_.jpg"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\HangHoa\\41CIcYRxJKL._SL500_AA300_.jpg",
-      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\41CIcYRxJKL._SL500_AA300_.jpg"
     },
     {
       "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\HangHoa\\41G38jC0ajL._SL500_AA300_.jpg",
@@ -1837,10 +1829,6 @@
       "PackagePath": "staticwebassets\\Hinh\\HangHoa\\51pvLIvb6ZL._SL500_AA300_.jpg"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\HangHoa\\51s6pbRlNyL._SL500_AA300_.jpg",
-      "PackagePath": "staticwebassets\\Hinh\\HangHoa\\51s6pbRlNyL._SL500_AA300_.jpg"
-    },
-    {
       "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\HangHoa\\51uJ-pWfc9L._SL500_AA300_.jpg",
       "PackagePath": "staticwebassets\\Hinh\\HangHoa\\51uJ-pWfc9L._SL500_AA300_.jpg"
     },
@@ -1907,6 +1895,10 @@
     {
       "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\HangHoa\\ba5d5616-37c9-43f2-a12b-e01e7ad89a93winter-8612635_640.jpg",
       "PackagePath": "staticwebassets\\Hinh\\HangHoa\\ba5d5616-37c9-43f2-a12b-e01e7ad89a93winter-8612635_640.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\07c307d8-7ec2-431f-aa89-1315d2c22994.png",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\07c307d8-7ec2-431f-aa89-1315d2c22994.png"
     },
     {
       "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\086fcfe4-027b-4ccd-8c5c-a711f38ea202.jpg",
@@ -2009,6 +2001,10 @@
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\311324929_5532660673522049_6658220157440399597_n.jpg"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\33320791-ff5a-476e-9b9a-f37fa3104d84.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\33320791-ff5a-476e-9b9a-f37fa3104d84.jpg"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\354956327_300426762335655_344044513158347264_n.jpg",
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\354956327_300426762335655_344044513158347264_n.jpg"
     },
@@ -2019,6 +2015,10 @@
     {
       "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\4.jpg",
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\4388c1ea-d5b7-4541-99c5-476da1b490bc.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\4388c1ea-d5b7-4541-99c5-476da1b490bc.jpg"
     },
     {
       "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\5.jpg",
@@ -2043,6 +2043,10 @@
     {
       "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\668f3bbb-9a3e-4303-b13f-8dcc7836fe9d.png",
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\668f3bbb-9a3e-4303-b13f-8dcc7836fe9d.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\6c90d71d-98b1-462d-9878-cbe8f4371777.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\6c90d71d-98b1-462d-9878-cbe8f4371777.jpg"
     },
     {
       "Id": "C:\\Users\\ADMIN\\Documents\\KLTN-10\\Khoaluantotnghiep\\wwwroot\\Hinh\\KhachHang\\7.jpg",

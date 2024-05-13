@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using KLTN_E.Helpers
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -200,6 +201,14 @@
                                 </li>
                             </ul>
                         </li>
+
+                        @{
+                            var userClaims = User.Claims.FirstOrDefault(c => c.Type == MySettings.CLAIM_CUSTOMER_ID);
+
+                            var userId = userClaims.Value;
+
+                        }
+
                         <li class="nav-item dropdown nav-user">
                             <a class="nav-link nav-user-img"
                                href="#"
@@ -207,21 +216,26 @@
                                data-toggle="dropdown"
                                aria-haspopup="true"
                                aria-expanded="false">
-                                <img src="AdminUI/images/avatar-1.jpg"
-                                     alt=""
-                                     class="user-avatar-md rounded-circle" />
+                                @*   <img src="https://localhost:7121/Hinh/KhachHang/@userId"
+                                alt=""
+                                class="user-avatar-md rounded-circle" /> *@
+                                <h5>@userId</h5>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right nav-user-dropdown"
                                  aria-labelledby="navbarDropdownMenuLink2">
-                                <div class="nav-user-info">
-                                    <h5 class="mb-0 text-white nav-user-name">John Abraham</h5>
-                                    <span class="status"></span><span class="ml-2">Available</span>
-                                </div>
-                                <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
-                                <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
-                                <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
+                                @*  <div class="nav-user-info">
+                                <h5 class="mb-0 text-white nav-user-name">@userClaims.Value</h5>
+                                <span class="status"></span><span class="ml-2">Available</span>
+                                </div> *@
+                                @* <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a> *@
+                                <a class="dropdown-item" href="/KhachHang/Profile/?id=@userId"><i class="fas fa-cog mr-2"></i>Profile</a>
+                                <a class="dropdown-item" href="/KhachHang/DangXuat"><i class="fas fa-power-off mr-2"></i>Logout</a>
+
                             </div>
                         </li>
+
+
+
                     </ul>
                 </div>
             </nav>
@@ -274,7 +288,7 @@
                                                     </li>
                                                     <li class="nav-item">
                                                         <a class="nav-link" asp-area="Admin" asp-controller="HangHoas" asp-action="Index">
-                                                            Manage Products        
+                                                            Manage Products
                                                         </a>
                                                     </li>
                                                     <li class="nav-item">
@@ -292,6 +306,24 @@
                                                             Manage Suplier
                                                         </a>
                                                     </li>
+                                                    <li class="nav-item dropdown">
+                                                        <a class="nav-link dropdown-toggle"
+                                                           href="#"
+                                                           role="button"
+                                                           data-toggle="dropdown"
+                                                           aria-haspopup="true"
+                                                           aria-expanded="false">
+                                                            Manage Order
+                                                        </a>
+                                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                            <a class="dropdown-item" asp-area="Admin" asp-controller="Orders" asp-action="Index">All Orders</a>
+                                                            <a class="dropdown-item" asp-area="Admin" asp-controller="Orders" asp-action="PendingOrders">Pending Orders</a>
+                                                            <a class="dropdown-item" asp-area="Admin" asp-controller="Orders" asp-action="CancelledOrders">Cancelled Orders</a>
+                                                          
+                                                            <a class="dropdown-item" asp-area="Admin" asp-controller="Orders" asp-action="PendingDelivery">Pending Delivery</a>
+                                                            <a class="dropdown-item" asp-area="Admin" asp-controller="Orders" asp-action="Delivered">Delivered</a>
+                                                        </div>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </li>
@@ -305,6 +337,8 @@
                 </nav>
             </div>
         </div>
+
+
         <!-- ============================================================== -->
         <!-- end left sidebar -->
         <!-- ============================================================== -->

@@ -34,24 +34,6 @@ builder.Services.AddSession(options =>
 
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
-//builder.Services.AddAuthentication(options =>
-//{
-//    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-//    options.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
-//})
-//    .AddCookie()
-//    .AddGoogle(GoogleDefaults.AuthenticationScheme, options =>
-//    {
-//        options.ClientId = builder.Configuration.GetSection("GoogleKeys:ClientId").Value;
-//        options.ClientSecret = builder.Configuration.GetSection("GoogleKeys:ClientSecret").Value;
-//    });
-
-//builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
-//{
-//    options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
-//    options.LoginPath = "/KhachHang/DangNhap";
-//    options.AccessDeniedPath = "/AccessDenied";
-//});
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
