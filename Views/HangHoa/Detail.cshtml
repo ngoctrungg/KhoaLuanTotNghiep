@@ -80,6 +80,7 @@
     <!-- Form thêm comment mới -->
     @if (User.Identity.IsAuthenticated)
     {
+        <h5>Comments (@Model.Comments.Count)</h5>
         <form asp-action="AddComment" asp-controller="Comment" method="post">
             <input type="hidden" name="productId" value="@Model.MaHH" />
             <textarea name="content" rows="2" cols="30"></textarea>
@@ -91,13 +92,48 @@
         <p>Please <a asp-action="DangNhap" asp-controller="KhachHang">log in</a> to leave a comment.</p>
     }
 
+  @*   @foreach (var comment in Model.Comments)
+    {
+        <div>
+            <small>Posted by: @comment.Name - @comment.CreatedDate.ToShortDateString()</small>
+            <p>@comment.Content</p>
+            <button type="button" class="btn btn-success" onclick="showEditForm(@comment.Id)">Edit</button>
+            <div id="edit-form-@comment.Id" style="display:none;">
+                <form asp-action="EditComment" asp-controller="Comment" method="post">
+                    <input type="hidden" name="CommentId" value="@comment.Id" />
+                    <textarea name="Content" rows="4" cols="50">@comment.Content</textarea>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-secondary" onclick="hideEditForm(@comment.Id)">Cancel</button>
+                </form>
+                <form asp-action="DeleteComment" asp-controller="Comment" method="post">
+                    <input type="hidden" name="CommentId" value="@comment.Id" />
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </div>
+
+        </div>
+    } *@
     @foreach (var comment in Model.Comments)
     {
         <div>
             <small>Posted by: @comment.Name - @comment.CreatedDate.ToShortDateString()</small>
             <p>@comment.Content</p>
+            <button type="button" class="btn btn-success" onclick="showEditForm(@comment.Id)">Edit</button>
+            <form asp-action="DeleteComment" asp-controller="Comment" method="post" style="display:inline;">
+                <input type="hidden" name="CommentId" value="@comment.Id" />
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+            <div id="edit-form-@comment.Id" style="display:none; margin-top: 10px;">
+                <form asp-action="EditComment" asp-controller="Comment" method="post">
+                    <input type="hidden" name="CommentId" value="@comment.Id" />
+                    <textarea name="Content" rows="4" cols="50">@comment.Content</textarea>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-secondary" onclick="hideEditForm(@comment.Id)">Cancel</button>
+                </form>
+            </div>
         </div>
     }
+
 
     <div class="row">
         <div class="col-lg-12">
@@ -117,88 +153,16 @@
         </div>
     </div>
 
-
-
-    @*   <div class="row">
-    <div class="col-lg-12">
-    <div class="product__details__tab">
-    <ul class="nav nav-tabs" role="tablist">
-    <!-- Các tab khác nếu có -->
-    <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#tabs-7" role="tab">
-    Comments (@Model.Comments.Count)
-    </a>
-    </li>
-    </ul>
-    <div class="tab-content">
-    <!-- Các tab khác nếu có -->
-    <div class="tab-pane active" id="tabs-7" role="tabpanel">
-    <div class="product__details__tab__content">
-    <!-- Form để người dùng thêm comment -->
-    <form asp-action="AddComment" asp-controller="Comment" method="post">
-    <input type="hidden" name="productId" value="@Model.MaHH" />
-    <textarea class="form-control" name="content" rows="3" required></textarea>
-    <button type="submit" class="btn btn-primary mt-2">Add Comment</button>
-    </form>
-
-    <!-- Danh sách các comment -->
-    @if (Model.Comments.Any())
-    {
-    <ul class="list-unstyled mt-4">
-    @foreach (var comment in Model.Comments)
-    {
-    <li>
-    <strong>@comment.User.HoTen</strong> - @comment.CreatedDate.ToShortDateString():
-    <p>@comment.Content</p>
-    </li>
-    }
-    </ul>
-    }
-    else
-    {
-    <p>There are no comments yet.</p>
-    }
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div> *@
-
-    @* <div class="product__details__content">
-    <div class="container">
-
-    <div class="row">
-    <div class="col-lg-12">
-    <div class="product__details__tab">
-    <ul class="nav nav-tabs" role="tablist">
-    <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#tabs-5"
-    role="tab">Description</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#tabs-6" role="tab">
-    Customer
-    Previews(5)
-    </a>
-    </li>
-
-    </ul>
-    <div class="tab-content">
-    <div class="tab-pane active" id="tabs-5" role="tabpanel">
-    <div class="product__details__tab__content">
-    <p class="note">
-    @Model.ChiTiet
-    </p>
-    </div>
-    </div>
-    </div>
-
-
-    </div>
-    </div>
-    </div>
-    </div>
-    </div> *@
 </section>
+
+<script>
+    function showEditForm(commentId) {
+        document.getElementById('edit-form-' + commentId).style.display = 'block';
+    }
+
+    function hideEditForm(commentId) {
+        document.getElementById('edit-form-' + commentId).style.display = 'none';
+    }
+</script>
+
 <!-- Shop Details Section End -->

@@ -53,7 +53,8 @@
                         <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
                             <form method="post" asp-action="UpdateProfile" asp-controller="KhachHang" enctype="multipart/form-data">
                                 <div class="card-body media align-items-center" style="padding:0px !important">
-                                    <img src="https://localhost:7121/Hinh/KhachHang/@Model.ProfileImage" alt="User Image"
+                                    <img src="/Hinh/KhachHang/@Model.ProfileImage" alt="User Image
+                                    @*  <img src="https://localhost:7121/Hinh/KhachHang/@Model.ProfileImage" alt="User Image"  *@
                                          class="d-block rounded-circle" style="width:100px; height:100px; object-fit:cover" />
                                     <div class=" ml-4">
                                         <label class=" site-btn">

@@ -13,7 +13,8 @@
             <div class="product__item sale">
                 <div class="product__item__pic">
                     <a asp-action="Detail" asp-controller="HangHoa" asp-route-id="@item.MaHH">
-                        <img src="https://localhost:7121/Hinh/HangHoa/@item.Hinh" alt="@item.TenHH" class=" set-bg">
+                        <img src="/Hinh/HangHoa/@item.Hinh" alt="@item.TenHH" class=" set-bg">
+                        @* <img src="https://localhost:7121/Hinh/HangHoa/@item.Hinh" alt="@item.TenHH" class=" set-bg"> *@
                     </a>
                     <span class="label">@item.TenLoai</span>
                     <ul class="product__hover">

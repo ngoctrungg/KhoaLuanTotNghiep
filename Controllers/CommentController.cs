@@ -2,6 +2,7 @@
 using KLTN_E.Helpers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 
@@ -79,51 +80,64 @@ namespace KLTN_E.Controllers
 
         public async Task<IActionResult> DeleteComment(int commentId)
         {
-            var comment = await _context.Comments.FindAsync(commentId);
+            var comment = await _context.Comments.FirstOrDefaultAsync(p => p.Id == commentId);
             if (comment == null)
             {
-                return NotFound(); 
+                return NotFound();
             }
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (comment.UserId != userId)
+            var productId = comment.ProductId;
+            var userIdClaim = HttpContext.User.Claims.FirstOrDefault(c => c.Type == MySettings.CLAIM_CUSTOMER_ID);
+            if (userIdClaim != null)
             {
-                return Forbid();
+                var userId = userIdClaim.Value;
+
+                if (comment.UserId != userId)
+                {
+                    return Forbid();
+                }
             }
             try
             {
                 _context.Comments.Remove(comment);
                 await _context.SaveChangesAsync();
                 TempData["SuccessMessage"] = "Comment đã được xóa thành công.";
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Detail", "HangHoa", new { id = productId });
             }
             catch
             {
                 TempData["ErrorMessage"] = "Đã xảy ra lỗi khi xóa comment. Vui lòng thử lại sau.";
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Detail", "HangHoa", new { id = productId });
             }
         }
 
 
 
-        public async Task<IActionResult> EditComment(int commentId, string newContent)
+        public async Task<IActionResult> EditComment(int commentId, string Content)
         {
+            
             var comment = await _context.Comments.FindAsync(commentId);
             if (comment == null)
             {
                 return NotFound();
             }
 
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (comment.UserId != userId)
-            {
-                return Forbid();
-            }
 
-            comment.Content = newContent;
+            var productId = comment.ProductId;
+            var userIdClaim = HttpContext.User.Claims.FirstOrDefault(c => c.Type == MySettings.CLAIM_CUSTOMER_ID);
+            if (userIdClaim != null)
+            {
+                var userId = userIdClaim.Value;
+
+                if (comment.UserId != userId)
+                {
+                    return Forbid();
+                }
+            }
+            comment.Content = Content;
             await _context.SaveChangesAsync();
 
             TempData["SuccessMessage"] = "Comment đã được chỉnh sửa thành công.";
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Detail", "HangHoa", new { id = productId });
         }
 
 
