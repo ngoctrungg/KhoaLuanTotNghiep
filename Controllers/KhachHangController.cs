@@ -35,12 +35,14 @@ namespace KLTN_E.Controllers
             _purchaseHistory = purchaseHistory;
         }
         #region Register
+        [Route("/customer/register")]
         [HttpGet]
         public IActionResult DangKy()
         {
             return View();
         }
 
+        [Route("/customer/register")]
         [HttpPost]
         public async Task<IActionResult> DangKy(RegisterVM model, IFormFile Hinh)
         {
@@ -81,6 +83,7 @@ namespace KLTN_E.Controllers
         }
         #endregion
 
+        [Route("/confirm-email")]
         [HttpGet]
         public async Task<IActionResult> Notification()
         {
@@ -112,6 +115,8 @@ namespace KLTN_E.Controllers
         }
 
         #region Login
+        [Route("/customer/login")]
+
         [HttpGet]
         public IActionResult DangNhap(string? ReturnUrl)
         {
@@ -119,7 +124,7 @@ namespace KLTN_E.Controllers
             return View();
         }
 
-
+        [Route("/customer/login")]
         [HttpPost]
         public async Task<IActionResult> DangNhap(LoginVM model, string? ReturnUrl, int vaiTro = 0)
         {
@@ -193,6 +198,7 @@ namespace KLTN_E.Controllers
         }
         #endregion
 
+        [Route("/customer/profile")]
         [Authorize]
         public IActionResult Profile(int page = 1, int pageSize = 5)
         {
@@ -243,7 +249,7 @@ namespace KLTN_E.Controllers
         }
 
 
-     
+        [Route("/customer/update-profile")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> UpdateProfile(DatLaiMatKhauVM model, IFormFile newImage)
@@ -288,6 +294,7 @@ namespace KLTN_E.Controllers
         }
 
 
+        [Route("/customer/change-password")]
         [Authorize]
         [HttpPost]
         public async Task<IActionResult> ChangePassword(DatLaiMatKhauVM model)
@@ -321,31 +328,34 @@ namespace KLTN_E.Controllers
             return RedirectToAction("Profile");
         }
 
-
+        [Route("/customer/logout")]
         [Authorize]
         public async Task<IActionResult> DangXuat()
         {
             await HttpContext.SignOutAsync();
             return Redirect("/");
         }
-
+        [Route("/customer/reset-password-success")]
         public IActionResult RSPasswordSuccess()
         {
             return View();
         }
 
+        [Route("/customer/reset-password-failed")]
         public IActionResult Error()
         {
             return View();
         }
 
         #region QuenMatKhau
+        [Route("/forgot-password")]
         [HttpGet]
         public IActionResult QuenMatKhau()
         {
             return View();
         }
 
+        [Route("/forgot-password")]
         [HttpPost]
         public async Task<IActionResult> QuenMatKhau(QuenMatKhauVM model)
         {
@@ -375,20 +385,21 @@ namespace KLTN_E.Controllers
                 return View();
             }
         }
-
+        [Route("/notification-reset-password")]
         [HttpGet]
         public async Task<IActionResult> NotificationRSPassword()
         {
             return View();
         }
 
-
+        [Route("/reset-password")]
         [HttpGet]
         public IActionResult DatLaiMatKhau()
         {
             return View();
         }
 
+        [Route("/reset-password")]
         [HttpPost]
         public async Task<IActionResult> DatLaiMatKhau(ResetPasswordVM model)
         {
@@ -420,7 +431,7 @@ namespace KLTN_E.Controllers
             }
         }
 
-
+        [Route("/reset-password-success")]
         [HttpGet]
         public async Task<IActionResult> DatLaiMatKhauThanhCong()
         {

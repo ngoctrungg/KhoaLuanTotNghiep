@@ -7,8 +7,10 @@
         <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="product__item sale">
                 <div class="product__item__pic">
-                    <a asp-action="Detail" asp-controller="HangHoa" asp-route-id="@item.MaHH">
-                        <img src="/Hinh/HangHoa/@item.Hinh" alt="@item.TenHH" class=" set-bg">
+                    @* <a asp-action="Detail" asp-controller="HangHoa" asp-route-id="@item.MaHH"> *@
+                    <a href="/shop/detail/@item.MaHH">
+
+                        <img src="/Hinh/HangHoa/@item.Hinh" alt="@item.TenHH" class=" set-bg" style="width:250px;height:250px">
                         @* <img src="https://localhost:7121/Hinh/HangHoa/@item.Hinh" alt="@item.TenHH" class=" set-bg"> *@
                     </a>
                     <span class="label">@item.TenLoai</span>

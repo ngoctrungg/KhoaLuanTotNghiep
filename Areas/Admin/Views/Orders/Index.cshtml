@@ -32,9 +32,9 @@
                                         @Html.DisplayNameFor(model => model.MaTrangThaiNavigation.TenTrangThai)
                                     </th>
                                     <th>
-                                        Action
+                                        Actions
                                     </th>
-
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -59,6 +59,12 @@
                                             @Html.DisplayFor(modelItem => item.MaTrangThaiNavigation.TenTrangThai)
                                         </td>
                                         <td>
+                                            <form asp-action="ViewOrderDetail" asp-controller="Orders" method="post">
+                                                <input type="hidden" name="maHd" value="@item.MaHd" />
+                                                <button type="submit" class="btn btn-success">View Detail</button>
+                                            </form>
+                                        </td>
+                                        <td>
                                             @if (item.MaTrangThaiNavigation.TenTrangThai == "Pending approval")
                                             {
                                                 <form asp-action="ApproveOrder" asp-controller="Orders" method="post">
@@ -66,6 +72,7 @@
                                                     <button type="submit" class="btn btn-success">Approve</button>
                                                 </form>
                                             }
+                                           
                                         </td>
                                     </tr>
                                 }

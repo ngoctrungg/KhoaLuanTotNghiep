@@ -2,6 +2,20 @@
 @{
     ViewData["Title"] = "Detail";
 }
+
+@section MetaTags {
+    <meta property="og:title" content="@Model.TenHH" />
+    <meta property="og:description" content="@Model.MoTa" />
+    <meta property="og:url" content="@Context.Request.Scheme://@Context.Request.Host@Context.Request.Path" />
+    <meta property="og:image" content="@Context.Request.Scheme://@Context.Request.Host/Hinh/HangHoa/@Model.Hinh" data-react-helmet="true" />
+    <meta property="og:image:type" content="image/*" data-react-helmet="true">
+    <meta property="og:image:width" content="1200" data-react-helmet="true">
+    <meta property="og:image:height" content="627" data-react-helmet="true">
+    <meta property="fb:app_id" content="330428239820926" />
+    <meta property="og:type" content="product" />
+}
+
+
 <!-- Shop Details Section Begin -->
 <section class="shop-details">
     <div class="product__details__pic">
@@ -40,7 +54,7 @@
                                     <i class="fa fa-star-o"></i>
                                     <span> - 5 Reviews</span>
                                 </div>
-                                <h3>$@Model.DonGia <span>70.00</span></h3>
+                                <h3>$@Model.DonGia <span></span></h3>
                                 <p>
                                     @Model.MoTa
                                 </p>
@@ -58,7 +72,11 @@
                                     <a href="#"><i class="fa fa-exchange"></i> Add To Compare</a>
                                 </div>
                                 <div class="product__details__last__option">
-                                    <h5><span>Guaranteed Safe Checkout</span></h5>
+                                    @* <h5><span>Guaranteed Safe Checkout</span></h5> *@
+                                    <h5>Share</h5>
+                                    <a href="https: //www.facebook.com/sharer/sharer.php?u =@Context.Request.Scheme://@Context.Request.Host@Context.Request.Path" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
                                     <img src="img/shop-details/details-payment.png" alt="">
                                     <ul>
                                         <li><span>SKU:</span> @Model.MaHH</li>
@@ -92,26 +110,26 @@
         <p>Please <a asp-action="DangNhap" asp-controller="KhachHang">log in</a> to leave a comment.</p>
     }
 
-  @*   @foreach (var comment in Model.Comments)
+    @*   @foreach (var comment in Model.Comments)
     {
-        <div>
-            <small>Posted by: @comment.Name - @comment.CreatedDate.ToShortDateString()</small>
-            <p>@comment.Content</p>
-            <button type="button" class="btn btn-success" onclick="showEditForm(@comment.Id)">Edit</button>
-            <div id="edit-form-@comment.Id" style="display:none;">
-                <form asp-action="EditComment" asp-controller="Comment" method="post">
-                    <input type="hidden" name="CommentId" value="@comment.Id" />
-                    <textarea name="Content" rows="4" cols="50">@comment.Content</textarea>
-                    <button type="submit" class="btn btn-primary">Save</button>
-                    <button type="button" class="btn btn-secondary" onclick="hideEditForm(@comment.Id)">Cancel</button>
-                </form>
-                <form asp-action="DeleteComment" asp-controller="Comment" method="post">
-                    <input type="hidden" name="CommentId" value="@comment.Id" />
-                    <button type="submit" class="btn btn-danger">Delete</button>
-                </form>
-            </div>
+    <div>
+    <small>Posted by: @comment.Name - @comment.CreatedDate.ToShortDateString()</small>
+    <p>@comment.Content</p>
+    <button type="button" class="btn btn-success" onclick="showEditForm(@comment.Id)">Edit</button>
+    <div id="edit-form-@comment.Id" style="display:none;">
+    <form asp-action="EditComment" asp-controller="Comment" method="post">
+    <input type="hidden" name="CommentId" value="@comment.Id" />
+    <textarea name="Content" rows="4" cols="50">@comment.Content</textarea>
+    <button type="submit" class="btn btn-primary">Save</button>
+    <button type="button" class="btn btn-secondary" onclick="hideEditForm(@comment.Id)">Cancel</button>
+    </form>
+    <form asp-action="DeleteComment" asp-controller="Comment" method="post">
+    <input type="hidden" name="CommentId" value="@comment.Id" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
+    </div>
 
-        </div>
+    </div>
     } *@
     @foreach (var comment in Model.Comments)
     {

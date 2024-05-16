@@ -2,12 +2,14 @@
 
 <html>
 <head>
-    <title>@ViewBag.Title</title>
+    <link rel="icon" href="/Hinh/icon/avtKLTN.jpg" type="image/x-icon">
+    <title>@ViewData["Title"] - KLTN</title>
     <meta charset="UTF-8">
     <meta name="description" content="Male_Fashion Template">
     <meta name="keywords" content="Male_Fashion, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    @RenderSection("MetaTags", required: false)
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
@@ -71,7 +73,8 @@
                 <div class="row" style="display:flex; align-items:center">
                     <div class="col-lg-3 col-md-3">
                         <div class="header__logo">
-                            <a href="./index.html"><img src="~/img/logo.png" alt=""></a>
+                            @* <a href="./index.html"><img src="~/img/logo.png" alt=""></a> *@
+                            <a asp-controller="Home" asp-action="Index"><img src="~/Hinh//Others/R Y Z.jpg" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -95,7 +98,7 @@
                                 </ul>
                                 </li>
                                 <li><a href="./blog.html">Blog</a></li> *@
-                                <li><a href="./contact.html">Contacts</a></li>
+                                <li><a asp-action="Index" asp-controller="Contact">Contacts</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -110,6 +113,7 @@
                                         <ul class="dropdown">
 
                                             @if (User.Identity.IsAuthenticated)
+                                            @* @if (HttpContext.User.Identity.IsAuthenticated) *@
                                             {
                                                 <li> <a asp-controller="KhachHang" asp-action="Profile">Profile</a></li>
                                                 <li><a asp-controller="KhachHang" asp-action="DangXuat">Logout</a></li>
@@ -148,6 +152,9 @@
                       agent-id="b2f82887-5f0f-4469-9b8c-ba2ee02779c4"
                       language-code="en"></df-messenger>
 
+
+
+
         @await Html.PartialAsync("_Footer")
     </div>
     <!-- Search Begin -->
@@ -178,7 +185,7 @@
     <script>
         $(document).ready(function () {
             $("#searchButton").click(function () {
-                let url = `/HangHoa/Search?query=` + $("#searchText").val();
+                let url = `/shop/search?query=` + $("#searchText").val();
                 window.location.href = url;
             });
         });

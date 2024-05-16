@@ -2,8 +2,9 @@
 @model KLTN_E.Models.PagedList<KLTN_E.ViewModels.HangHoaVM>
 
 @{
-    TempData["Title"] = "Filter products";
+    ViewData["Title"] = "Shop";
     Layout = "_DanhSachHangHoa";
+
 }
 
 <div class="row">
@@ -13,7 +14,7 @@
             <div class="product__item sale">
                 <div class="product__item__pic">
                     <a asp-action="Detail" asp-controller="HangHoa" asp-route-id="@item.MaHH">
-                        <img src="/Hinh/HangHoa/@item.Hinh" alt="@item.TenHH" class=" set-bg">
+                        <img src="/Hinh/HangHoa/@item.Hinh" alt="@item.TenHH" class=" set-bg" style="width:250px;height:250px">
                         @* <img src="https://localhost:7121/Hinh/HangHoa/@item.Hinh" alt="@item.TenHH" class=" set-bg"> *@
                     </a>
                     <span class="label">@item.TenLoai</span>
@@ -41,17 +42,17 @@
                         }
                     </div>
                     <h5>$@item.DonGia</h5>
-                    <div class="product__color__select">
-                        <label for="pc-7">
-                            <input type="radio" id="pc-7">
-                        </label>
-                        <label class="active black" for="pc-8">
-                            <input type="radio" id="pc-8">
-                        </label>
-                        <label class="grey" for="pc-9">
-                            <input type="radio" id="pc-9">
-                        </label>
-                    </div>
+                    @*    <div class="product__color__select">
+                <label for="pc-7">
+                <input type="radio" id="pc-7">
+                </label>
+                <label class="active black" for="pc-8">
+                <input type="radio" id="pc-8">
+                </label>
+                <label class="grey" for="pc-9">
+                <input type="radio" id="pc-9">
+                </label>
+                </div> *@
                 </div>
             </div>
         </div>

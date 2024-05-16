@@ -5,7 +5,7 @@ namespace KLTN_E.ViewModels
     public class RegisterVM
     {
         [Key]
-        [Display(Name = "UserName")]
+        [Display(Name = "User Name")]
         [Required(ErrorMessage = "The UserName is required")]
         [MaxLength(20, ErrorMessage = "Maximum 20 characters")]
         public string MaKh { get; set; }
@@ -16,13 +16,13 @@ namespace KLTN_E.ViewModels
         [DataType(DataType.Password)]
         public string MatKhau { get; set; }
 
-        [Display(Name = "FullName")]
+        [Display(Name = "Full Name")]
 
         [Required(ErrorMessage = "The FullName is required")]
         [MaxLength(50, ErrorMessage = "Maximum 50 characters")]
         public string HoTen { get; set; }
 
-        [Display(Name = "DateOfBirth")]
+        [Display(Name = "Date Of Birth")]
         [DataType(DataType.Date)]
         public DateTime? NgaySinh { get; set; }
 

@@ -15,6 +15,7 @@ namespace KLTN_E.Controllers
         {
             db = context;
         }
+        [Route("/shop")]
         public IActionResult Index(int? loai, int page = 1, int pageSize = 10)
         {
             var hangHoas = db.HangHoas.AsQueryable();
@@ -55,24 +56,9 @@ namespace KLTN_E.Controllers
             return View(result);
         }
 
-        //public IActionResult Search(string? query)
-        //{
-        //    var hangHoas = db.HangHoas.AsQueryable();
+      
+        [Route("/shop/search")]
 
-        //    if (query != null)
-        //    {
-        //        hangHoas = hangHoas.Where(p => p.TenHh.Contains(query));
-        //    }
-        //    var result = hangHoas.Select(p => new HangHoaVM
-        //    {
-        //        MaHH = p.MaHh,
-        //        TenHH = p.TenHh,
-        //        Hinh = p.Hinh ?? "",
-        //        DonGia = p.DonGia ?? 0,
-        //        TenLoai = p.MaLoaiNavigation.TenLoai
-        //    });
-        //    return View(result);
-        //}
         public IActionResult Search(string? query, int page = 1, int pageSize = 10)
         {
             var hangHoas = db.HangHoas.AsQueryable();
@@ -109,11 +95,11 @@ namespace KLTN_E.Controllers
                 })
                 .ToList();
 
-            var pagedList = new PagedList<HangHoaVM>(hangHoasPage, totalHangHoas, page, pageSize, null); // Tạo đối tượng PagedList
+            var pagedList = new PagedList<HangHoaVM>(hangHoasPage, totalHangHoas, page, pageSize, null);
 
             return View(pagedList);
         }
-
+        [Route("/shop/detail/{id}")]
         public IActionResult Detail(int id, int page = 1, int pageSize = 5)
         {
             var data = db.HangHoas
@@ -193,49 +179,7 @@ namespace KLTN_E.Controllers
             }
         }
 
-        //public IActionResult Filter(string minPrice)
-        //{
-        //    if (!string.IsNullOrEmpty(minPrice))
-        //    {
-        //        // Tách giá trị minPrice thành khoảng giá
-        //        var priceRange = minPrice.Split('-');
-
-        //        if (priceRange.Length == 2 && int.TryParse(priceRange[0], out var min) && int.TryParse(priceRange[1], out var max))
-        //        {
-        //            // Lọc sản phẩm có giá trong khoảng từ min đến max
-
-        //            var filteredProducts = db.HangHoas
-        //                .Where(p => p.DonGia != null && p.DonGia.Value >= min && p.DonGia.Value <= max)
-        //                .Select(p => new HangHoaVM
-        //                {
-        //                    MaHH = p.MaHh,
-        //                    TenHH = p.TenHh,
-        //                    Hinh = p.Hinh ?? "",
-        //                    DonGia = p.DonGia ?? 0,
-        //                    TenLoai = p.MaLoaiNavigation.TenLoai ?? "..."
-        //                })
-        //                .ToList();
-
-        //            // Trả về danh sách sản phẩm đã lọc đến View
-        //            return View(filteredProducts);
-        //        }
-        //    }
-
-        //    // Nếu không có giá tối thiểu được chọn, trả về toàn bộ danh sách sản phẩm
-        //    var allProducts = db.HangHoas
-        //        .Select(p => new HangHoaVM
-        //        {
-        //            MaHH = p.MaHh,
-        //            TenHH = p.TenHh,
-        //            Hinh = p.Hinh,
-        //            DonGia = p.DonGia ?? 0,
-        //            TenLoai = p.MaLoaiNavigation.TenLoai
-        //        })
-        //        .ToList();
-
-        //    return View(allProducts);
-        //}
-
+        [Route("/shop/filter")]
         public IActionResult Filter(string minPrice, int? loai, int page = 1, int pageSize = 10)
         {
             var hangHoas = db.HangHoas.AsQueryable();

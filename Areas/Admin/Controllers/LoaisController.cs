@@ -21,13 +21,13 @@ namespace KLTN_E.Areas.Admin.Controllers
             _environment = environment;
         }
 
-        [Authorize(Roles = "Admin, NhanVien")]
+        [Authorize(Roles = "Admin, Employee")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Loais.ToListAsync());
         }
 
-        [Authorize(Roles = "Admin, NhanVien")]
+        [Authorize(Roles = "Admin, Employee")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -112,40 +112,41 @@ namespace KLTN_E.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-
-            if (ModelState.IsValid)
+            var existedCategory = await _context.Loais.AsNoTracking().FirstOrDefaultAsync(kh => kh.MaLoai == loai.MaLoai);
+            try
             {
-                try
+                if (hinhLoai != null)
                 {
-                    if (hinhLoai != null)
-                    {
-                        string dir = Path.Combine(_environment.WebRootPath, "Hinh/Loai");
-                        string imgName = Guid.NewGuid().ToString() + hinhLoai.FileName;
-                        string filePath = Path.Combine(dir, imgName);
+                    string dir = Path.Combine(_environment.WebRootPath, "Hinh/Loai");
+                    string imgName = Guid.NewGuid().ToString() + hinhLoai.FileName;
+                    string filePath = Path.Combine(dir, imgName);
 
-                        FileStream fs = new FileStream(filePath, FileMode.Create);
-                        await hinhLoai.CopyToAsync(fs);
-                        fs.Close();
-                        loai.Hinh = imgName;
-                    }
-
-                    _context.Update(loai);
-                    await _context.SaveChangesAsync();
+                    FileStream fs = new FileStream(filePath, FileMode.Create);
+                    await hinhLoai.CopyToAsync(fs);
+                    fs.Close();
+                    loai.Hinh = imgName;
                 }
-                catch (DbUpdateConcurrencyException)
+                else
                 {
-                    if (!LoaiExists(loai.MaLoai))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    loai.Hinh = existedCategory.Hinh;
                 }
-                return RedirectToAction(nameof(Index));
+
+                _context.Update(loai);
+                await _context.SaveChangesAsync();
             }
-            return View(loai);
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!LoaiExists(loai.MaLoai))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            return RedirectToAction(nameof(Index));
+
         }
 
         [Authorize(Roles = "Admin")]

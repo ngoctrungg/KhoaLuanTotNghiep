@@ -26,6 +26,7 @@ namespace KLTN_E.Controllers
             db = context;
             _configuration = configuration;
         }
+
         public IActionResult Index()
         {
             return View();

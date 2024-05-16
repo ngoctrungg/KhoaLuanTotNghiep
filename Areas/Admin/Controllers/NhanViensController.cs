@@ -20,13 +20,13 @@ namespace KLTN_E.Areas.Admin.Controllers
             _context = context;
         }
 
-        [Authorize(Roles = "Admin, NhanVien")]
+        [Authorize(Roles = "Admin, Employee")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.NhanViens.ToListAsync());
         }
 
-        [Authorize(Roles = "Admin, NhanVien")]
+        [Authorize(Roles = "Admin, Employee")]
         public async Task<IActionResult> Details(string id)
         {
             if (id == null)

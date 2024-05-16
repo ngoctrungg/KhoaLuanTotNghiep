@@ -22,13 +22,13 @@ namespace KLTN_E.Areas.Admin.Controllers
             _environment = environment;
         }
 
-        [Authorize(Roles = "Admin, NhanVien")]
+        [Authorize(Roles = "Admin, Employee")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.NhaCungCaps.ToListAsync());
         }
 
-        [Authorize(Roles = "Admin, NhanVien")]
+        [Authorize(Roles = "Admin, Employee")]
         public async Task<IActionResult> Details(string id)
         {
             if (id == null)
@@ -57,33 +57,31 @@ namespace KLTN_E.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(NhaCungCap nhaCungCap, IFormFile hinhNCC)
         {
-            if (ModelState.IsValid)
-            {
-                var check = await _context.NhaCungCaps.FirstOrDefaultAsync(p => p.TenCongTy == nhaCungCap.TenCongTy);
-                if (check != null)
-                {
-                    ModelState.AddModelError("TenCongTy", "Ten Cong Ty da ton tai");
-                    return View(nhaCungCap);
-                }
-                else
-                {
 
-                    if (hinhNCC != null)
-                    {
-                        string dir = Path.Combine(_environment.WebRootPath, "Hinh/NhaCC");
-                        string imgName = Guid.NewGuid().ToString() + hinhNCC.FileName;
-                        string filePath = Path.Combine(dir, imgName);
-                        FileStream fs = new FileStream(filePath, FileMode.Create);
-                        await hinhNCC.CopyToAsync(fs);
-                        fs.Close();
-                        nhaCungCap.Logo = imgName;
-                    }
-                }
-                _context.Add(nhaCungCap);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+            var check = await _context.NhaCungCaps.FirstOrDefaultAsync(p => p.TenCongTy == nhaCungCap.TenCongTy);
+            if (check != null)
+            {
+                ModelState.AddModelError("TenCongTy", "Ten Cong Ty da ton tai");
+                return View(nhaCungCap);
             }
-            return View(nhaCungCap);
+            else
+            {
+
+                if (hinhNCC != null)
+                {
+                    string dir = Path.Combine(_environment.WebRootPath, "Hinh/NhaCC");
+                    string imgName = Guid.NewGuid().ToString() + hinhNCC.FileName;
+                    string filePath = Path.Combine(dir, imgName);
+                    FileStream fs = new FileStream(filePath, FileMode.Create);
+                    await hinhNCC.CopyToAsync(fs);
+                    fs.Close();
+                    nhaCungCap.Logo = imgName;
+                }
+            }
+            _context.Add(nhaCungCap);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+
         }
 
         [Authorize(Roles = "Admin")]
@@ -111,39 +109,39 @@ namespace KLTN_E.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-
-            if (ModelState.IsValid)
+            var existedSupplier = await _context.NhaCungCaps.AsNoTracking().FirstOrDefaultAsync(kh => kh.MaNcc == nhaCungCap.MaNcc);
+            try
             {
-                try
+                if (hinhNCC != null)
                 {
-                    if (hinhNCC != null)
-                    {
-                        string dir = Path.Combine(_environment.WebRootPath, "Hinh/NhaCC");
-                        string imgName = Guid.NewGuid().ToString() + hinhNCC.FileName;
-                        string filePath = Path.Combine(dir, imgName);
-                        FileStream fs = new FileStream(filePath, FileMode.Create);
-                        await hinhNCC.CopyToAsync(fs);
-                        fs.Close();
-                        nhaCungCap.Logo = imgName;
-                    }
+                    string dir = Path.Combine(_environment.WebRootPath, "Hinh/NhaCC");
+                    string imgName = Guid.NewGuid().ToString() + hinhNCC.FileName;
+                    string filePath = Path.Combine(dir, imgName);
+                    FileStream fs = new FileStream(filePath, FileMode.Create);
+                    await hinhNCC.CopyToAsync(fs);
+                    fs.Close();
+                    nhaCungCap.Logo = imgName;
+                }
+                else
+                {
+                    nhaCungCap.Logo = existedSupplier.Logo;
+                }
 
-                    _context.Update(nhaCungCap);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!NhaCungCapExists(nhaCungCap.MaNcc))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
+                _context.Update(nhaCungCap);
+                await _context.SaveChangesAsync();
             }
-            return View(nhaCungCap);
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!NhaCungCapExists(nhaCungCap.MaNcc))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            return RedirectToAction(nameof(Index));
         }
 
         [Authorize(Roles = "Admin")]

@@ -14,14 +14,14 @@ namespace KLTN_E.Areas.Admin.Controllers
         {
             db = context;
         }
-        [Authorize(Roles = "Admin, NhanVien")]
+        [Authorize(Roles = "Admin, Employee")]
         public async Task<IActionResult> Index()
         {
             var Kltn = db.HoaDons.Include(p => p.MaTrangThaiNavigation);
             return View(await Kltn.ToListAsync());
         }
 
-        [Authorize(Roles = "Admin, NhanVien")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> ApproveOrder(int? maHd)
         {
             var order = await db.HoaDons.FindAsync(maHd);
@@ -35,7 +35,7 @@ namespace KLTN_E.Areas.Admin.Controllers
             return RedirectToAction("Index");
         }
 
-        [Authorize(Roles = "Admin, NhanVien")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> CancelledOrders()
         {
             var cancelOrder = await db.HoaDons.Include(p => p.MaTrangThaiNavigation).Where(p => p.MaTrangThai == -1).ToListAsync();
@@ -43,41 +43,41 @@ namespace KLTN_E.Areas.Admin.Controllers
             return View(cancelOrder);
         }
 
-        [Authorize(Roles = "Admin, NhanVien")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> PendingOrders()
         {
-            var cancelOrder = await db.HoaDons.Include(p => p.MaTrangThaiNavigation).Where(p => p.MaTrangThai == 0).ToListAsync();
+            var pendingOrder = await db.HoaDons.Include(p => p.MaTrangThaiNavigation).Where(p => p.MaTrangThai == 0).ToListAsync();
 
-            return View(cancelOrder);
+            return View(pendingOrder);
         }
         
         
-        [Authorize(Roles = "Admin, NhanVien")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> ApprovedOrders()
         {
-            var cancelOrder = await db.HoaDons.Include(p => p.MaTrangThaiNavigation).Where(p => p.MaTrangThai == 1).ToListAsync();
+            var approveOrder = await db.HoaDons.Include(p => p.MaTrangThaiNavigation).Where(p => p.MaTrangThai == 1).ToListAsync();
 
-            return View(cancelOrder);
+            return View(approveOrder);
         }
 
 
-        [Authorize(Roles = "Admin, NhanVien")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> PendingDelivery()
         {
-            var cancelOrder = await db.HoaDons.Include(p => p.MaTrangThaiNavigation).Where(p => p.MaTrangThai == 1).ToListAsync();
+            var pendingDelivery = await db.HoaDons.Include(p => p.MaTrangThaiNavigation).Where(p => p.MaTrangThai == 1).ToListAsync();
 
-            return View(cancelOrder);
+            return View(pendingDelivery);
         }
 
-        [Authorize(Roles = "Admin, NhanVien")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delivered()
         {
-            var cancelOrder = await db.HoaDons.Include(p => p.MaTrangThaiNavigation).Where(p => p.MaTrangThai == 2).ToListAsync();
+            var Delivered = await db.HoaDons.Include(p => p.MaTrangThaiNavigation).Where(p => p.MaTrangThai == 2).ToListAsync();
 
-            return View(cancelOrder);
+            return View(Delivered);
         }
 
-        [Authorize(Roles = "Admin, NhanVien")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> UpdateOrders(int maHd)
         {
             var order = await db.HoaDons.FindAsync(maHd);
@@ -96,6 +96,12 @@ namespace KLTN_E.Areas.Admin.Controllers
             return RedirectToAction("PendingDelivery");
         }
 
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> ViewOrderDetail(int maHd)
+        {
+            var ct = await db.ChiTietHds.Include(p => p.MaHhNavigation).Where(ct => ct.MaHd == maHd).ToListAsync();
+            return View(ct);
+        }
 
 
     }

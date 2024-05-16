@@ -22,10 +22,10 @@
                             <thead>
                                 <tr>
                                     <th>
-                                        @Html.DisplayNameFor(model => model.TenCongTy)
+                                        @Html.DisplayNameFor(model => model.Logo)
                                     </th>
                                     <th>
-                                        @Html.DisplayNameFor(model => model.Logo)
+                                        @Html.DisplayNameFor(model => model.TenCongTy)
                                     </th>
                                     <th>
                                         @Html.DisplayNameFor(model => model.NguoiLienLac)
@@ -40,7 +40,7 @@
                                     <th>
                                         @Html.DisplayNameFor(model => model.MoTa)
                                     </th>
-                                    <th></th>
+                                    <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -48,10 +48,10 @@
                                 {
                                     <tr>
                                         <td>
-                                            @Html.DisplayFor(modelItem => item.TenCongTy)
+                                            <img src="~/Hinh/NhaCC/@item.Logo" width="50" height="50" alt="img" />
                                         </td>
                                         <td>
-                                            <img src="~/Hinh/NhaCC/@item.Logo" width="50" height="50" alt="img"/>
+                                            @Html.DisplayFor(modelItem => item.TenCongTy)
                                         </td>
                                         <td>
                                             @Html.DisplayFor(modelItem => item.NguoiLienLac)

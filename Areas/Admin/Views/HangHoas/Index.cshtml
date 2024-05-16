@@ -111,11 +111,14 @@
                             <thead>
                                 <tr>
                                     <th>
+                                        @Html.DisplayNameFor(model => model.Hinh)
+                                    </th>
+                                    <th>
                                         @Html.DisplayNameFor(model => model.TenHh)
                                     </th>
 
                                     <th>
-                                        @Html.DisplayNameFor(model => model.Hinh)
+                                        @Html.DisplayNameFor(model => model.NgaySx)
                                     </th>
 
                                     <th>
@@ -124,7 +127,7 @@
                                     <th>
                                         @Html.DisplayNameFor(model => model.MaNccNavigation.TenCongTy)
                                     </th>
-                                    <th>Edit</th>
+                                    <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -132,13 +135,15 @@
                                 {
                                     <tr>
                                         <td>
+                                            <img src="~/Hinh/HangHoa/@item.Hinh" width="100" height="100">
+                                        </td>
+                                        <td>
                                             @Html.DisplayFor(modelItem => item.TenHh)
                                         </td>
 
                                         <td>
-                                           <img src="~/Hinh/HangHoa/@item.Hinh" width="100" height="100">
+                                            @Html.DisplayFor(modelItem => item.NgaySx)
                                         </td>
-
                                         <td>
                                             @Html.DisplayFor(modelItem => item.MaLoaiNavigation.TenLoai)
                                         </td>

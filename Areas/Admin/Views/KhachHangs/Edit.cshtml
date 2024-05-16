@@ -25,14 +25,14 @@
                             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 ">
                                 <div class="form-group">
                                     <label asp-for="MaKh" class="control-label"></label>
-                                    <input asp-for="MaKh" class="form-control" />
+                                    <input asp-for="MaKh" class="form-control" readonly/>
                                     <span asp-validation-for="MaKh" class="text-danger"></span>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 ">
                                 <div class="form-group">
                                     <label asp-for="MatKhau" class="control-label"></label>
-                                    <input asp-for="MatKhau" class="form-control" />
+                                    <input asp-for="MatKhau" class="form-control" readonly />
                                     <span asp-validation-for="MatKhau" class="text-danger"></span>
                                 </div>
                             </div>
@@ -70,14 +70,14 @@
                             <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
                                 <div class="form-group">
                                     <label asp-for="VaiTro" class="control-label"></label>
-                                    <input asp-for="VaiTro" class="form-control" />
+                                    <select asp-for="VaiTro" class="form-control" asp-items="ViewBag.VaiTro"></select>
                                     <span asp-validation-for="VaiTro" class="text-danger"></span>
                                 </div>
                             </div>
                             <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
                                 <div class="form-group">
                                     <label asp-for="RandomKey" class="control-label"></label>
-                                    <input asp-for="RandomKey" class="form-control" />
+                                    <input asp-for="RandomKey" class="form-control" readonly />
                                     <span asp-validation-for="RandomKey" class="text-danger"></span>
                                 </div>
                             </div>
@@ -93,7 +93,8 @@
                                     <label asp-for="Hinh" class="control-label"></label>
                                     <input asp-for="Hinh" name="hinhKH" type="file" class="form-control" />
                                     <img src="~/Hinh/KhachHang/@Model.Hinh" alt="img" width="100" height="100" style="border-radius:50%">
-                                    <span asp-validation-for="RandomKey" class="text-danger"></span>
+                                    <span asp-validation-for="Hinh" class="text-danger"></span>
+
                                 </div>
                             </div>
                             <div class="col-xl-2 col-lg-12 col-md-12 col-sm-12 col-12">

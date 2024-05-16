@@ -23,14 +23,14 @@ namespace KLTN_E.Areas.Admin.Controllers
             _environment = environment;
         }
 
-        [Authorize(Roles = "Admin, NhanVien")]
+        [Authorize(Roles = "Admin, Employee")]
         // GET: Admin/HangHoas1
         public async Task<IActionResult> Index()
         {
             var kltnContext = _context.HangHoas.Include(h => h.MaLoaiNavigation).Include(h => h.MaNccNavigation);
             return View(await kltnContext.ToListAsync());
         }
-        [Authorize(Roles = "Admin, NhanVien")]
+        [Authorize(Roles = "Admin, Employee")]
         // GET: Admin/HangHoas1/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -133,8 +133,6 @@ namespace KLTN_E.Areas.Admin.Controllers
                 existedHH.MaLoai = hangHoa.MaLoai;
                 existedHH.MaNcc = hangHoa.MaNcc;
                
-
-
                 if (hinhHH != null)
                 {
                     string dir = Path.Combine(_environment.WebRootPath, "Hinh/HangHoa");
@@ -144,6 +142,10 @@ namespace KLTN_E.Areas.Admin.Controllers
                     await hinhHH.CopyToAsync(fs);
                     fs.Close();
                     existedHH.Hinh = imgName;
+                }
+                else
+                {
+                    hangHoa.Hinh = existedHH.Hinh;
                 }
              
                 //Save

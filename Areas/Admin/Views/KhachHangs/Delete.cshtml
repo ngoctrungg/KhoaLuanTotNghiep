@@ -47,7 +47,6 @@
                             <tr>
                                 <th scope="row">
                                     @Html.DisplayNameFor(model => model.NgaySinh)
-
                                 </th>
                                 <td>
                                     @Html.DisplayFor(model => model.NgaySinh)
@@ -56,7 +55,6 @@
                             <tr>
                                 <th scope="row">
                                     @Html.DisplayNameFor(model => model.DiaChi)
-
                                 </th>
                                 <td>
                                     @Html.DisplayFor(model => model.DiaChi)
@@ -65,7 +63,6 @@
                             <tr>
                                 <th scope="row">
                                     @Html.DisplayNameFor(model => model.DienThoai)
-
                                 </th>
                                 <td>
                                     @Html.DisplayFor(model => model.DienThoai)
@@ -82,8 +79,7 @@
                             </tr>
                             <tr>
                                 <th scope="row">
-                                    @Html.DisplayNameFor(model => model.Hinh)
-
+                                    @Html.DisplayNameFor(model => model.Hinh) 
                                 </th>
                                 <td>
                                     <img src="~/Hinh/KhachHang/@Model.Hinh" alt="img" width="100" height="100" style="border-radius:50%">
@@ -101,10 +97,10 @@
                             <tr>
                                 <th scope="row">
                                     @Html.DisplayNameFor(model => model.VaiTro)
-
                                 </th>
                                 <td>
-                                    @Html.DisplayFor(model => model.VaiTro)
+                                    <select asp-for="VaiTro" class="form-control" asp-items="ViewBag.VaiTro" class="form-control" disabled>
+                                    </select>
                                 </td>
                             </tr>
 

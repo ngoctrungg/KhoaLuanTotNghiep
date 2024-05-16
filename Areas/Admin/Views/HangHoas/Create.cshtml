@@ -4,7 +4,7 @@
     ViewData["Title"] = "Create";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
-@* 
+@*
 <h1>Create</h1>
 
 <h4>HangHoa</h4>
@@ -113,7 +113,6 @@
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
                                 <div class="form-group">
                                     <label asp-for="MoTa" class="control-label"></label>
-
                                     <textarea asp-for="MoTa" class="form-control"></textarea>
                                     <span asp-validation-for="MoTa" class="text-danger"></span>
                                 </div>
@@ -179,5 +178,7 @@
     </div>
 </div>
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

@@ -169,7 +169,7 @@
                                                         <td>@product.SoLuong</td>
                                                         <td>@product.DonGia</td>
                                                         <td>
-                                                            @if (isFirstProduct && purchaseHistoryItem.TenTrangThai != "Cancelled")
+                                                            @if (isFirstProduct && purchaseHistoryItem.TenTrangThai == "Pending approval")
                                                             {
                                                                 <form asp-action="CancelOrder" asp-controller="Cart" method="post">
                                                                     <input type="hidden" name="maHd" value="@purchaseHistoryItem.MaHd" />
@@ -200,7 +200,7 @@
                             }
                             else
                             {
-                                <p>Không có dữ liệu.</p>
+                                <p>There are no orders.</p>
                             }
                         </div>
 

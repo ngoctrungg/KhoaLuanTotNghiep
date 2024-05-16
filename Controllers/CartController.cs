@@ -85,11 +85,26 @@ namespace KLTN_E.Controllers
             var item = gioHang.SingleOrDefault(p => p.MaHh == id);
             if (item != null)
             {
-                gioHang.Remove(item);
+                if (item.SoLuong > 1)
+                {
+                    item.SoLuong -= 1;
+                }
+                else
+                {
+                    gioHang.Remove(item);
+                }
             }
             HttpContext.Session.Set(MySettings.CART_KEY, gioHang);
             return RedirectToAction("Index");
         }
+
+        public IActionResult ClearCart(int id)
+        {
+            var gioHang = new List<CartItem>();
+            HttpContext.Session.Set(MySettings.CART_KEY, gioHang);
+            return RedirectToAction("Index");
+        }
+
 
         #region Checkout
         [Authorize]

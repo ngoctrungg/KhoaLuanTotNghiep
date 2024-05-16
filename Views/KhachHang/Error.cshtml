@@ -1,7 +1,39 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Error";
 }
-
+@*
 <h1>Error</h1>
 <p>There's some problem, please try again.'</p>
+ *@
+
+<section class="breadcrumb-option">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb__text">
+                    <h4>Reset password</h4>
+                    <div class="breadcrumb__links">
+                        <a href="/">Home</a>
+                        @* <a asp-action="Index" asp-controller="Cart">Cart</a> *@
+                        <span>Reset password</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="container" style="margin-top: 5%; margin-bottom: 10%;">
+    <div class="card">
+        <div class="alert alert-danger" role="alert">
+            <p>
+                Error. There's some problem, please try again.
+            </p>
+
+        </div>
+        <div class="text text-center" style="margin: 1%;">
+            <p>Click <a href="@Url.Action("DangNhap", "KhachHang")">here</a> to go back to the login page.</p>
+        </div>
+    </div>
+</div>
