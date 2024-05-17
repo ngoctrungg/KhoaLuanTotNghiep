@@ -41,7 +41,6 @@ public partial class HangHoa
 
     public string MaNcc { get; set; } = null!;
 
-    public virtual ICollection<BanBe> BanBes { get; set; } = new List<BanBe>();
 
     public virtual ICollection<ChiTietHd> ChiTietHds { get; set; } = new List<ChiTietHd>();
 
@@ -49,6 +48,5 @@ public partial class HangHoa
 
     public virtual NhaCungCap MaNccNavigation { get; set; } = null!;
 
-    public virtual ICollection<YeuThich> YeuThiches { get; set; } = new List<YeuThich>();
     public List<Comment>? Comments { get; set; }
 }

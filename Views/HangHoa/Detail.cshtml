@@ -1,4 +1,5 @@
-﻿@model KLTN_E.ViewModels.ChiTietHangHoaVM
+﻿@using KLTN_E.Helpers
+@model KLTN_E.ViewModels.ChiTietHangHoaVM
 @{
     ViewData["Title"] = "Detail";
 }
@@ -109,38 +110,43 @@
     {
         <p>Please <a asp-action="DangNhap" asp-controller="KhachHang">log in</a> to leave a comment.</p>
     }
-
-    @*   @foreach (var comment in Model.Comments)
+    @*    @foreach (var comment in Model.Comments)
     {
     <div>
     <small>Posted by: @comment.Name - @comment.CreatedDate.ToShortDateString()</small>
     <p>@comment.Content</p>
     <button type="button" class="btn btn-success" onclick="showEditForm(@comment.Id)">Edit</button>
-    <div id="edit-form-@comment.Id" style="display:none;">
+    <form asp-action="DeleteComment" asp-controller="Comment" method="post" style="display:inline;">
+    <input type="hidden" name="CommentId" value="@comment.Id" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
+    <div id="edit-form-@comment.Id" style="display:none; margin-top: 10px;">
     <form asp-action="EditComment" asp-controller="Comment" method="post">
     <input type="hidden" name="CommentId" value="@comment.Id" />
     <textarea name="Content" rows="4" cols="50">@comment.Content</textarea>
     <button type="submit" class="btn btn-primary">Save</button>
     <button type="button" class="btn btn-secondary" onclick="hideEditForm(@comment.Id)">Cancel</button>
     </form>
-    <form asp-action="DeleteComment" asp-controller="Comment" method="post">
-    <input type="hidden" name="CommentId" value="@comment.Id" />
-    <button type="submit" class="btn btn-danger">Delete</button>
-    </form>
     </div>
-
     </div>
-    } *@
+    }
+    *@
+   
     @foreach (var comment in Model.Comments)
     {
         <div>
-            <small>Posted by: @comment.Name - @comment.CreatedDate.ToShortDateString()</small>
+            <small>@comment.Name - @comment.CreatedDate.ToString("yyyy-MM-dd HH:mm")</small>
             <p>@comment.Content</p>
-            <button type="button" class="btn btn-success" onclick="showEditForm(@comment.Id)">Edit</button>
-            <form asp-action="DeleteComment" asp-controller="Comment" method="post" style="display:inline;">
-                <input type="hidden" name="CommentId" value="@comment.Id" />
-                <button type="submit" class="btn btn-danger">Delete</button>
-            </form>
+
+            @if (comment.UserId == ViewBag.CurrentUserId)
+            {
+                <button type="button" class="btn btn-success" onclick="showEditForm(@comment.Id)">Edit</button>
+                <form asp-action="DeleteComment" asp-controller="Comment" method="post" style="display:inline;">
+                    <input type="hidden" name="CommentId" value="@comment.Id" />
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            }
+
             <div id="edit-form-@comment.Id" style="display:none; margin-top: 10px;">
                 <form asp-action="EditComment" asp-controller="Comment" method="post">
                     <input type="hidden" name="CommentId" value="@comment.Id" />

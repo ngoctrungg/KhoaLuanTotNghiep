@@ -15,19 +15,15 @@ public partial class KltnContext : DbContext
     {
     }
 
-    public virtual DbSet<BanBe> BanBes { get; set; }
 
     public virtual DbSet<ChiTietHd> ChiTietHds { get; set; }
 
-    public virtual DbSet<ChuDe> ChuDes { get; set; }
 
-    public virtual DbSet<GopY> Gopies { get; set; }
 
     public virtual DbSet<HangHoa> HangHoas { get; set; }
 
     public virtual DbSet<HoaDon> HoaDons { get; set; }
 
-    public virtual DbSet<HoiDap> HoiDaps { get; set; }
 
     public virtual DbSet<KhachHang> KhachHangs { get; set; }
 
@@ -37,21 +33,14 @@ public partial class KltnContext : DbContext
 
     public virtual DbSet<NhanVien> NhanViens { get; set; }
 
-    public virtual DbSet<PhanCong> PhanCongs { get; set; }
-
-    public virtual DbSet<PhanQuyen> PhanQuyens { get; set; }
-
-    public virtual DbSet<PhongBan> PhongBans { get; set; }
 
     public virtual DbSet<Role> Roles { get; set; }
 
     public virtual DbSet<TrangThai> TrangThais { get; set; }
 
-    public virtual DbSet<TrangWeb> TrangWebs { get; set; }
 
     public virtual DbSet<VChiTietHoaDon> VChiTietHoaDons { get; set; }
 
-    public virtual DbSet<YeuThich> YeuThiches { get; set; }
     public DbSet<Comment> Comments { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -60,31 +49,7 @@ public partial class KltnContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<BanBe>(entity =>
-        {
-            entity.HasKey(e => e.MaBb).HasName("PK_Promotions");
-
-            entity.ToTable("BanBe");
-
-            entity.Property(e => e.MaBb).HasColumnName("MaBB");
-            entity.Property(e => e.Email).HasMaxLength(50);
-            entity.Property(e => e.HoTen).HasMaxLength(50);
-            entity.Property(e => e.MaHh).HasColumnName("MaHH");
-            entity.Property(e => e.MaKh)
-                .HasMaxLength(20)
-                .HasColumnName("MaKH");
-            entity.Property(e => e.NgayGui)
-                .HasDefaultValueSql("(getdate())")
-                .HasColumnType("datetime");
-
-            entity.HasOne(d => d.MaHhNavigation).WithMany(p => p.BanBes)
-                .HasForeignKey(d => d.MaHh)
-                .HasConstraintName("FK_QuangBa_HangHoa");
-
-            entity.HasOne(d => d.MaKhNavigation).WithMany(p => p.BanBes)
-                .HasForeignKey(d => d.MaKh)
-                .HasConstraintName("FK_BanBe_KhachHang");
-        });
+       
 
         modelBuilder.Entity<ChiTietHd>(entity =>
         {
@@ -107,49 +72,7 @@ public partial class KltnContext : DbContext
                 .HasConstraintName("FK_OrderDetails_Products");
         });
 
-        modelBuilder.Entity<ChuDe>(entity =>
-        {
-            entity.HasKey(e => e.MaCd);
-
-            entity.ToTable("ChuDe");
-
-            entity.Property(e => e.MaCd).HasColumnName("MaCD");
-            entity.Property(e => e.MaNv)
-                .HasMaxLength(50)
-                .HasColumnName("MaNV");
-            entity.Property(e => e.TenCd)
-                .HasMaxLength(50)
-                .HasColumnName("TenCD");
-
-            entity.HasOne(d => d.MaNvNavigation).WithMany(p => p.ChuDes)
-                .HasForeignKey(d => d.MaNv)
-                .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("FK_ChuDe_NhanVien");
-        });
-
-        modelBuilder.Entity<GopY>(entity =>
-        {
-            entity.HasKey(e => e.MaGy);
-
-            entity.ToTable("GopY");
-
-            entity.Property(e => e.MaGy)
-                .HasMaxLength(50)
-                .HasColumnName("MaGY");
-            entity.Property(e => e.DienThoai).HasMaxLength(50);
-            entity.Property(e => e.Email).HasMaxLength(50);
-            entity.Property(e => e.HoTen).HasMaxLength(50);
-            entity.Property(e => e.MaCd).HasColumnName("MaCD");
-            entity.Property(e => e.NgayGy)
-                .HasDefaultValueSql("(getdate())")
-                .HasColumnName("NgayGY");
-            entity.Property(e => e.NgayTl).HasColumnName("NgayTL");
-            entity.Property(e => e.TraLoi).HasMaxLength(50);
-
-            entity.HasOne(d => d.MaCdNavigation).WithMany(p => p.Gopies)
-                .HasForeignKey(d => d.MaCd)
-                .HasConstraintName("FK_GopY_ChuDe");
-        });
+       
 
         modelBuilder.Entity<HangHoa>(entity =>
         {
@@ -229,26 +152,7 @@ public partial class KltnContext : DbContext
                 .HasConstraintName("FK_HoaDon_TrangThai");
         });
 
-        modelBuilder.Entity<HoiDap>(entity =>
-        {
-            entity.HasKey(e => e.MaHd);
-
-            entity.ToTable("HoiDap");
-
-            entity.Property(e => e.MaHd)
-                .ValueGeneratedNever()
-                .HasColumnName("MaHD");
-            entity.Property(e => e.CauHoi).HasMaxLength(50);
-            entity.Property(e => e.MaNv)
-                .HasMaxLength(50)
-                .HasColumnName("MaNV");
-            entity.Property(e => e.NgayDua).HasDefaultValueSql("(getdate())");
-            entity.Property(e => e.TraLoi).HasMaxLength(50);
-
-            entity.HasOne(d => d.MaNvNavigation).WithMany(p => p.HoiDaps)
-                .HasForeignKey(d => d.MaNv)
-                .HasConstraintName("FK_HoiDap_NhanVien");
-        });
+        
 
         modelBuilder.Entity<KhachHang>(entity =>
         {
@@ -319,71 +223,7 @@ public partial class KltnContext : DbContext
             entity.Property(e => e.MatKhau).HasMaxLength(50);
         });
 
-        modelBuilder.Entity<PhanCong>(entity =>
-        {
-            entity.HasKey(e => e.MaPc);
-
-            entity.ToTable("PhanCong");
-
-            entity.Property(e => e.MaPc).HasColumnName("MaPC");
-            entity.Property(e => e.MaNv)
-                .HasMaxLength(50)
-                .HasColumnName("MaNV");
-            entity.Property(e => e.MaPb)
-                .HasMaxLength(7)
-                .IsUnicode(false)
-                .HasColumnName("MaPB");
-            entity.Property(e => e.NgayPc)
-                .HasColumnType("datetime")
-                .HasColumnName("NgayPC");
-
-            entity.HasOne(d => d.MaNvNavigation).WithMany(p => p.PhanCongs)
-                .HasForeignKey(d => d.MaNv)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_PhanCong_NhanVien");
-
-            entity.HasOne(d => d.MaPbNavigation).WithMany(p => p.PhanCongs)
-                .HasForeignKey(d => d.MaPb)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_PhanCong_PhongBan");
-        });
-
-        modelBuilder.Entity<PhanQuyen>(entity =>
-        {
-            entity.HasKey(e => e.MaPq);
-
-            entity.ToTable("PhanQuyen");
-
-            entity.Property(e => e.MaPq).HasColumnName("MaPQ");
-            entity.Property(e => e.MaPb)
-                .HasMaxLength(7)
-                .IsUnicode(false)
-                .HasColumnName("MaPB");
-
-            entity.HasOne(d => d.MaPbNavigation).WithMany(p => p.PhanQuyens)
-                .HasForeignKey(d => d.MaPb)
-                .HasConstraintName("FK_PhanQuyen_PhongBan");
-
-            entity.HasOne(d => d.MaTrangNavigation).WithMany(p => p.PhanQuyens)
-                .HasForeignKey(d => d.MaTrang)
-                .HasConstraintName("FK_PhanQuyen_TrangWeb");
-        });
-
-        modelBuilder.Entity<PhongBan>(entity =>
-        {
-            entity.HasKey(e => e.MaPb);
-
-            entity.ToTable("PhongBan");
-
-            entity.Property(e => e.MaPb)
-                .HasMaxLength(7)
-                .IsUnicode(false)
-                .HasColumnName("MaPB");
-            entity.Property(e => e.TenPb)
-                .HasMaxLength(50)
-                .HasColumnName("TenPB");
-        });
-
+        
         modelBuilder.Entity<Role>(entity =>
         {
             entity.HasKey(e => e.MaVaiTro);
@@ -405,17 +245,7 @@ public partial class KltnContext : DbContext
             entity.Property(e => e.TenTrangThai).HasMaxLength(50);
         });
 
-        modelBuilder.Entity<TrangWeb>(entity =>
-        {
-            entity.HasKey(e => e.MaTrang);
-
-            entity.ToTable("TrangWeb");
-
-            entity.Property(e => e.TenTrang).HasMaxLength(50);
-            entity.Property(e => e.Url)
-                .HasMaxLength(250)
-                .HasColumnName("URL");
-        });
+        
 
         modelBuilder.Entity<VChiTietHoaDon>(entity =>
         {
@@ -431,31 +261,7 @@ public partial class KltnContext : DbContext
                 .HasColumnName("TenHH");
         });
 
-        modelBuilder.Entity<YeuThich>(entity =>
-        {
-            entity.HasKey(e => e.MaYt).HasName("PK_Favorites");
-
-            entity.ToTable("YeuThich");
-
-            entity.Property(e => e.MaYt).HasColumnName("MaYT");
-            entity.Property(e => e.MaHh).HasColumnName("MaHH");
-            entity.Property(e => e.MaKh)
-                .HasMaxLength(20)
-                .HasColumnName("MaKH");
-            entity.Property(e => e.MoTa).HasMaxLength(255);
-            entity.Property(e => e.NgayChon).HasColumnType("datetime");
-
-            entity.HasOne(d => d.MaHhNavigation).WithMany(p => p.YeuThiches)
-                .HasForeignKey(d => d.MaHh)
-                .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("FK_YeuThich_HangHoa");
-
-            entity.HasOne(d => d.MaKhNavigation).WithMany(p => p.YeuThiches)
-                .HasForeignKey(d => d.MaKh)
-                .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("FK_Favorites_Customers");
-        });
-
+        
         OnModelCreatingPartial(modelBuilder);
     }
 

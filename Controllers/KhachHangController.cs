@@ -374,14 +374,14 @@ namespace KLTN_E.Controllers
                 var callbackUrl = Url.Action("DatLaiMatKhau", "KhachHang", new { userId = khachHang.MaKh, token = khachHang.ResetToken }, protocol: HttpContext.Request.Scheme);
                 //var callbackUrl = Url.Action("DatLaiMatKhau", "KhachHang", new { userId = khachHang.MaKh, token = khachHang.ResetToken }, HttpContext.Request.Scheme);
 
-                await _myEmailSender.SendEmailAsync(khachHang.Email, "Đặt lại mật khẩu", $"Please <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>click here</a> to reset your password.");
+                await _myEmailSender.SendEmailAsync(khachHang.Email, "Reset password", $"Please <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>click here</a> to reset your password.");
 
 
                 return RedirectToAction("NotificationRSPassword");
             }
             else
             {
-                ModelState.AddModelError("Error", "MaKh does not exist.");
+                ModelState.AddModelError("Error", "UserName does not exist.");
                 return View();
             }
         }

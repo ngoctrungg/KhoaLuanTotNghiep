@@ -7,7 +7,6 @@ namespace KLTN_E.Data;
 public partial class KhachHang
 {
     [Display(Name = "User Name")]
-
     public string MaKh { get; set; } = null!;
     [Display(Name = "Password")]
 
@@ -46,11 +45,9 @@ public partial class KhachHang
 
     public string? ResetToken { get; set; }
 
-    public virtual ICollection<BanBe> BanBes { get; set; } = new List<BanBe>();
 
     public virtual ICollection<HoaDon> HoaDons { get; set; } = new List<HoaDon>();
 
     public virtual Role VaiTroNavigation { get; set; } = null!;
 
-    public virtual ICollection<YeuThich> YeuThiches { get; set; } = new List<YeuThich>();
 }

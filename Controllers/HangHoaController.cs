@@ -1,4 +1,5 @@
 ﻿using KLTN_E.Data;
+using KLTN_E.Helpers;
 using KLTN_E.Models;
 using KLTN_E.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -102,6 +103,9 @@ namespace KLTN_E.Controllers
         [Route("/shop/detail/{id}")]
         public IActionResult Detail(int id, int page = 1, int pageSize = 5)
         {
+            var userIdClaim = HttpContext.User.Claims.FirstOrDefault(c => c.Type == MySettings.CLAIM_CUSTOMER_ID);
+            var userId = userIdClaim.Value;
+            ViewBag.CurrentUserId = userId;
             var data = db.HangHoas
                 .Include(p => p.MaLoaiNavigation)
                 .SingleOrDefault(p => p.MaHh == id);
