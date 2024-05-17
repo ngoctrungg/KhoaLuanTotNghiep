@@ -1,0 +1,252 @@
+﻿@using KLTN_E.Helpers
+@model KLTN_E.ViewModels.ChiTietHangHoaVM
+@{
+    ViewData["Title"] = "Detail";
+}
+
+@section MetaTags {
+    <meta property="og:title" content="@Model.TenHH" />
+    <meta property="og:description" content="@Model.MoTa" />
+    <meta property="og:url" content="@Context.Request.Scheme://@Context.Request.Host@Context.Request.Path" />
+    <meta property="og:image" content="@Context.Request.Scheme://@Context.Request.Host/Hinh/HangHoa/@Model.Hinh" data-react-helmet="true" />
+    <meta property="og:image:type" content="image/*" data-react-helmet="true">
+    <meta property="og:image:width" content="1200" data-react-helmet="true">
+    <meta property="og:image:height" content="627" data-react-helmet="true">
+    <meta property="fb:app_id" content="330428239820926" />
+    <meta property="og:type" content="product" />
+}
+
+
+<!-- Shop Details Section Begin -->
+<section class="shop-details">
+    <div class="product__details__pic">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="product__details__breadcrumb text-left">
+                        <a href="/">Home</a>
+                        <a asp-action="Index" asp-controller="HangHoa">Shop</a>
+                        <span>@Model.TenHH</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-9  d-flex justify-content-between ">
+
+                    <div class="col-lg-5" style="padding:0px">
+                        <div class="product__details__pic__item">
+                            @* <a asp-action="Detail" asp-route-id="@Model.MaHH"> *@
+                            <img src="~/Hinh/HangHoa/@Model.Hinh" alt="@Model.TenHH">
+                            @* </a> *@
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-lg-6">
+                        <form asp-action="AddToCart" asp-controller="Cart" asp-route-id="@Model.MaHH">
+                            <div class="product__details__text text-left">
+                                <h4>@Model.TenHH</h4>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <span> - 5 Reviews</span>
+                                </div>
+                                <h3>$@Model.DonGia <span></span></h3>
+                                <p>
+                                    @Model.MoTa
+                                </p>
+
+                                <div class="product__details__cart__option">
+                                    <div class="quantity">
+                                        <div class="pro-qty">
+                                            <input type="text" value="1" name="quantity">
+                                        </div>
+                                    </div>
+                                   <button class="btn btn-dark roun">Add to card</button>
+                                </div>
+                                <div class="product__details__btns__option">
+                                    <a href="#"><i class="fa fa-heart"></i> add to wishlist</a>
+                                    <a href="#"><i class="fa fa-exchange"></i> Add To Compare</a>
+                                </div>
+                                <div class="product__details__last__option">
+                                    @* <h5><span>Guaranteed Safe Checkout</span></h5> *@
+                                    <div class="d-flex gap-3">
+
+                                    <h5>Share:</h5>
+                                    <a class="text-decoration-none" href="https://www.facebook.com/sharer/sharer.php?u =@Context.Request.Scheme://@Context.Request.Host@Context.Request.Path" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-facebook">
+
+                                        </i>
+                                    </a>
+                                    </div>
+                                    <img src="img/shop-details/details-payment.png" alt="">
+                                    <ul class="p-0 m-0">
+                                        <li><span>SKU:</span> @Model.MaHH</li>
+                                        <li><span>Categories:</span> @Model.TenLoai</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Form thêm comment mới -->
+    <div class="container">
+
+
+        @if (User.Identity.IsAuthenticated)
+        {
+            <h5>Comments (@Model.Comments.Count)</h5>
+            <form asp-action="AddComment" asp-controller="Comment" method="post">
+                <input type="hidden" name="productId" value="@Model.MaHH" />
+                <div>
+
+                    @* <textarea name="content" rows="2" cols="30"></textarea> *@
+                    <div class="form-floating mb-2">
+                        <textarea name="content" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Write here</label>
+                    </div>
+                    <div class="d-flex justify-content-end">
+
+                        <button type="submit" class="btn btn-dark rounded-0">Send</button>
+                    </div>
+                </div>
+            </form>
+        }
+        else
+        {
+            <p>Please <a asp-action="DangNhap" asp-controller="KhachHang">log in</a> to leave a comment.</p>
+        }
+        @*    @foreach (var comment in Model.Comments)
+        {
+        <div>
+        <small>Posted by: @comment.Name - @comment.CreatedDate.ToShortDateString()</small>
+        <p>@comment.Content</p>
+        <button type="button" class="btn btn-success" onclick="showEditForm(@comment.Id)">Edit</button>
+        <form asp-action="DeleteComment" asp-controller="Comment" method="post" style="display:inline;">
+        <input type="hidden" name="CommentId" value="@comment.Id" />
+        <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
+        <div id="edit-form-@comment.Id" style="display:none; margin-top: 10px;">
+        <form asp-action="EditComment" asp-controller="Comment" method="post">
+        <input type="hidden" name="CommentId" value="@comment.Id" />
+        <textarea name="Content" rows="4" cols="50">@comment.Content</textarea>
+        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-secondary" onclick="hideEditForm(@comment.Id)">Cancel</button>
+        </form>
+        </div>
+        </div>
+        }
+        *@
+
+        @foreach (var comment in Model.Comments)
+        {
+            <div class="col-6 p-0">
+                <small>@comment.Name - @comment.CreatedDate.ToString("yyyy-MM-dd HH:mm")</small>
+                <div >
+                    <span class="text-justify">@comment.Content</span>
+
+                    @if (comment.UserId == ViewBag.CurrentUserId)
+                    {
+                        <button type="button" class="bg-white border-0 text-success" onclick="showEditForm(@comment.Id)">Edit</button>
+                        <form asp-action="DeleteComment" asp-controller="Comment" method="post" style="display:inline;">
+                            <input type="hidden" name="CommentId" value="@comment.Id" />
+                            <button type="submit" class="bg-white border-0 text-danger">
+                                Delete
+                            </button>
+                        </form>
+                    }
+                    <div id="edit-form-@comment.Id" style="display:none; margin-top: 10px;">
+                        <form asp-action="EditComment" asp-controller="Comment" method="post">
+                            <input type="hidden" name="CommentId" value="@comment.Id" />
+                     @*        <textarea name="Content" rows="4" cols="50">@comment.Content</textarea>
+                            <button type="submit" class="btn btn-primary">Save</button>
+                            <button type="button" class="btn btn-secondary" onclick="hideEditForm(@comment.Id)">Cancel</button> *@
+
+
+                            <div class="form-floating mb-2">
+                                <textarea name="Content" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px">@comment.Content</textarea>
+                                <label for="floatingTextarea2">Write here</label>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <button type="submit" class="btn btn-success rounded-0">Save</button>
+                                <button type="button" class="btn btn-light rounded-0" onclick="hideEditForm(@comment.Id)">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr />
+            </div>
+        }
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                @*       <div class="product__pagination">
+                @for (int i = 1; i <= Model.TotalPages; i++)
+                {
+                if (i == Model.CurrentPage)
+                {
+                <div class="d-inline-block w-10 h-10 bg-dark">
+                <div class="d-flex justify-content-center align-items-center">
+
+                <span class="text-info ">@i</span>
+                </div>
+                </div>
+                }
+                else
+                {
+                <a href="@Url.Action("Detail", new { id = Model.MaHH, page = i, pageSize = Model.PageSize })">@i</a>
+                }
+                }
+                </div> *@
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center align-items-center">
+
+                        @for (int i = 1; i <= Model.TotalPages; i++)
+                        {
+                            if (i == Model.CurrentPage)
+                            {
+
+                                <li class="page-item"><a class="page-link  bg-dark-subtle">@i</a></li>
+                            }
+                            else
+                            {
+                                <li class="page-item">
+
+                                    <a class="page-link text-dark" href="@Url.Action("Detail", new { id = Model.MaHH, page = i, pageSize = Model.PageSize })">@i</a>
+                                </li>
+                            }
+                        }
+
+
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function showEditForm(commentId) {
+        document.getElementById('edit-form-' + commentId).style.display = 'block';
+    }
+
+    function hideEditForm(commentId) {
+        document.getElementById('edit-form-' + commentId).style.display = 'none';
+    }
+</script>
+
+<!-- Shop Details Section End -->

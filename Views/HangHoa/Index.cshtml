@@ -1,0 +1,50 @@
+﻿@model KLTN_E.Models.PagedList<KLTN_E.ViewModels.HangHoaVM>
+@{
+    ViewData["Title"] = "Shop";
+    Layout = "_DanhSachHangHoa";
+}
+<div style="margin-bottom:44px">
+
+    @* <h5>There are <b>@Model.Count()</b> products.</h5> *@
+</div>
+<!-- Breadcrumb Section Begin -->
+@section BreadCum {
+    <section class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h4>Shop</h4>
+                        <div class="breadcrumb__links">
+                            <a asp-action="Index" asp-controller="Home">Home</a>
+                            <span>Shop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+<!-- Breadcrumb Section End -->
+@await Html.PartialAsync("ProductItem", Model)
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="product__pagination">
+            @if (Model.TotalPages > 1)
+            {
+                <ul class="pagination">
+                    @for (int i = 1; i <= Model.TotalPages; i++)
+                    {
+                        <li class="@(i == Model.CurrentPage ? "active" : "")">
+                            @* <a href="@Url.Action("Index", new { page = i, pageSize = Model.PageSize, loai = ViewBag.CurrentLoai })">@i</a> *@
+                            <a href="@Url.Action("Index", new { page = i, pageSize = Model.PageSize, loai = Model.Loai })">@i</a>
+
+                        </li>
+                    }
+                </ul>
+            }
+        </div>
+    </div>
+</div>

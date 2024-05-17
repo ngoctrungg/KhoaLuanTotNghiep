@@ -1,0 +1,126 @@
+﻿@model KLTN_E.Data.HangHoa
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid dashboard-content">
+
+    <div class="row">
+
+        <div class="col-xl-12 col-lg-6 col-md-12 col-sm-12 col-12">
+            <div class="card">
+                <h5 class="card-header">
+
+                    <a class="btn btn-success" asp-action="Edit" asp-route-id="@Model?.MaHh">Edit</a> |
+                    <a class="btn btn-dark" asp-action="Index">Back to List</a>
+
+                </h5>
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.TenHh)
+                                </th>
+                                <td>@Html.DisplayFor(model => model.TenHh)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.TenAlias)
+
+                                </th>
+                                <td>@Html.DisplayFor(model => model.TenAlias)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.MoTaDonVi)
+
+                                </th>
+                                <td>
+                                    @Html.DisplayFor(model => model.MoTaDonVi)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.DonGia)
+
+                                </th>
+                                <td>
+                                    @Html.DisplayFor(model => model.DonGia)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.Hinh)
+
+                                </th>
+                                <td>
+                                    <img src="~/Hinh/HangHoa/@Model.Hinh" alt="img" width="100" height="100" style="border-radius:50%">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.NgaySx)
+
+                                </th>
+                                <td>
+                                    @Html.DisplayFor(model => model.NgaySx)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.GiamGia)
+
+                                </th>
+                                <td>
+                                    @Html.DisplayFor(model => model.GiamGia)
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.SoLanXem)
+
+                                </th>
+                                <td>
+                                    @Html.DisplayFor(model => model.SoLanXem)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.MoTa)
+
+                                </th>
+                                <td>
+                                    @Html.DisplayFor(model => model.MoTa)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.MaLoaiNavigation.TenLoai)
+
+                                </th>
+                                <td>
+                                    @Html.DisplayFor(model => model.MaLoaiNavigation.TenLoai)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.MaNccNavigation.TenCongTy)
+
+                                </th>
+                                <td>
+                                    @Html.DisplayFor(model => model.MaNccNavigation.TenCongTy)
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

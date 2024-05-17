@@ -1,0 +1,73 @@
+﻿@{
+    Layout = "_LayoutCustomer";
+}
+
+<!-- Breadcrumb Section Begin -->
+@RenderSection("BreadCum", required: false);
+<!-- Breadcrumb Section End -->
+<!-- Shop Section Begin -->
+<section class="shop spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="shop__sidebar">
+                    <div class="shop__sidebar__search">
+                        <form asp-action="Search" asp-controller="HangHoa">
+                            <input type="search" placeholder="Search..." name="query">
+                            <button><span class="fa fa-search"></span></button>
+                        </form>
+                    </div>
+                    <div class="shop__sidebar__accordion">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-heading">
+                                    <a data-toggle="collapse" data-target="#collapseOne">Categories</a>
+                                </div>
+
+                                @await Component.InvokeAsync("MenuLoai")
+                            </div>
+
+                         
+                            <form asp-action="Filter" asp-controller="HangHoa" method="get">
+                                <div class="card-body">
+                                    <div class="shop__sidebar__price">
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="minPrice" value="0-50" id="price_50_100">
+                                                <label for="price_50_100">$0.00 - $50.00</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="minPrice" value="50-100" id="price_50_100">
+                                                <label for="price_50_100">$50.00 - $100.00</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="minPrice" value="100-200" id="price_50_100">
+                                                <label for="price_50_100">$100.00 - $200.00</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="minPrice" value="200-300" id="price_50_100">
+                                                <label for="price_50_100">$200.00 - $300.00</label>
+                                            </li>
+                                            <!-- Các radio button khác ở đây -->
+                                        </ul>
+                                        <div class="">
+
+                                        <button type="submit" class="site-btn" style=" padding:10px 10px; font-size:10px">Filter</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</section>

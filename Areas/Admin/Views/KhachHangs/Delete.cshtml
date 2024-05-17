@@ -1,0 +1,113 @@
+﻿@model KLTN_E.Data.KhachHang
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="container-fluid dashboard-content">
+
+    <div class="row">
+
+        <div class="col-xl-12 col-lg-6 col-md-12 col-sm-12 col-12">
+            <div class="card">
+                <h5 class="card-header">
+
+                    <form asp-action="Delete">
+                        <input type="hidden" asp-for="MaKh" />
+                        <input type="submit" value="Delete" class="btn btn-danger" /> |
+                        <a asp-action="Index" class="btn btn-dark">Back to List</a>
+                    </form>
+
+                </h5>
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.MatKhau)
+                                </th>
+                                <td>@Html.DisplayFor(model => model.MatKhau)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.HoTen)
+
+                                </th>
+                                <td>@Html.DisplayFor(model => model.HoTen)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.GioiTinh)
+
+                                </th>
+                                <td>
+                                    @Html.DisplayFor(model => model.GioiTinh)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.NgaySinh)
+                                </th>
+                                <td>
+                                    @Html.DisplayFor(model => model.NgaySinh)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.DiaChi)
+                                </th>
+                                <td>
+                                    @Html.DisplayFor(model => model.DiaChi)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.DienThoai)
+                                </th>
+                                <td>
+                                    @Html.DisplayFor(model => model.DienThoai)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.Email)
+
+                                </th>
+                                <td>
+                                    @Html.DisplayFor(model => model.Email)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.Hinh) 
+                                </th>
+                                <td>
+                                    <img src="~/Hinh/KhachHang/@Model.Hinh" alt="img" width="100" height="100" style="border-radius:50%">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.HieuLuc)
+
+                                </th>
+                                <td>
+                                    @Html.DisplayFor(model => model.HieuLuc)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    @Html.DisplayNameFor(model => model.VaiTro)
+                                </th>
+                                <td>
+                                    <select asp-for="VaiTro" class="form-control" asp-items="ViewBag.VaiTro" class="form-control" disabled>
+                                    </select>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

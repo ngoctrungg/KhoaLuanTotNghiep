@@ -1,0 +1,5 @@
+# Bỏ qua tất cả các tệp .vsidx trong thư mục .vs/KLTN-E/FileContentIndex
+.vs/KLTN-E/FileContentIndex/*.vsidx
+
+# Local Netlify folder
+.netlify
